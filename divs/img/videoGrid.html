@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Grid</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+       body{
+        margin: 0; /* Remove default margin */
+        padding: 0;
+        background-color: black;
+       }
+
+        .grid-container {
+            width: 550px; /* Set a fixed width for the grid container */
+            height: 350px; /* Set a fixed height for the grid container */
+            margin: 5em auto;
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 0;
+            padding: 0;
+            float: left;
+            margin-left: 7em;
+            
+        }
+
+        .grid-item {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+        }
+
+        .video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Optional media queries for responsiveness */
+        @media (max-width: 768px) {
+            .grid-container {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .grid-container {
+                width: 100%;
+            }
+        }
+        .as {
+            width: 50%;
+            padding-left: em;
+            float: right;
+            margin-top: 4.5em;
+            font-size: 1.3em;
+            
+        }
+
+        .lorem p {
+            color: white;
+            margin-right:2em;
+            float: right;
+            font-weight: lighter;
+            letter-spacing: 3px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-style: italic;
+           
+        }
+        .read-more button{
+            display: block;
+            background-color:rgb(61, 64, 63);
+            float: left;
+            margin-top: 1em;
+            color:white; /* Set the button color to red */
+           text-decoration: none;
+           font-size: 0.7em; /* Adjust the font size to increase button size */
+           padding: 0.5em 0.5em; /* Adjust padding to increase button size */
+           border-radius: 5px;
+           border-color: black;
+        }
+        .read-more button:hover{
+            background-color: cyan;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">
+           <video loop muted autoplay src="v1.mp4" width="300" height="150"></video>
+        </div>
+        <div class="grid-item">
+           <video loop muted autoplay src="v3.mp4" width="300" height="150"></video>
+        </div>
+        <div class="grid-item">
+           <video loop muted autoplay src="v4.mp4" width="300" height="150"></video>
+        </div>
+        <div class="grid-item">
+           <video loop muted autoplay src="v2.mp4" width="300" height="150"></video>
+        </div>
+    </div>
+    <div class="as">
+        <div class="lorem">
+            <p>
+                Sparkio has been an enduring brand in the 
+                Indian Consumer Durable space, and has won
+                the trust of millions of consumers. <br>
+                Being an Indian company,
+                the company understands the unique requirements
+                of the Indian consumer – more than any other 
+                company does.
+                <br>Starting with a goal of manufacturing 
+                televisions sets, it transformed into a 
+                complete consumer durable company with a 
+                wide product portfolio including Flat 
+                panel TVs (LED LCD TVs), Air Conditioners,
+                 Mobile phones,
+                  Projector systems and LED lights.
+
+                
+
+
+            </p>
+            <a href="#" class="read-more"><button>Read More</button></a>
+            
+        </div>
+    </div>
+</body>
+</html>

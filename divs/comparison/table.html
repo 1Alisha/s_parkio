@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .sl{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<table>
+    <tr>
+        <th colspan="2"><center>Select product</center> </th>
+    </tr>
+    <tr>
+        <th width="300px">
+            <select class="form-control" id="select1" onchange="item1(this.value)">
+                <option class="sl" value="0"><center>-- Select Anyone --</center></option>
+            </select>
+        </th>
+        <th width="300px">
+            <select class="form-control" id="select2" onchange="item2(this.value)">
+                <option value="0">-- Select Anyone --</option>
+            </select>
+        </th>
+    </tr>
+    <tr>
+       
+        <td >
+            <img width="500px" height="500px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/1665px-No-Image-Placeholder.svg.png"
+                id="img1" alt=" ">
+        </td>
+        <td >
+            <img width="500px" height="500px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/1665px-No-Image-Placeholder.svg.png"
+                id="img2" alt=" ">
+        </td>
+    </tr>
+    <tr>
+        <td>Row 2, Cell 1</td>
+        <td>Row 2, Cell 2</td>
+    </tr>
+    <tr>
+        <td>Row 3, Cell 1</td>
+        <td>Row 3, Cell 2</td>
+    </tr>
+    <tr>
+        <td>Row 4, Cell 1</td>
+        <td>Row 4, Cell 2</td>
+    </tr>
+</table>
+
+</body>
+</html>

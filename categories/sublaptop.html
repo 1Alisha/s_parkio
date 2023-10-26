@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<style>
+
+body {
+  font-family: sans-serif;
+  background: hsl(0, 0%, 4%);
+  /* background-image: url("img/bi.jpg");
+  filter: grayscale(50%); */
+  background-size: cover;
+}
+
+.container {
+  max-width: 75%;
+  margin: auto;
+  height: 85vh;
+  margin-top: 5%;
+  background: rgb(14, 13, 13);
+  box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.3);
+}
+
+
+.left, .right {
+  width: 50%;
+  padding: 30px;
+}
+/* .glass{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px 0px 0px 0px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+} */
+
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex1 {
+  display: flex;
+}
+
+.main_image {
+  width: auto;
+  height: auto;
+}
+
+.option img {
+  width: 75px;
+  height: 75px;
+  padding: 10px;
+}
+
+.right {
+  padding: 50px 100px 50px 50px;
+}
+
+h2 {
+  color: hwb(0 96% 2%);
+  
+  margin: 20px 0 20px 0;
+  font-size: 25px;
+}
+/* h2{
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color:rgb(rgb(235, 134, 134), green, blue);
+} */
+
+.fas{
+  font-size: 25px;
+}
+.cut{
+  text-decoration: line-through;
+  font-weight: lighter;
+}
+ul{
+  list-style: none;
+  display: flex;
+  padding-top:10px;
+  
+  
+}
+li{
+  padding-top:5px ;
+  margin-left: 0px;
+  padding-right:3px ;
+  text-align: center;
+
+}
+
+
+h5,
+p,
+small {
+  color: #fcf9f8;
+  padding-top: 10px;
+  
+}
+
+h4 {
+  color: red;
+}
+
+p {
+  margin: 20px 0 10px 0;
+  line-height: 25px;
+  color: white;
+}
+
+h5 {
+  font-size: 18px;
+  font-weight:lighter;
+}
+
+label,
+.add span,
+.color span {
+  width: 35px;
+  height: 35px;
+  background: #000;
+  border-radius: 50%;
+  margin: 20px 10px 20px 0;
+  cursor: pointer;
+  padding-top: 4px;
+  
+}
+#Number{
+  padding-top: 15px;
+}
+.color span:nth-child(1) {
+  background: #e69595;
+}
+.color span:nth-child(2) {
+  background: #ee2c2c;
+}
+
+.color span:nth-child(3) {
+  background: #3a64b8;
+}
+
+.color span:nth-child(4) {
+  background: #42dbdb;
+}
+
+.color span:nth-child(5) {
+  background: #AB8ED1;
+}
+
+.color span:nth-child(6) {
+  background: #e03fd2;
+}
+.color span:nth-child(7) {
+  background: #ad38e8;
+}
+
+.add label,
+.add span {
+  background: none;
+  border: 1px solid #C1908B;
+  color: #C1908B;
+  text-align: center;
+  line-height: 25px;
+  
+}
+
+.add label {
+  padding: 10px 30px 0 20px;
+  border-radius: 50px;
+  line-height: 0;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background: #C1908B;
+  color: white;
+  margin-top: 20%;
+  border-radius: 30px;
+}
+
+@media only screen and (max-width:768px) {
+  .container {
+    max-width: 90%;
+    margin: auto;
+    height: auto;
+  }
+
+  .left, .right {
+    width: 100%;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width:511px) {
+  .container {
+    max-width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+
+  .left, .right {
+    padding: 0;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .option {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.container{
+  height: 86vh;
+  width: 75%;
+  padding: 0,20px;
+  background:rgba(255,255,255,0.1);
+  z-index: 10;
+  display:flex;
+  position: relative;
+  border-radius: 20px;
+  border: 2px solid rgba(255,255, 255,0.7);
+  backdrop-filter:blur(25px); /*important! 1*/
+  box-shadow: -15px 17px 17px rgba(10, 10, 10,0.25);
+}
+   *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins',sans-serif;
+    }
+    .containers{
+        width: 100%;
+        height: 100vh;
+       
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .btn{
+        margin-top: 45px;
+        padding: 10px 60px;
+        background:rgb(216, 150, 150);
+        border: 0;
+        outline: none;
+        cursor: pointer;
+        font-size: 22px;
+        font-weight: 500;
+        border-radius: 30px;
+}
+    .popup{
+        width: 400px;
+        background:#383636;
+        border-radius: 6px;
+        position: absolute;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0.1) ;
+        text-align: center;
+        padding: 0 30px 30px;
+        color: #333;
+        visibility: hidden;
+        transition: tranform 0.4s, top 0.4s ;
+    }
+    .open-popup{
+        visibility: visible;
+        top: 50%;
+        transform: translate(-50%, -50%) scale(1) ;
+    }
+    .popup img{
+        width: 100px;
+        margin-top: -50px;
+        border-radius: 50%;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+    .popup h2{
+        font-size: 38px;
+        font-weight: 500;
+        margin: 30px 0 10px;
+        color: white;
+    }
+    .popup p{
+      color: white;
+    }
+    .popup button{
+        width: 100%;
+        margin-top: 50pxem;
+        padding: 10px 0;
+        background: #6fd649;
+        color: #fff;
+        border: 0;
+        outline: none;
+        font-size: 18px;
+        border-radius: 4px;
+        cursor: pointer;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+
+
+    }
+    .pp, .ppp{
+      margin-top:5px;
+      color: black;
+    }
+    .ok{
+      margin-top: 10px;
+    }
+    #lens {
+  position: absolute;
+  border: 2px solid grey;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: none;
+  box-shadow: inset 0 0 10px 2px grey;
+  filter: drop-shadow(0 0 2px grey);
+}
+#lens > * {
+  cursor: none;
+}
+.first{
+  height: 80px;
+  width: 90px;
+  border-color: white;
+  border-width: 1px;
+  border-style: dashed;
+  margin-right: 10px;
+  margin-top: 10px;
+ 
+}
+#zoom>img{
+ width: 500px;
+ height: 500px;
+}
+
+</style>
+
+<body>
+  <section>
+    <div class="container flex">
+      <div class="left ">
+        <div class="main_image" id="zoom">
+          <img src="https://m.media-amazon.com/images/I/71ShmqzxUDL._SL1500_.jpg" class="slide">
+        </div>
+        <div class="option flex">
+        
+          <div class="first">
+            <img src="https://m.media-amazon.com/images/I/71ShmqzxUDL._SL1500_.jpg" onclick="img('https://m.media-amazon.com/images/I/71ShmqzxUDL._SL1500_.jpg')">
+          </div>
+          <div class="first">
+            <img src="https://m.media-amazon.com/images/I/61r-Jisih1L._SL1000_.jpg" onclick="img('https://m.media-amazon.com/images/I/61r-Jisih1L._SL1000_.jpg')">
+          </div>
+          <div class="first">
+            <img src="https://m.media-amazon.com/images/I/61O9yQcy1iL._SL1000_.jpg" onclick="img('https://m.media-amazon.com/images/I/61O9yQcy1iL._SL1000_.jpg')">
+          </div>
+          <div class="first">
+            <img src="https://m.media-amazon.com/images/I/61zvEeRwm+L._SL1000_.jpg" onclick="img('https://m.media-amazon.com/images/I/61zvEeRwm+L._SL1000_.jpg')">
+          </div>
+          <div class="first">
+            <img src="https://m.media-amazon.com/images/I/61uGTvkfrSL._SL1000_.jpg" onclick="img('https://m.media-amazon.com/images/I/61uGTvkfrSL._SL1000_.jpg')">
+          </div>
+          <div class="first">
+            <img src="https://m.media-amazon.com/images/I/61bTH-NL2lL._SL1000_.jpg" onclick="img('https://m.media-amazon.com/images/I/61bTH-NL2lL._SL1000_.jpg')">
+          </div>
+        </div>
+      </div>
+      <div class="right ">
+        <h2>HP Laptop 15, 12th Gen i3</h2>
+        <p>1215U, 15.6-inch (39.6 cm), FHD, Anti-Glare, 8GB DDR4, 512GB SSD, Intel UHD Graphics, Dual Speakers, (Win 11, MSO 2021, Silver, 1.69 kg), 15s-fy5006TU</p>
+        <i class="fas fa-rupee-sign fa-s" style="color: #e89696;">37,990&nbsp;</i><i class="fas fa-rupee-sign fa-xs cut" style="color: rgb(243, 147, 147); font-size:15px;">39,500.00</i>
+        <ul>
+          <li><i class="fa fa-star checked" style="color:rgb(224, 137, 117)"></i></li>
+          <li><i class="fa fa-star checked" style="color: rgb(224, 137, 117)"></i></li>
+          <li><i class="fa fa-star checked" style="color: rgb(224, 137, 117)"></i></li> 
+          <li><i class="fa fa-star checked" style="color: rgb(224, 137, 117)"></i></li>
+          <li><i class="fa fa-star checked" style="color: rgb(233, 224, 224)"></i></li>
+      </ul>
+        <h5>Choose your color : Rose Gold</h5>
+        <div class="color flex1">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <h5>Quantity</h5>
+        <div class="add flex1">
+          <span id="dec">-</span>
+          <label id="Number">1</label>
+          <span id="inc">+</span>
+        </div>
+
+          <button type="submit" class="btn" onclick="openPopup()">Add to Cart</button>
+          <div class="popup glass" id="popup">
+              <img src="404-tick.png" alt="">
+              <h2 class="pp">Thank You!</h2>
+              <p class="ppp">Your details has been successfully submitted.</p>
+              <button type="submit" class="ok" onclick="closePopup()">OK</button>
+          </div>
+      </div>
+      </div>
+    </div>
+
+  </section>
+  <script>
+    function img(anything) {
+      document.querySelector('.slide').src = anything;
+    }
+
+    // Get references to the HTML elements
+const inc = document.getElementById('inc');
+const dec = document.getElementById('dec');
+const Number = document.getElementById('Number');
+
+let number = 0;
+
+// Function to increment the number
+function incrementNumber() {
+    number++;
+    Number.textContent = number;
+}
+
+// Function to decrement the number
+function decrementNumber() {
+    if (number > 0) {
+        number--;
+        Number.textContent = number;
+    }
+}
+
+// Add event listeners to the buttons
+inc.addEventListener('click', incrementNumber);
+dec.addEventListener('click', decrementNumber);
+
+let popup=document.getElementById("popup");
+        function openPopup(){
+            popup.classList.add("open-popup");
+        }
+        function closePopup(){
+            popup.classList.remove("open-popup");
+        }
+
+
+        
+  </script>
+</body>
+
+</html>

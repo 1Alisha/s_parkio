@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <script
+    src="https://kit.fontawesome.com/66aa7c98b3.js"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<style>
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  
+}
+.pic img{
+    width: 100%;
+    height: 600px;
+}
+*{
+        padding: 0;
+        margin: 0;
+        /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+        box-sizing: border-box;
+    }
+    body{
+        background-color: black;
+    }
+    span{
+    text-decoration: overline;
+    color: cyan;
+ }
+ .logo{
+    color: white;
+    font-size:2.5em;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    margin-left: 20px;
+
+ }
+ #navbar {
+    display: flex; /* Use flexbox to align items horizontally */
+    justify-content: space-between; /* Distribute items evenly between logo and list items */
+    align-items: center; /* Center items vertically*/
+    background: rgb(22, 20, 21);
+    padding: 20px 30px;
+
+}
+#navbar li {
+    list-style: none;
+    /* padding: 0 20px; */
+     /* Add margin to create space between list items */
+      margin-right: 70px; 
+}
+/* #navbar li:last-child {
+    margin-right: 0; /* Remove margin from the last list item 
+} */
+.button:last-child{
+    margin-right: 0px;
+}
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    transition: 0.3s ease;
+}
+ .bxs-user{
+    font-size: 2em;
+    margin-left: 1em;
+    color: cyan;
+
+}
+#navbar li a:hover {
+    color:rgb(22,20,21);
+}
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333; /* Adjust background color as needed */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    margin-right: 20px;
+    margin-top: 0px;
+    
+}
+
+.button:hover {
+    background-color: aqua; /* Adjust hover background color as needed */
+}
+.button.last{
+    margin-right: 0;
+}
+.search-container {
+  position: relative;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 8px 40px 8px 8px; /* Adjust the right padding to make space for the icon */
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  width: 350px;
+  height: 35px;
+}
+
+i.fas.fa-search {
+  position: absolute;
+  top: 50%;
+  right: 15px; /* Adjust the right position to control the icon position */
+  transform: translateY(-50%);
+  color: black;
+  pointer-events: none; /* This ensures the icon does not interfere with text input */
+  cursor:pointer;
+  
+}
+
+
+button {
+  padding: 8px 12px;
+  background-color:cyan;
+  color:black;
+  border: none;
+  border-radius: 20px 20px 20px 20px;
+  cursor: pointer;
+  float: left;
+}
+
+button:hover {
+  background-color:cyan;
+}
+.fas fa-search{
+    color: cyan;
+  
+}
+@media screen and (max-width: 768px) {
+    #navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    #navbar li {
+        margin: 10px 0;
+    }
+    
+    #navbar li:last-child {
+        margin-bottom: 20px;
+    }
+}
+.button.last {
+     margin-right: 0; 
+}
+.trends h5{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color:white;
+    font-size: 2.0em;
+    font-weight:lighter;
+    margin-top: 1em;
+    letter-spacing: 0.1em;
+    
+}
+.topics p{
+    color: cyan;
+    font-size: 1.5em;
+    margin-left: 5em;
+    margin-top:2.1em;
+}
+div > p >a{
+    margin-left: 5em;
+    text-decoration: none;
+    color: white;
+}
+.sec > a{
+margin-left: 1.9em;
+}
+
+p{
+    text-align: center;
+    color: white;
+    margin-left: em;
+    padding: 0 8px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+h6{
+    font-size:1em;
+    font-weight:lighter;
+
+    color: #e8eff7;
+    margin: 0;
+}
+
+.top-deals{
+    display: flex;
+    flex-wrap:wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+
+}
+
+.content{
+    height:300px;
+    width: 20%;
+    margin: 2em;
+    box-sizing: border-box;
+    float: left;
+    text-align:center;
+    cursor: pointer;
+    padding-top: 10px; 
+    box-shadow: 0 14px 28px O rgba(208, 27, 27, 0.25), 0 10px 10px Orgba(0,0,0,0.22) ;
+    transition:.4s;
+    background:rgb(29, 28, 28);
+    border-radius: 5%;
+    border:solid 0.5px white;
+}
+.content {
+    /* ... (other styles) ... */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-left: 5em;
+}
+
+.content {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.16), 0 6px 12px rgba(0, 0, 0, 0.23);
+    background-image: url(https://media.istockphoto.com/id/1456172525/vector/black-background-with-clear-water-drops.jpg?s=612x612&w=0&k=20&c=bdTGevS_cKOJ1YoRAlURqB96aj_cmYSN_1dJW_vieqU=);
+   
+    
+   
+}
+.content p{
+    margin-top: 5em;
+    font-weight: lighter;
+    font-style: italic;
+    letter-spacing: .2em;
+}
+
+
+
+    img{ 
+        width: 200px;
+        height: 200px;
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+}
+.cut{
+    text-decoration: line-through;
+    font-weight: lighter;
+    font-size: 0.6em;
+}
+.fas{
+    margin-left: 0px;
+    font-size: 1.2em;
+}
+ul{
+    list-style: none;
+    display: flex;
+    padding-top: 0;
+    
+    justify-content: center;
+}
+li{
+    padding-top:5px ;
+    margin-left: 0px;
+    text-align: center;
+
+}
+.fa{
+    transition: 4s;
+    margin: 3px;
+}
+.fa:hover{
+transform: scale(1.3);
+transition: .6s;
+}
+.deals{
+    font-size: 2em;
+    color: #e8eff7;
+    margin:50px 0;
+    padding: 0;
+    font-weight: bold;
+}
+.content button{
+    display: flex;
+    text-align: center;
+    justify-content:center;
+    margin-top: 2em;
+    margin-left: 7em;
+}
+.one:hover .content {
+    opacity: 1;
+}
+
+.one:hover .image {
+    display: none;
+}
+.foo {
+    background-color: black;
+    color: white;
+    padding: 3% 5%;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+}
+.foothead{
+    font-family:"Nunito",sans-serif;
+    font-size: 1rem;
+    letter-spacing: .15rem;
+    margin-bottom: 10px;
+}
+.foo>.foo_item {
+    border-right: 2px solid white;
+    width: 29%;
+    height: 320px;
+}
+.foo>.last {
+    border: none;
+}
+.foo_input {
+    background-color: white;
+    border-radius: 10px;
+    display: inline-block;
+}
+#foo_email {
+    padding: 16px 44px 16px 22px;
+    border: none;
+    border-radius: 10px;
+}
+#foo_email:focus {
+    outline: none;
+} 
+.email_btn {
+    border: none;
+    padding: 14px 20px;
+    background-color: white;
+    border-radius: 10px;
+    background-color:(0, 0, 0, 0.1);
+}
+.contact_us {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    width: 70%;
+    
+}
+.contact_us_item .logo{
+    height: 30px;
+    width:30px;
+}
+
+.foo_item>.lastline {
+    margin-right:32%;
+    color: white;
+    font-weight: bold;
+}
+.foo>h3 {
+    vertical-align: top;
+}
+.foo_item_div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(7, 1fr) ;
+    grid-column-gap: 8%;
+    grid-row-gap: 15px;
+    height: 28px;
+    
+}
+.foo_item_div>div>a {
+    color: white;
+    text-decoration: none;
+    font-family:"Nunito",sans-serif;
+}
+.foo_item_div>div>a:hover {
+    color: #49a5a2;
+}
+#bodybox {
+    float:right;
+    width:400px;
+    bottom: 300px;
+    font: 15px arial, sans-serif;
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 5px 5px 5px #49a7a1;
+    border-radius: 15px;
+    opacity: 0;
+    z-index: 1;
+  }
+  
+  #chatborder {
+    border-style: solid;
+    background-color:#49a7a1;
+    border-width: 3px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    padding-right: 20px;
+    padding-left: 15px;
+    border-radius: 15px;
+    z-index: 1;
+  }
+  #chatbot{
+    border-radius: 50px;
+    height: 40px;
+    width:40px;
+    margin-left: 1250px;
+    z-index: 1;
+    background-color: #49a7a1;
+    position:fixed;
+    top:350px;
+  }
+  #chaticon{
+    border-radius: 50px;
+    height: 70px;
+    width:70px;
+    z-index: 1;
+   
+  }
+  
+  .chatlog {
+    font-family:"Nunito",sans-serif;
+    color: black;
+    font-weight: bold;
+  }
+  
+  #chatbox {
+    font: 17px arial, sans-serif;
+    height: 22px;
+    width: 100%;
+  }
+  
+  h1 {
+    margin: auto;
+  }
+  
+  pre {
+    background-color: #f0f0f0;
+    margin-left: 20px;
+  }
+
+</style>
+<body>
+    <div>
+        <ul id="navbar">
+            <li>
+                <a href="index.html"><p class="logo">Spar<span>k</span>io</p></a>
+            </li>
+            <li>
+                <div class="search-container">
+                    <input type="text" placeholder="What are you looking for..?">
+                    <i class="fas fa-search"></i>
+                </div>
+            </li>
+            <li>
+                
+                <a href="Mobile.html" class="button">Categories</a>
+                <a href="blog.html" class="button">blog</a>
+                <a href="aboutUs.html" class="button">About Us</a>
+                <a href="contactUs.html" class="button last">Contact Us</a>
+                <a href="sign.html"><i class='bx bxs-user'></i></a>
+            </li>
+        </ul>
+    </div>
+    <div class="pic">
+        <img src="https://www.menabytes.com/wp-content/uploads/2017/05/Ecommerce-Cellphones-Gadgets-Saudi.jpg" alt="">
+    </div>
+    <div class="trends">
+        <h5>Trend Topics</h5>
+        <div class="topics">
+            <p class="first">
+                 <a href="">#tv ></a>&emsp13;
+                 <a href="">#homeaudio ></a>&emsp13;
+                 <a href="">#refrigerators ></a>&emsp13;
+                 <a href="">#computerproducts ></a>&emsp13;
+            </p>
+            <p class="sec">
+                
+
+               
+                 <a href="">#homeaudio ></a>&emsp13;
+                 <a href="">#refrigerators ></a>&emsp13;
+                 <a href="">#computerproducts ></a>&emsp13;
+                 <a href="">#Water Purifiers ></a>&emsp13;
+                 <a href="">#AC and Fans ></a>&emsp;
+
+            </p>
+            <p class="first">
+                
+
+                <a href="">#Microwave Ovens ></a>&emsp;
+                <a href="">#Washing Machines></a>&emsp13;
+                <a href="">#refrigerators ></a>&emsp13;
+                
+               
+
+           </p>
+         
+        </div>
+    </div>
+    <div class="deals"></div>
+    <div class="top-deals"> 
+       <div class="content one">
+           <!-- <a href=""> <img src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1669197120/Croma%20Assets/Large%20Appliances/Washers%20and%20Dryers/Images/260605_0_airyza.png?tr=w-1000" alt=""></a> -->
+          
+           <p>
+            Watch on in Wonder with the All-New LG Objet Collection TV
+
+           </p>
+           <button>Learn more</button>
+           
+       </div>
+       <div class="content">
+        <!-- <a href=""> <img src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1669197120/Croma%20Assets/Large%20Appliances/Washers%20and%20Dryers/Images/260605_0_airyza.png?tr=w-1000" alt=""></a> -->
+       
+        <p>
+            Mastering Monsoons with LG Dryer: Your Ultimate Laundry Companion
+
+
+        </p>
+        <button>Learn more</button>
+        
+    </div>
+    <div class="content">
+        <!-- <a href=""> <img src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1669197120/Croma%20Assets/Large%20Appliances/Washers%20and%20Dryers/Images/260605_0_airyza.png?tr=w-1000" alt=""></a> -->
+       
+        <p>
+            What are the Benefits of LG Split AC with Dual Cool Technology?
+
+
+        </p>
+        <button>Learn more</button>
+        
+    </div>
+    <div class="content">
+        <!-- <a href=""> <img src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1669197120/Croma%20Assets/Large%20Appliances/Washers%20and%20Dryers/Images/260605_0_airyza.png?tr=w-1000" alt=""></a> -->
+       
+        <p>
+            LG AI Direct Drive Washing Machine: Smart Convenience Redefined
+
+
+
+        </p>
+        <button>Learn more</button>
+        
+    </div>
+    <div class="content">
+        <!-- <a href=""> <img src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1669197120/Croma%20Assets/Large%20Appliances/Washers%20and%20Dryers/Images/260605_0_airyza.png?tr=w-1000" alt=""></a> -->
+       
+        <p>
+            Why Using a Dishwasher Better than Cleaning Dishes with Your Hands?
+
+
+        </p>
+        <button>Learn more</button>
+        
+    </div>
+    <div class="content">
+        <!-- <a href=""> <img src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1669197120/Croma%20Assets/Large%20Appliances/Washers%20and%20Dryers/Images/260605_0_airyza.png?tr=w-1000" alt=""></a> -->
+       
+        <p>
+            Make Every Wash Gentle Yet Efficient With The Our Top Washing Machines In India
+
+
+        </p>
+        <button>Learn more</button>
+        
+    </div>
+      
+    </div>
+    <footer>
+        
+        <div class="foo">
+            <div class="foo_item">
+                <h3 class="foothead">CONNECT WITH US</h3>
+                <div class="foo_input">
+                    <input type="email" name="" id="foo_email" placeholder="Enter Email ID">
+                    <button class="email_btn"><i class="fas fa-arrow-right"></i></button>
+                </div>
+                <div class="contact_us">
+                    <div class="contact_us_item"><a href="#"></a><img class="logo" src="https://www.pneumaticsindia.com/wp-content/uploads/2020/04/Youtube.png"></div>
+                    <div class="contact_us_item"><a href="#"><img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Facebook_logo_%28square%29.png"></a></div>
+                    <div class="contact_us_item"><a href="#"><img class="logo" src="https://toppng.com/uploads/preview/instagram-logo-transparent-logo-instagram-vector-2021-116177766354twhxoagvv.png"></a></div>
+                    <div class="contact_us_item"><a href="#"><img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/768px-LinkedIn_logo_initials.png"></a></div>
+                    <div class="contact_us_item"><a href="#"></a><img class="logo" src="https://toppng.com//public/uploads/preview/red-twitter-logo-11549680466ua0eyzyb5c.png"></a></div>
+                </div>
+                <p class="lastline">© Copyright 2021 Sparkio. All rights reserved</p>
+                
+            </div>
+            <div class="foo_item">
+                <h3 class="foothead">USEFUL LINKS</h3>
+                <div class="foo_item_div">
+                    <div><a href="#top">About Sparkio</a></div>
+                    <div><a href="#top">E-Care</a></div>
+                    <div><a href="#top">Help And Support</a></div>
+                    <div><a href="#top">Franchise Opportunity</a></div>
+                    <div><a href="#top">FAQs</a></div>
+                    <div><a href="#top">Site Map</a></div>
+                    <div><a href="#top">Return Policy</a></div>
+                    <div><a href="#top">Careers At Sparkio</a></div>
+                    <div><a href="#top">Bulk Enquiry</a></div>
+                    <div><a href="#top">Terms Of Use</a></div>
+                    <div><a href="#top">Store Locator</a></div>
+                    <div><a href="#top">Disclaimer</a></div>
+                    <div><a href="#top">Delightful Programmes</a></div>
+                    <div><a href="#top">Privacy Policy</a></div>
+                </div>
+            </div>
+            <div class="foo_item last">
+                <h3 class="foothead">PRODUCTS</h3>
+                <div class="foo_item_div">
+                    <div><a href="#top">Televisions & Accessories</a></div>
+                    <div><a href="#top">Grooming & Personal Care</a></div>
+                    <div><a href="#top">Home Appliances</a></div>
+                    <div><a href="#top">Cameras & Accessories</a></div>
+                    <div><a href="#top">Phones & Wearables</a></div>
+                    <div><a href="#top">Smart Devices</a></div>
+                    <div><a href="#top">Computers & Tablets</a></div>
+                    <div><a href="#top">Gaming</a></div>
+                    <div><a href="#top">Kitchen Appliances</a></div>
+                    <div><a href="#top">Accessories</a></div>
+                    <div><a href="#top">Audio & Video</a></div>
+                    <div><a href="#top">Top Brands</a></div>
+                    <div><a href="#top">Health & Fitness</a></div>
+                </div>
+            </div>
+        </div>
+    
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,364 @@
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+body{
+width: 100%;
+background-color:#040303;
+}
+span{
+text-decoration: overline;
+color: cyan;
+}
+.logo{
+color: white;
+font-size:2.5em;
+font-weight: bolder;
+letter-spacing: 1px;
+margin-left: 20px;
+
+}
+#navbar {
+display: flex; /* Use flexbox to align items horizontally */
+justify-content: space-between; /* Distribute items evenly between logo and list items */
+align-items: center; /* Center items vertically*/
+background: black;
+padding: 20px 30px;
+}
+#navbar li {
+list-style: none;
+/* padding: 0 20px; */
+ /* Add margin to create space between list items */
+  margin-right: 70px; 
+}
+/* #navbar li:last-child {
+margin-right: 0; /* Remove margin from the last list item 
+} */
+.button:last-child{
+margin-right: 0px;
+}
+#navbar li a {
+text-decoration: none;
+font-size: 16px;
+font-weight: 600;
+color: white;
+transition: 0.3s ease;
+}
+
+#navbar li a:hover {
+color:rgb(22,20,21);
+}
+.button {
+display: inline-block;
+padding: 10px 20px;
+background-color: #333; /* Adjust background color as needed */
+color: white;
+border: none;
+border-radius: 5px;
+text-decoration: none;
+font-size: 16px;
+font-weight: 600;
+transition: background-color 0.3s ease;
+margin-right: 20px;
+margin-top: 0px;
+
+}
+
+.button:hover {
+background-color: aqua; /* Adjust hover background color as needed */
+}
+.button.last{
+margin-right: 0;
+}
+.search-container {
+position: relative;
+}
+
+input[type="text"] {
+flex: 1;
+padding: 8px 40px 8px 8px; /* Adjust the right padding to make space for the icon */
+border: 1px solid #ccc;
+border-radius: 20px;
+width: 350px;
+height: 35px;
+}
+
+i.fas.fa-search {
+position: absolute;
+top: 50%;
+right: 15px; /* Adjust the right position to control the icon position */
+transform: translateY(-50%);
+color: black;
+pointer-events: none; /* This ensures the icon does not interfere with text input */
+cursor:pointer;
+
+}
+.moree{
+    text-align: center;
+    justify-content: center;
+}
+
+button {
+padding: 8px 12px;
+background-color:cyan;
+color:black;
+border: none;
+border-radius: 20px 20px 20px 20px;
+cursor: pointer;
+float: left;
+}
+
+button:hover {
+background-color:cyan;
+}
+.fas fa-search{
+color: cyan;
+
+}
+@media screen and (max-width: 768px) {
+#navbar {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#navbar li {
+    margin: 10px 0;
+}
+
+#navbar li:last-child {
+    margin-bottom: 20px;
+}
+}
+.button.last {
+ margin-right: 0; 
+}
+/* ======================= */
+.slider { 
+	width: 100%; 
+	position: relative; 
+} 
+
+.slider ul { 
+	list-style: none; 
+	margin: 0; 
+	padding: 0; 
+} 
+
+.slider li { 
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	opacity: 0; 
+	transition: opacity 1s ease-in-out; 
+} 
+
+
+
+
+.slider li.active { 
+	opacity: 1; 
+} 
+
+.slider .caption { 
+	position: absolute; 
+	bottom: 0; 
+	left: 0; 
+	width: 100%; 
+	background-color: rgba(0, 0, 0, 0.5); 
+	color: #fff; 
+	font-size: 18px; 
+	padding: 10px; 
+	text-align: center; 
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* =========================== */
+.sellers{
+    margin-top:0.5em;
+    margin-left: 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sell{
+    margin-top: 20em;
+    padding-left: 2em;
+    color: white;
+    font-weight: lighter;
+}
+.video-container > video{
+margin: 20px 20px 20px 35px;
+height: 300px;
+width: 300px;
+ border-radius: 10%;
+}
+
+
+.cap{
+    color: white;
+    margin-left: 45px;
+    text-align: center;
+
+}
+/* ==================================== */
+.t{
+    margin-top: 2em;
+    padding-left: 2em;
+    color: white;
+    font-weight: lighter;
+}
+.countdown-container {
+    background: url('https://www.boat-lifestyle.com/cdn/shop/files/Strip-Desktop_1600x.jpg?v=1696618254')no-repeat center center / cover;
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+
+    justify-content: space-between;
+    margin-top: 2em;
+  }
+  .wrapper{
+    margin-top:0.5em;
+    margin-left: 0px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.pro
+{
+    margin-left: 3em;
+    margin-top: 1em;
+    height: 330px;
+    width: 300px;
+    background:url('https://png.pngtree.com/element_our/sm/20180409/sm_5acb9a71aade6.png');
+    border-radius: 10px;
+
+}
+.pro > img{
+
+    height: 250px;
+    width:300px;
+    border-radius: 10px 10px 0px 0px;
+}
+h4{
+color: #111010;
+font-size: 20px;
+font-style: normal;
+
+text-align: center;
+}
+
+button{
+    margin-top: 10px;
+    border-radius: 5px 5px 5px 5px;
+    justify-content: center;
+    text-align: center;
+    margin-left: 8.5em;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+}.pro {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+  }
+  
+  .pro::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0) 100%);
+    transform: skewX(-25deg);
+    transition: left 0.5s ease; /* Add a smooth transition for the shine effect */
+    opacity: 0; /* Initially hidden */
+  }
+  
+  .pro:hover::before {
+    left: 100%;
+    opacity: 2; /* Display the shine effect on hover */
+  }
+  .warr{
+    margin-top:0.5em;
+    margin-left: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin-left: 3.5em;
+    margin-right: 2.5em;
+    margin-bottom: 8em;
+    
+  }
+  .r{
+   /* border: 2px solid white; */
+    margin-top: 1em;
+    height: 100px;
+    width: 300px;
+    /* display: flex;
+
+    justify-content:center;
+    text-align: center; */
+
+    
+    
+  }
+  .r > img{
+
+    height: 150px;
+    width:150px;
+    
+}
+h5{
+    color: white;
+    font-size: 20px;
+}
+span{
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+   /* .bt{
+    margin-top:5em;
+    margin-left: 0px;
+    display: flex;
+    flex-wrap: wrap;
+   }
+   .st{
+    margin-left: 3em;
+    margin-top: 1em;
+    height: 330px;
+    width: 300px;
+   }
+   .st > img{
+
+    height: 450px;
+    width:300px;
+   
+}
+.h4{
+    text-align: center;
+} */
+
+/* .filter{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+} */
+a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    margin-left: 2em;
+}
+.btnn{
+    height: 30px;
+    width: 40px;
+    background-color: gray;
+}

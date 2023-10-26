@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+*{
+    padding: 0;
+    margin: 0;
+    background-color: black;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2em;
+    flex-wrap: wrap;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    margin: 2em;
+}
+
+.wrapper > div {
+    padding: 1.5em; /* Adjust spacing between items */
+    text-align: center;
+    color: white;
+    flex: 1; /* Distribute available space evenly among items */
+    max-width: 200px; /* Limit the maximum width of each item */
+}
+
+.wrapper img {
+    border-radius: 50%;
+    width: 100%;
+    max-width: 150px; /* Adjust the maximum image width */
+}
+
+.topic h1 {
+    font-size: 1.9em; /* Adjust font size for smaller screens */
+    color: aliceblue;
+    margin: 1em;
+    margin-left: 2em;
+    letter-spacing: 0.06em;
+}
+
+@media screen and (max-width: 768px) {
+    .wrapper {
+        margin: 1em;
+    }
+
+    .wrapper > div {
+        padding: 0.5em;
+        max-width: none; /* Remove the maximum width */
+    }
+
+    .topic h1 {
+        font-size: 1.2em;
+    }
+}
+</style>
+<body>
+    
+    <div class="circle topic">
+        <h1>Top Categories</h1>
+        <div class="wrapper">
+            <div class="one">
+               <img src="https://m.media-amazon.com/images/I/71AvQd3VzqL._SL1500_.jpg" alt="">
+               <p>Smart Phones</p>
+            </div>
+            <div class="two">
+                <img src="img/cc1.jpeg" alt="">
+                <p>Smart TV's</p>
+            </div>
+            <div class="three">
+                <img src="img/cc2.webp" alt="">
+                <p>Smart Watches</p>
+            </div>
+            <div class="four">
+                <img src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/h_300,w_300/v1673263883/Croma%20Assets/Large%20Appliances/Refrigerator/Images/246513_0_ewhx5u.png?tr=w-400" alt="">
+                <p>Refrigerators</p>
+            </div>
+            <!-- <div class="five">
+                <img src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1682596919/Croma%20Assets/Entertainment/Headphones%20and%20Earphones/Images/259887_0_gjfql9.png?tr=w-400" alt="">
+                <p>Headphones</p>
+            </div> -->
+            <div class="six">
+                <img src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1674046489/Croma%20Assets/Communication/Headphones%20and%20Earphones/Images/246929_0_rgtbiq.png?tr=w-400" alt="">
+                <p>Ear Podes</p>
+            </div>
+            <div class="seven">
+                <img src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1686892338/Croma%20Assets/Imaging/Camera%20and%20Camcorders/Images/269401_0_xlrwfa.png?tr=w-640" alt="">
+                <p>Polaroid</p>
+            </div>
+            <!-- <div class="eight">
+                <img src="" alt="">
+            </div> -->
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -5,7 +5,7 @@
 /**
  * copyright 2022 @codewithsadee 
  */
-
+ 
 
 
 
@@ -22,15 +22,15 @@
 
   --spanish-gray: hsl(0, 0%, 60%);
   --sonic-silver: hsl(0, 0%, 47%);
-  --eerie-black: hsl(0, 0%, 13%);
+  --eerie-black:white;
   --salmon-pink: hsl(353, 100%, 78%);
   --sandy-brown: hsl(29, 90%, 65%);
   --bittersweet: hsl(0, 100%, 70%);
   --ocean-green: hsl(152, 51%, 52%);
   --davys-gray: hsl(0, 0%, 33%);
-  --cultured: hsl(0, 0%, 93%);
+  --cultured: hsl(0, 0%, 0%);
   --white: hsl(0, 100%, 100%);
-  --onyx: hsl(0, 0%, 27%);
+  --onyx: white;
 
   /**
    * typography
@@ -121,7 +121,7 @@ input::-ms-input-placeholder { font: inherit; }
 
 input::placeholder { font: inherit; }
 
-body { background: var(--white); }
+body { background:black; }
 
 /**
  * scrollbar style
@@ -130,18 +130,18 @@ body { background: var(--white); }
 body::-webkit-scrollbar { width: 15px; }
 
 body::-webkit-scrollbar-track {
-  background: var(--white);
+  background:black;
   border-left: 1px solid var(--cultured);
 }
 
 body::-webkit-scrollbar-thumb {
-  background: hsl(0, 0%, 80%);
+  background:black;
   border: 3px solid var(--white);
   -webkit-border-radius: 10px;
           border-radius: 10px;
 }
 
-body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
+body::-webkit-scrollbar-thumb:hover { background: black; }
 
 
 
@@ -521,7 +521,16 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 /*-----------------------------------*\
   #HEADER
 \*-----------------------------------*/
-
+.header-alert-news{
+  color: white;
+  
+}
+.social-link{
+  border:2px solid black;
+}
+.social-link:hover{
+  background-color: cyan;
+}
 .header-top,
 .header-user-actions,
 .desktop-navigation-menu { display: none; }
@@ -799,46 +808,35 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 \*-----------------------------------*/
 
 .banner { margin: 30px 0; }
+        .slider-parent {
+            overflow: hidden; /* Add this line to hide horizontal scrollbar */
+        }
+        .slider-container {
+            display: flex;
+            gap: 10px;
+            border-radius: var(--border-radius-md);
+            scroll-snap-type: inline mandatory;
+            overscroll-behavior-inline: contain;
+            width: 100%; /* Ensure the slider fits the parent container */
+            overflow-x: auto; /* Enable horizontal scrolling */
+        }
+        .slider-item {
+            margin-top: 1em;
+            position: relative;
+            min-width: 100%;
+            aspect-ratio: 1 / 1;
+            border-radius: var(--border-radius-md);
+            overflow: hidden;
+            scroll-snap-align: start;
+        }
+        .slider-item .banner-img {
+            width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+            object-position: right;
+        }
 
-.slider-container {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 10px;
-  -webkit-border-radius: var(--border-radius-md);
-          border-radius: var(--border-radius-md);
-  overflow: auto hidden;
-  -webkit-scroll-snap-type: inline mandatory;
-      -ms-scroll-snap-type: inline mandatory;
-          scroll-snap-type: inline mandatory;
-  overscroll-behavior-inline: contain;
-}
-
-.slider-item {
-  position: relative;
-  min-width: 100%;
-  max-height: 450px;
-  aspect-ratio: 1 / 1;
-  -webkit-border-radius: var(--border-radius-md);
-          border-radius: var(--border-radius-md);
-  overflow: hidden;
-  scroll-snap-align: start;
-}
-
-.slider-item .banner-img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: right;
-     object-position: right;
-}
-
+/* 
 .banner-content {
   background: hsla(0, 0%, 100%, 0.8);
   position: absolute;
@@ -889,7 +887,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 .banner-btn:hover { background: var(--eerie-black); }
 
 
-
+ */
 
 
 /*-----------------------------------*\
@@ -913,6 +911,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
       -ms-scroll-snap-type: inline mandatory;
           scroll-snap-type: inline mandatory;
   overscroll-behavior-inline: contain;
+  
 }
 
 .category-item {
@@ -931,14 +930,18 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   -webkit-border-radius: var(--border-radius-md);
           border-radius: var(--border-radius-md);
   scroll-snap-align: start;
+  height: 200px;
+  background-image: url('https://media.istockphoto.com/id/616865636/photo/crumpled-dark-paper-texture.jpg?s=612x612&w=0&k=20&c=bAwui7SoE56hKRMmL62i-XXqYYUYAlr6IAJkCtfh_8w=');
 }
 
 .category-img-box {
-  background: var(--cultured);
+  /* height: 100px;
+  width: 150px; */
+  /* background-color: #020202;
   border: 1px solid hsl(0, 0%, 80%);
-  padding: 10px;
+  
   -webkit-border-radius: var(--border-radius-sm);
-          border-radius: var(--border-radius-sm);
+          border-radius: var(--border-radius-sm); */
 }
 
 .category-content-box { width: 100%; }
@@ -987,7 +990,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 \*-----------------------------------*/
 
 .sidebar {
-  background: var(--white);
+  background:black;
   position: fixed;
   top: 0;
   left: -100%;
@@ -1125,7 +1128,11 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 
 .sidebar-submenu-title:hover { color: var(--eerie-black); }
 
-.sidebar .product-name { text-transform: capitalize; }
+.sidebar .product-name { text-transform: capitalize;
+ }
+ .product-name:hover{
+  color: cyan;
+ }
 
 .sidebar-accordion-menu.active .add-icon,
 .sidebar-accordion-menu .remove-icon { display: none; }
@@ -1283,12 +1290,15 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  color: var(--davys-gray);
+  color:pink;
   font-size: var(--fs-8);
   text-transform: capitalize;
   margin-bottom: 3px;
 }
-
+.product-minimal .showcase{
+  background-image: url(https://img.freepik.com/premium-photo/water-droplets-black-background_158502-192.jpg);
+  background-size: cover;
+}
 .product-minimal .showcase-category:hover { color: var(--salmon-pink); }
 
 .product-minimal .price-box {
@@ -1630,7 +1640,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 
 .product-grid .btn-action:hover {
   background: var(--eerie-black);
-  color: var(--white);
+  color:palevioletred;
   border-color: var(--eerie-black);
 }
 
@@ -1758,7 +1768,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 }
 
 .cta-content {
-  background: hsla(0, 0%, 100%, 0.7);
+ 
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1775,7 +1785,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 }
 
 .cta-content .discount {
-  background: var(--eerie-black);
+  /* background: var(--eerie-black); */
   color: var(--white);
   font-size: var(--fs-11);
   font-weight: var(--weight-600);
@@ -1791,14 +1801,14 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 }
 
 .cta-title {
-  color: var(--onyx);
+  color:palevioletred;
   font-size: var(--fs-5);
   text-transform: capitalize;
   margin-bottom: 5px;
 }
 
 .cta-text {
-  color: var(--sonic-silver);
+  color: white;
   font-size: var(--fs-7);
   margin-bottom: 5px;
 }
@@ -3207,4 +3217,10 @@ footer {
     max-width: 460px;
   }
 
+}
+footer{
+  background-color: black;
+}
+.footer-category-link:hover{
+color: palevioletred;
 }

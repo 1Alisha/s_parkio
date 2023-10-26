@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    body{
+        margin:0;
+        padding: 0;
+        background-color: white;
+    }
+    .main_container{
+        margin: 6% 0 0 0.5;
+        position:relative;
+        width: 25%;
+        display: flex;
+        justify-content: center;
+        margin-left: 5em;
+        margin: 50px 20px;
+
+    }
+    .image{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .overlay{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0,0,0,0.75);
+        overflow: hidden;
+        width: 100%;
+        height: 0;
+        transition: .5s ease;
+        background: #eb3583b3;
+        top: -50%;
+        left: -50%;
+        z-index: 1;
+        transform: rotate(25deg);
+        transform-origin:center top 0;
+        transition: .5s;
+  
+    }
+.main_container:hover .overlay{
+    height: 100%;
+    transform: scale(0.9);
+    z-index: 2;
+}
+     
+
+h1{
+    width: 100%;
+    margin-top: 30%;
+    color: white;
+    font-size: 4vw;
+    position: absolute;
+    text-align: center;
+    font-family: cursive;
+    
+}
+h2 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 1.2vw;
+    margin: 60% 0 0 18%;
+    width: 70%;
+    letter-spacing: 5px;
+    line-height: 1.5em;
+}
+</style>
+<body>
+    <div class="main_container">
+    <img src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1692604784/Croma%20Assets/CMS/Homepage%20Banners/01_Homepage%20Bugs%20Daily/TOP%20trending%20deals/21-08-2023/HP_TopDeals_11R_19July2023_f5dcdw.png?tr=w-1024" class="image">
+    <div class="overlay">
+        <h1>Sample Text</h1>
+            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed d</h2>
+</div>
+</div>
+</body>
+</html>

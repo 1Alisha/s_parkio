@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: black;
+        margin: 0;
+        padding: 0;
+    }
+
+.brands-bx img {
+        border-radius: 50%;
+        width: 100%;
+        max-width: 150px; /* Limit maximum image width */
+        height: auto;
+        transition: border-color 0.3s ease; /* Add transition for smooth effect */
+    }
+
+    .brands-bx {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px; /* Add padding for spacing */  
+       
+     
+    }
+    .brands-bx a {
+        margin: 0 10px; /* Adjust the horizontal spacing between images */
+        display: inline-block; /* Make each anchor element behave like inline block */
+    }
+    
+
+    .Brands {
+        font-size: 2em;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+        font-family: serif;
+        padding: 20px 0;
+    }
+
+    @media screen and (max-width: 768px) {
+        .brands-bx img {
+            max-width: 100px; /* Adjust image size for smaller screens */
+        }
+
+        .brands-bx a{
+            flex-direction: row; /* Stack images vertically on smaller screens */
+            align-items: center;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        .brands-bx img {
+            max-width: 80px; /* Further adjust image size for even smaller screens */
+        }
+    }
+
+</style>
+<body>
+    <div class="Brands">
+<p>Top Brands</p>
+    </div>
+    <div class="brands-bx">
+       <a href=""> <img src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1654848447/Croma%20Assets/CMS/Brand%20Logos/apple_xmf55t.png?tr=w-1440" alt=""></a>
+       <a href=""> <img src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1652260851/Croma%20Assets/CMS/Brand%20Logos/hp_co1yuv.png?tr=w-1440" alt=""></a>
+       <a href=""> <img src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1654848448/Croma%20Assets/CMS/Brand%20Logos/sony_fa0aon.png?tr=w-1440" alt=""></a>
+       <a href=""> <img src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1654848447/Croma%20Assets/CMS/Brand%20Logos/Lg_duygz8.png?tr=w-1440" alt=""></a>
+       <a href=""> <img src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1652260851/Croma%20Assets/CMS/Brand%20Logos/Lenovo_dxvgyb.png?tr=w-1440" alt=""></a>
+       <a href=""> <img src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1652260852/Croma%20Assets/CMS/Brand%20Logos/oppo_zdscdn.png?tr=w-1440" alt=""></a>
+       <a href=""> <img src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1652260850/Croma%20Assets/CMS/Brand%20Logos/amazon_ujwvcg.png?tr=w-1440" alt=""></a>
+        
+    </div>
+</body>
+</html>

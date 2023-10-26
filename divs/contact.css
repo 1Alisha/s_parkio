@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+body{
+width: 100%;
+background-color:black;
+background-image: url('');
+background-size: 100% 100%;
+}
+span{
+text-decoration: overline;
+color: cyan;
+}
+.logo{
+color: white;
+font-size:2.5em;
+font-weight: bolder;
+letter-spacing: 1px;
+margin-left: 20px;
+
+}
+#navbar {
+display: flex; /* Use flexbox to align items horizontally */
+justify-content: space-between; /* Distribute items evenly between logo and list items */
+align-items: center; /* Center items vertically*/
+background: black;
+padding: 20px 30px;
+}
+#navbar li {
+list-style: none;
+/* padding: 0 20px; */
+ /* Add margin to create space between list items */
+  margin-right: 70px; 
+}
+/* #navbar li:last-child {
+margin-right: 0; /* Remove margin from the last list item 
+} */
+.button:last-child{
+margin-right: 0px;
+}
+#navbar li a {
+text-decoration: none;
+font-size: 16px;
+font-weight: 600;
+color: white;
+transition: 0.3s ease;
+}
+
+#navbar li a:hover {
+color:rgb(22,20,21);
+}
+.button {
+display: inline-block;
+padding: 10px 20px;
+background-color: #333; /* Adjust background color as needed */
+color: white;
+border: none;
+border-radius: 5px;
+text-decoration: none;
+font-size: 16px;
+font-weight: 600;
+transition: background-color 0.3s ease;
+margin-right: 20px;
+margin-top: 0px;
+
+}
+
+.button:hover {
+background-color: aqua; /* Adjust hover background color as needed */
+}
+.button.last{
+margin-right: 0;
+}
+.search-container {
+position: relative;
+}
+
+input[type="text"] {
+flex: 1;
+padding: 8px 40px 8px 8px; /* Adjust the right padding to make space for the icon */
+border: 1px solid #ccc;
+border-radius: 20px;
+width: 350px;
+height: 35px;
+}
+
+i.fas.fa-search {
+position: absolute;
+top: 50%;
+right: 15px; /* Adjust the right position to control the icon position */
+transform: translateY(-50%);
+color: black;
+pointer-events: none; /* This ensures the icon does not interfere with text input */
+cursor:pointer;
+
+}
+
+
+button {
+padding: 8px 12px;
+background-color:cyan;
+color:black;
+border: none;
+border-radius: 20px 20px 20px 20px;
+cursor: pointer;
+float: left;
+}
+
+button:hover {
+background-color:cyan;
+}
+.fas fa-search{
+color: cyan;
+
+}
+@media screen and (max-width: 768px) {
+#navbar {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#navbar li {
+    margin: 10px 0;
+}
+
+#navbar li:last-child {
+    margin-bottom: 20px;
+}
+}
+.button.last {
+ margin-right: 0; 
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+}
+.contact-bg{
+    height: 70vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url('https://www.fujitsu.com/us/imagesgig5/contactus_tcm127-6317963_tcm127-6286607-32.jpg');
+    background-size: 100% 100%;
+    /* background-attachment: fixed; */
+    text-align: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-bg h3{
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+.contact-bg h2{
+    font-size: 3rem;
+    text-transform: uppercase;
+    padding: 0.4rem 0;
+    letter-spacing: 4px;
+}
+.line div{
+    margin: 0 0.2rem;
+}
+.line div:nth-child(1),
+.line div:nth-child(3){
+    height: 3px;
+    width: 70px;
+    background:cyan;
+    border-radius: 5px;
+}
+.line{
+    display: flex;
+    align-items: center;
+}
+.line div:nth-child(2){
+    width: 10px;
+    height: 10px;
+    background: cyan;
+    border-radius: 50%;
+}
+.text{
+    font-size: 1em;
+    font-weight: 300px;
+    opacity: 0.9;
+    color: white;
+}
+.contact-bg .text{
+    margin: 1.6rem 0;
+}
+.contact-body{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+.contact-info{
+    margin: 2rem 0;
+    text-align: center;
+    padding: 2rem 0;
+}
+.contact-info span{
+    display: block;
+}
+.contact-info div{
+    margin: 0.8rem 0;
+    padding: 1rem;
+}
+.contact-info span .fas{
+    font-size: 2rem;
+    padding-bottom: 0.9rem;
+    color:white;
+}
+.contact-info div span:nth-child(2){
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+.contact-info .text{
+    padding-top: 0.4rem;
+}
+.contact-form{
+    padding: 2rem 0;
+    border-top: 1px solid white;
+}
+.contact-form form{
+    padding-bottom: 1rem;
+}
+.form-control{
+    width: 100%;
+    border-style: solid;
+    
+    border-radius: 5px;
+    padding: 0.7rem;
+    margin: 0.6rem 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    outline: 0;
+    color: white;
+    background-color: rgb(22,20,21);
+}
+.form-control:hover{
+    border: 1.5px solid cyan;
+}
+.form-control:focus{
+    box-shadow: 0 0 6px -3px rgba(48, 48, 48, 1);
+}
+.contact-form form div{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 0.6rem;
+}
+.send-btn{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #fff;
+    background:cyan;
+    border: none;
+    border-radius: 5px;
+    padding: 0.7rem 1.5rem;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+.send-btn:hover{
+    opacity: 0.8;
+}
+.contact-form > div img{
+    width: 85%;
+}
+.contact-form > div{
+    margin: 0 auto;
+    text-align: center;
+}
+.contact-footer{
+    padding: 2rem 0;
+    background: #000;
+}
+.contact-footer h3{
+    font-size: 1.3rem;
+    color: #fff;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.social-links{
+    display: flex;
+    justify-content: center;
+}
+.social-links a{
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.4rem;
+    transition: all 0.4s ease;
+}
+.social-links a:hover{
+    color:cyan;
+    border-color:cyan;
+}
+
+@media screen and (min-width: 768px){
+    .contact-bg .text{
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .contact-info{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 992px){
+    .contact-bg .text{
+        width: 50%;
+    }
+    .contact-form{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .contact-info{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+.send-btn{
+    color: black;
+}
+.fas{
+    color: white;
+}
+.foo {
+    background-color: black;
+    color: white;
+    padding: 3% 5%;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+}
+.foothead{
+    font-family:"Nunito",sans-serif;
+    font-size: 1rem;
+    letter-spacing: .15rem;
+    margin-bottom: 10px;
+}
+.foo>.foo_item {
+    border-right: 2px solid white;
+    width: 29%;
+    height: 320px;
+}
+.foo>.last {
+    border: none;
+}
+.foo_input {
+    background-color: white;
+    border-radius: 10px;
+    display: inline-block;
+}
+#foo_email {
+    padding: 16px 44px 16px 22px;
+    border: none;
+    border-radius: 10px;
+}
+#foo_email:focus {
+    outline: none;
+} 
+.email_btn {
+    border: none;
+    padding: 14px 20px;
+    background-color: white;
+    border-radius: 10px;
+    background-color:(0, 0, 0, 0.1);
+}
+.contact_us {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    width: 70%;
+    
+}
+.contact_us_item .logo{
+    height: 30px;
+    width:30px;
+}
+
+.foo_item>.lastline {
+    margin-right:32%;
+    color: white;
+    font-weight: bold;
+}
+.foo>h3 {
+    vertical-align: top;
+}
+.foo_item_div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(7, 1fr) ;
+    grid-column-gap: 8%;
+    grid-row-gap: 15px;
+    height: 28px;
+    
+}
+.foo_item_div>div>a {
+    color: white;
+    text-decoration: none;
+    font-family:"Nunito",sans-serif;
+}
+.foo_item_div>div>a:hover {
+    color: #49a5a2;
+}
+#bodybox {
+    float:right;
+    width:400px;
+    bottom: 300px;
+    font: 15px arial, sans-serif;
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 5px 5px 5px #49a7a1;
+    border-radius: 15px;
+    opacity: 0;
+    z-index: 1;
+  }
+  
+  #chatborder {
+    border-style: solid;
+    background-color:#49a7a1;
+    border-width: 3px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    padding-right: 20px;
+    padding-left: 15px;
+    border-radius: 15px;
+    z-index: 1;
+  }
+  #chatbot{
+    border-radius: 50px;
+    height: 40px;
+    width:40px;
+    margin-left: 1250px;
+    z-index: 1;
+    background-color: #49a7a1;
+    position:fixed;
+    top:350px;
+  }
+  #chaticon{
+    border-radius: 50px;
+    height: 70px;
+    width:70px;
+    z-index: 1;
+   
+  }
+  
+  .chatlog {
+    font-family:"Nunito",sans-serif;
+    color: black;
+    font-weight: bold;
+  }
+  
+  #chatbox {
+    font: 17px arial, sans-serif;
+    height: 22px;
+    width: 100%;
+  }
+  
+  h1 {
+    margin: auto;
+  }
+  
+  pre {
+    background-color: #f0f0f0;
+    margin-left: 20px;
+  }

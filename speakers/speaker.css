@@ -1,0 +1,470 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&family=Kaushan+Script&family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --Inter: 'Inter', sans-serif;
+    --Kaushan: 'Kaushan Script', cursive;
+    --Mont: 'Montserrat', sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+body{
+width: 100%;
+background-color:#040303;
+}
+span{
+text-decoration: overline;
+color: cyan;
+}
+.logo{
+color: white;
+font-size:2.5em;
+font-weight: bolder;
+letter-spacing: 1px;
+margin-left: 20px;
+
+}
+#navbar {
+display: flex; /* Use flexbox to align items horizontally */
+justify-content: space-between; /* Distribute items evenly between logo and list items */
+align-items: center; /* Center items vertically*/
+background: black;
+padding: 20px 30px;
+}
+#navbar li {
+list-style: none;
+/* padding: 0 20px; */
+ /* Add margin to create space between list items */
+  margin-right: 70px; 
+}
+/* #navbar li:last-child {
+margin-right: 0; /* Remove margin from the last list item 
+} */
+.button:last-child{
+margin-right: 0px;
+}
+#navbar li a {
+text-decoration: none;
+font-size: 16px;
+font-weight: 600;
+color: white;
+transition: 0.3s ease;
+}
+
+#navbar li a:hover {
+color:rgb(22,20,21);
+}
+.button {
+display: inline-block;
+padding: 10px 20px;
+background-color: #333; /* Adjust background color as needed */
+color: white;
+border: none;
+border-radius: 5px;
+text-decoration: none;
+font-size: 16px;
+font-weight: 600;
+transition: background-color 0.3s ease;
+margin-right: 20px;
+margin-top: 0px;
+
+}
+
+.button:hover {
+background-color: aqua; /* Adjust hover background color as needed */
+}
+.button.last{
+margin-right: 0;
+}
+.search-container {
+position: relative;
+}
+
+input[type="text"] {
+flex: 1;
+padding: 8px 40px 8px 8px; /* Adjust the right padding to make space for the icon */
+border: 1px solid #ccc;
+border-radius: 20px;
+width: 350px;
+height: 35px;
+}
+
+i.fas.fa-search {
+position: absolute;
+top: 50%;
+right: 15px; /* Adjust the right position to control the icon position */
+transform: translateY(-50%);
+color: black;
+pointer-events: none; /* This ensures the icon does not interfere with text input */
+cursor:pointer;
+
+}
+
+
+button {
+padding: 8px 12px;
+background-color:cyan;
+color:black;
+border: none;
+border-radius: 20px 20px 20px 20px;
+cursor: pointer;
+float: left;
+}
+
+button:hover {
+background-color:cyan;
+}
+.fas fa-search{
+color: cyan;
+
+}
+@media screen and (max-width: 768px) {
+#navbar {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#navbar li {
+    margin: 10px 0;
+}
+
+#navbar li:last-child {
+    margin-bottom: 20px;
+}
+}
+.button.last {
+ margin-right: 0; }
+.menu{
+    margin: 2rem 0;
+}
+button{
+    padding: 8px 12px;
+background-color:cyan;
+color:black;
+border: none;
+width: 200px;
+/* border-radius: ; */
+margin-top: 10px;
+cursor: pointer;
+}
+.menu-container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+img{
+    width: 100%;
+    display: block;
+}
+.menu-head{
+    text-align: center;
+}
+.menu-head h2{
+    font-family: var(--Kaushan);
+    font-size: 2.6rem;
+}
+.menu-head p{
+    font-weight: 300;
+    padding: 1.8rem 0;
+}
+.menu-btns{
+    padding: 0.6rem 0;
+    display: flex;
+    justify-content: center;
+}
+.menu-btn{
+    font-family: var(--Inter);
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: 600;
+    background: none;
+    border: none;
+    color: #ff9505;
+    display: block;
+    margin: 0 1rem;
+    cursor: pointer;
+    outline: 0;
+    transition: opacity 0.4s ease-out;
+}
+.menu-btn::after{
+    content: "";
+    display: block;
+    height: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #ff9505;
+    margin-top: 0.5rem;
+    width: 0;
+    transition: width 0.4s ease-out;
+}
+.menu-btn:hover::after{
+    width: 100%;
+}
+.menu-btn:hover{
+    opacity: 0.8;
+}
+.active-btn{
+    color: #fff;
+}
+.food-items{
+    margin: 2rem 0;
+}
+.fas{
+    color: cyan;
+}
+.food-item{
+    width: 600px;
+    height: 300px;
+    border-radius: 4px;
+    overflow: hidden;
+    background-image: url('https://media.istockphoto.com/id/522629778/photo/black-crumpled-paper-texture-background-and-wallpaper.jpg?s=612x612&w=0&k=20&c=GNjkGAml5hnQoeoEzDk1jiqi2AosELQmBQu1CD5_ddw=');
+    background-size: cover;
+    color: #0a0808;
+    margin: 0.6rem 0;
+    box-shadow: 0 0 16px -4px rgba(0, 0, 0, 0.75);
+    /* display: ; */
+    animation: fadeIn 2s;
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.food-img img{
+    border-radius: 4px;
+    width: 150px;
+    padding: 20px;
+}
+.food-content{
+    padding: 1rem;
+}
+.food-name{
+    
+    font-family: var(--Inter);
+    color:hsl(180, 23%, 94%);
+    font-weight: lighter;
+    text-transform: capitalize;
+}
+.line{
+    width: 100px;
+    height: 3px;
+    background: cyan;
+}
+.food-price{
+    padding: 0.4rem 0;
+    font-weight: 600;
+    font-size: 1.4rem;
+    opacity: 0.8;
+    color: white;
+}
+.rating{
+    display: flex;
+    list-style: none;
+}
+.rating .fa-star{
+    margin-right: 0.4rem;
+    color: #44355b;
+}
+.category{
+    color: white;
+    letter-spacing: 1px;
+    padding-bottom: 0.5em;
+    padding-top: 1rem;
+    font-size: 1rem;
+    font-weight:1em;
+    font-family: var(--Inter);
+}
+.category span{
+    font-weight: 500;
+}
+
+@media screen and (min-width: 600px){
+    .food-item{
+        display: grid;
+        grid-template-columns: 25% auto;
+        align-items: center;
+        padding: 1rem;
+        column-gap: 1rem;
+    }
+    .food-content{
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .menu-head p{
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .menu-head p{
+        width: 50%;
+    }
+    .food-items{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+}
+
+
+.foo {
+    background-color: black;
+    color: white;
+    padding: 3% 5%;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+}
+.foothead{
+    font-family:"Nunito",sans-serif;
+    font-size: 1rem;
+    letter-spacing: .15rem;
+    margin-bottom: 10px;
+}
+.foo>.foo_item {
+    border-right: 2px solid white;
+    width: 29%;
+    height: 320px;
+}
+.foo>.last {
+    border: none;
+}
+.foo_input {
+    background-color: white;
+    border-radius: 10px;
+    display: inline-block;
+}
+#foo_email {
+    /* padding: 16px 44px 16px 22px; */
+    border: none;
+    border-radius: 10px;
+}
+#foo_email:focus {
+    outline: none;
+} 
+.email_btn {
+    border: none;
+    padding: 14px 20px;
+    background-color: white;
+    border-radius: 10px;
+    background-color:(0, 0, 0, 0.1);
+}
+.contact_us {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    width: 70%;
+    
+}
+.contact_us_item .logo{
+    height: 30px;
+    width:30px;
+}
+
+.foo_item>.lastline {
+    margin-right:32%;
+    color: white;
+    font-weight: bold;
+}
+.foo>h3 {
+    vertical-align: top;
+}
+.foo_item_div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(7, 1fr) ;
+    grid-column-gap: 8%;
+    grid-row-gap: 15px;
+    height: 28px;
+    
+}
+.foo_item_div>div>a {
+    color: white;
+    text-decoration: none;
+    font-family:"Nunito",sans-serif;
+}
+.foo_item_div>div>a:hover {
+    color: #49a5a2;
+}
+#bodybox {
+    float:right;
+    width:400px;
+    bottom: 300px;
+    font: 15px arial, sans-serif;
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 5px 5px 5px #49a7a1;
+    border-radius: 15px;
+    opacity: 0;
+    z-index: 1;
+  }
+  
+  #chatborder {
+    border-style: solid;
+    background-color:#49a7a1;
+    border-width: 3px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    padding-right: 20px;
+    padding-left: 15px;
+    border-radius: 15px;
+    z-index: 1;
+  }
+  #chatbot{
+    border-radius: 50px;
+    height: 40px;
+    width:40px;
+    margin-left: 1250px;
+    z-index: 1;
+    background-color: #49a7a1;
+    position:fixed;
+    top:350px;
+  }
+  #chaticon{
+    border-radius: 50px;
+    height: 70px;
+    width:70px;
+    z-index: 1;
+   
+  }
+  
+  .chatlog {
+    font-family:"Nunito",sans-serif;
+    color: black;
+    font-weight: bold;
+  }
+  
+  #chatbox {
+    font: 17px arial, sans-serif;
+    height: 22px;
+    width: 100%;
+  }
+  
+  h1 {
+    margin: auto;
+  }
+  
+  pre {
+    background-color: #f0f0f0;
+    margin-left: 20px;
+  }

@@ -1,0 +1,492 @@
+
+    *{
+        margin: 0; 
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Spartan', sans-serif;
+}
+body{
+    width: 100%;
+    background-color:rgb(22,20,21);
+    background-image: url('');
+    background-size: 100% 100%;
+}
+span{
+    text-decoration: overline;
+    color: cyan;
+ }
+ .logo{
+    color: white;
+    font-size:2.5em;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    margin-left: 20px;
+
+ }
+  #navbar {
+    display: flex; /* Use flexbox to align items horizontally */
+    justify-content: space-between; /* Distribute items evenly between logo and list items */
+    align-items: center; /* Center items vertically*/
+    background: black;
+    padding: 20px 30px;
+}
+#navbar li {
+    list-style: none;
+    /* padding: 0 20px; */
+     /* Add margin to create space between list items */
+      margin-right: 70px; 
+}
+/* #navbar li:last-child {
+    margin-right: 0; /* Remove margin from the last list item 
+} */
+.button:last-child{
+    margin-right: 0px;
+}
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover {
+    color:rgb(22,20,21);
+}
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333; /* Adjust background color as needed */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    margin-right: 20px;
+    margin-top: 0px;
+    
+}
+
+.button:hover {
+    background-color: aqua; /* Adjust hover background color as needed */
+}
+.button.last{
+    margin-right: 0;
+}
+.search-container {
+  position: relative;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 8px 40px 8px 8px; /* Adjust the right padding to make space for the icon */
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  width: 350px;
+  height: 35px;
+}
+
+i.fas.fa-search {
+  position: absolute;
+  top: 50%;
+  right: 15px; /* Adjust the right position to control the icon position */
+  transform: translateY(-50%);
+  color: black;
+  pointer-events: none; /* This ensures the icon does not interfere with text input */
+  cursor:pointer;
+  
+}
+
+
+button {
+  padding: 8px 12px;
+  background-color:cyan;
+  color:black;
+  border: none;
+  border-radius: 20px 20px 20px 20px;
+  cursor: pointer;
+  float: left;
+}
+
+button:hover {
+  background-color:cyan;
+}
+.fas fa-search{
+    color: cyan;
+  
+}
+@media screen and (max-width: 768px) {
+    #navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    #navbar li {
+        margin: 10px 0;
+    }
+    
+    #navbar li:last-child {
+        margin-bottom: 20px;
+    }
+}
+.button.last {
+     margin-right: 0; 
+}
+
+/* ===================================================================================================== */
+body{
+    margin: 0; /* Remove default margin */
+    padding: 0;
+    background-color: black;
+   }
+
+    .grid-container {
+        width: 550px; /* Set a fixed width for the grid container */
+        height: 350px; /* Set a fixed height for the grid container */
+        margin: 3em auto;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 0;
+        padding: 0;
+        float: left;
+        margin-left: 7em;
+        
+    }
+
+    .grid-item {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+    }
+
+    .video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Optional media queries for responsiveness */
+    @media (max-width: 768px) {
+        .grid-container {
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .grid-container {
+            width: 100%;
+        }
+    }
+    .as {
+        width: 50%;
+        padding-left: em;
+        float: right;
+        margin-top: 4.5em;
+        font-size: 1.3em;
+        
+    }
+
+    .lorem p {
+        color: white;
+        margin-right:2em;
+        float: right;
+        font-weight: lighter;
+        letter-spacing: 3px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-style: italic;
+       
+    }
+    .read-more button{
+        display: block;
+        background-color:rgb(61, 64, 63);
+        float: left;
+        margin-top: 1em;
+        color:white; /* Set the button color to red */
+       text-decoration: none;
+       font-size: 0.7em; /* Adjust the font size to increase button size */
+       padding: 0.5em 0.5em; /* Adjust padding to increase button size */
+       border-radius: 5px;
+       border-color: black;
+    }
+    .read-more button:hover{
+        background-color: cyan;
+        color: black;
+    }
+    .gridcontent{
+        width: 70%;
+        height: 100%;
+        margin:15em auto;
+        display: grid;
+        grid-template-rows: 350px 350px 550px;
+        grid-template-columns: 1fr 1fr ;
+        grid-gap:120px;
+        grid-column-gap: 35px;
+
+    }
+    .ab1 ul li,
+    .ab4 ul li{
+       color: white;
+       margin-top: 2em;
+        font-weight: lighter;
+        letter-spacing: 3px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-style: italic;
+        font-size: 1.3em;
+
+    }
+    
+    .ab2{
+        background-image: url('https://www.readyconvenience.com/wp-content/uploads/2016/10/10.20.16-Turning-Your-Futre-Vision-into-Reality.jpg');
+        background-size: 100% 100%;
+        border-radius: 10%;
+    }
+    .ab2:hover{
+       background-image: url('https://media.istockphoto.com/id/488536442/photo/business-man-in-suit-with-cityscape-montage.jpg?s=612x612&w=0&k=20&c=QphgzTV2X-xBJtJHTY-xiWaBvxqCETciU0lCuQU0xF4='); 
+       background-size: 100% 100%;
+       border-radius: 10%;
+    }
+    
+    .ab3{
+        background-image: url('https://wealthlegacygroup.com/wp-content/uploads/elementor/thumbs/Teamwork-Cog-Shutterstock-oncyly3h41yxcpmfeuje18f0t9fqggd2er95v3bf7c.jpg');
+        background-size: 100% 100%;
+        border-radius: 10%;
+    }
+    
+   
+ .ab3:hover{
+        background-image: url('https://1.bp.blogspot.com/-jvzCrWnnkRY/X_Bz0-TjC0I/AAAAAAAAAr0/l5Hujuf3SgMzS0yWMmr5DL7LqHkwwpyJQCLcBGAsYHQ/s1000/AdobeStock_88530117_Preview.jpeg');
+        background-size: 100% 100%;
+        border-radius: 10%;
+    }
+    .ab5{
+        background-color: black;
+        grid-column: 1/-1;
+    }
+
+.ab5 .left{
+    float: left;
+}
+.ab5 .right
+{
+    float: right;
+}
+.ab5 .values
+{
+    margin-left: 19em;
+}
+.v1,.v2,.v3{
+    height: 60px;
+    width: 350px;
+    border-radius: 0px 100px 100px 0px;
+    background-image:url('https://www.readyconvenience.com/wp-content/uploads/2016/10/10.20.16-Turning-Your-Futre-Vision-into-Reality.jpg');
+    color:black;
+    text-align: center;
+    margin: 5px auto;
+    margin-left: 0em;
+}
+.v4,.v5,.v6{
+    height: 60px;
+    width: 350px;
+    border-radius: 100px 0px 0px 100px;
+    background-image:url('https://www.readyconvenience.com/wp-content/uploads/2016/10/10.20.16-Turning-Your-Futre-Vision-into-Reality.jpg');
+    color:black;
+    text-align: center;
+    margin: 5px auto;
+    margin-right: 0em;
+}
+.v1 h3,
+.v2 h3,
+.v3 h3,
+.v4 h3,
+.v5 h3,
+.v6 h3
+{
+    margin: 2em auto;
+}
+.values img{
+    height:200px;
+    width: 200px;
+    margin-top: 2em;
+    margin-left: 5em;
+    border-radius: 50%;
+    filter: grayscale(50%);
+
+}
+.values{
+    margin-left: 0px;
+}
+
+/* =============================== */
+.grid-container1 {
+    margin-left: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Columns with different sizes */
+    grid-template-rows:300px; /* Auto-sized rows */
+    gap: 10px; /* Gap between grid items */
+    margin:0px 15em;
+    top:-5%
+}
+
+.grid-itemt img{
+    width:300px;
+    height: 250px;
+}
+.gridcontent {
+    margin-bottom: -10px;
+}
+
+.grid-container1 {
+    margin-top:5em;
+}
+/* ====================================================================== */
+.foo {
+    background-color: black;
+    color: white;
+    padding: 3% 5%;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+}
+.foothead{
+    font-family:"Nunito",sans-serif;
+    font-size: 1rem;
+    letter-spacing: .15rem;
+    margin-bottom: 10px;
+}
+.foo>.foo_item {
+    border-right: 2px solid white;
+    width: 29%;
+    height: 320px;
+}
+.foo>.last {
+    border: none;
+}
+.foo_input {
+    background-color: white;
+    border-radius: 10px;
+    display: inline-block;
+}
+#foo_email {
+    padding: 16px 44px 16px 22px;
+    border: none;
+    border-radius: 10px;
+}
+#foo_email:focus {
+    outline: none;
+} 
+.email_btn {
+    border: none;
+    padding: 14px 20px;
+    background-color: white;
+    border-radius: 10px;
+    background-color:(0, 0, 0, 0.1);
+}
+.contact_us {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    width: 70%;
+    
+}
+.contact_us_item .logo{
+    height: 30px;
+    width:30px;
+}
+
+.foo_item>.lastline {
+    margin-right:32%;
+    color: white;
+    font-weight: bold;
+}
+.foo>h3 {
+    vertical-align: top;
+}
+.foo_item_div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(7, 1fr) ;
+    grid-column-gap: 8%;
+    grid-row-gap: 15px;
+    height: 28px;
+    
+}
+.foo_item_div>div>a {
+    color: white;
+    text-decoration: none;
+    font-family:"Nunito",sans-serif;
+}
+.foo_item_div>div>a:hover {
+    color: #49a5a2;
+}
+#bodybox {
+    float:right;
+    width:400px;
+    bottom: 300px;
+    font: 15px arial, sans-serif;
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 5px 5px 5px #49a7a1;
+    border-radius: 15px;
+    opacity: 0;
+    z-index: 1;
+  }
+  
+  #chatborder {
+    border-style: solid;
+    background-color:#49a7a1;
+    border-width: 3px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    padding-right: 20px;
+    padding-left: 15px;
+    border-radius: 15px;
+    z-index: 1;
+  }
+  #chatbot{
+    border-radius: 50px;
+    height: 40px;
+    width:40px;
+    margin-left: 1250px;
+    z-index: 1;
+    background-color: #49a7a1;
+    position:fixed;
+    top:350px;
+  }
+  #chaticon{
+    border-radius: 50px;
+    height: 70px;
+    width:70px;
+    z-index: 1;
+   
+  }
+  
+  .chatlog {
+    font-family:"Nunito",sans-serif;
+    color: black;
+    font-weight: bold;
+  }
+  
+  #chatbox {
+    font: 17px arial, sans-serif;
+    height: 22px;
+    width: 100%;
+  }
+  
+  h1 {
+    margin: auto;
+  }
+  
+  pre {
+    background-color: #f0f0f0;
+    margin-left: 20px;
+  }

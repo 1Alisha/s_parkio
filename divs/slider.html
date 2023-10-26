@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: black;
+    }
+    .mainDiv{
+        width:95%;
+        height: 60%;
+        position: absolute;
+        padding: 2em 2em;
+        background-image: url('https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1691591923/Croma%20Assets/CMS/LP%20Page%20Banners/2023/01_HP_BUGS_LP_BUGS/01-02-2023/ID/New/Hero%20Deals/Mobile/HP_IDSale_1_9Aug2023_aong3b.png?tr=w-2048');
+        background-size: 100% 100%;
+        animation: changeImage 7s infinite ;
+        /* animation-duration: 20s; */
+        
+
+    }
+    @keyframes changeImage{
+        0%{
+            background-image: url('https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1691591923/Croma%20Assets/CMS/LP%20Page%20Banners/2023/01_HP_BUGS_LP_BUGS/01-02-2023/ID/New/Hero%20Deals/Mobile/HP_IDSale_1_9Aug2023_aong3b.png?tr=w-2048');
+        }
+        25%{
+            background-image: url('https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1691670588/Croma%20Assets/CMS/LP%20Page%20Banners/2023/HP%20Top%20Rotating%20Deals/August/11th%20Aug/HPRotating_VivoY16_11Aug2023_a0b2me.jpg?tr=w-2048');
+        }
+        65%{
+            background-image: url('https://s3.us-east-2.amazonaws.com/onida-files/banner/25/original/Air_Cooler_1.jpg?1642584872');
+        }
+        85%{
+            background-image: url('https://s3.us-east-2.amazonaws.com/onida-files/banner/19/original/Refrigerator.jpg?1642584935');
+        }
+        100%{
+            background-image: url('https://www.boat-lifestyle.com/cdn/shop/files/Wave-active_desktop_1440x.jpg?v=1691133358');
+        }
+    }
+    @media (max-width: 768px) {
+            .mainDiv {
+                height: 35vh; /* Adjust height for smaller screens */
+            }
+        }
+</style>
+<body>
+    <div class="mainDiv">
+       
+    </div>
+</body>
+</html>

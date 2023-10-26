@@ -5,13 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Anon - eCommerce Website</title>
-
-  <!--
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./assets/images/logo/favicon.ico" type="image/x-icon">
-
+  <title>Sparkio</title>
   <!--
     - custom css link
   -->
@@ -35,8 +29,7 @@
   <!--
     - MODAL
   -->
-
-  <div class="modal" data-modal>
+ <div class="modal" data-modal>
 
     <div class="modal-close-overlay" data-modal-overlay></div>
 
@@ -56,17 +49,17 @@
 
           <div class="newsletter-header">
 
-            <h3 class="newsletter-title">Subscribe Newsletter.</h3>
+            <h3 style="color: black;" class="newsletter-title">Subscribe Newsletter.</h3>
 
-            <p class="newsletter-desc">
-              Subscribe the <b>Anon</b> to get latest products and discount update.
+            <p style="color: black;" class="newsletter-desc">
+              Subscribe  <b>Sparkio</b> to get latest products and discount update.
             </p>
 
           </div>
 
           <input type="email" name="email" class="email-field" placeholder="Email Address" required>
 
-          <button type="submit" class="btn-newsletter">Subscribe</button>
+          <button style="color: black;" type="submit" class="btn-newsletter">Subscribe</button>
 
         </form>
 
@@ -76,22 +69,18 @@
 
   </div>
 
-
-
-
-
   <!--
     - NOTIFICATION TOAST
   -->
 
-  <div class="notification-toast" data-toast>
+  <div  class="notification-toast" data-toast>
 
     <button class="toast-close-btn" data-toast-close>
       <ion-icon name="close-outline"></ion-icon>
     </button>
 
     <div class="toast-banner">
-      <img src="./assets/images/products/jewellery-1.jpg" alt="Rose Gold Earrings" width="80" height="70">
+      <img src="https://m.media-amazon.com/images/I/5181zv0IGvL._AC_UF894,1000_QL80_.jpg" width="80" height="70">
     </div>
 
     <div class="toast-detail">
@@ -100,8 +89,8 @@
         Someone in new just bought
       </p>
 
-      <p class="toast-title">
-        Rose Gold Earrings
+      <p style="color: palevioletred;" class="toast-title">
+        Latest SmartPhone
       </p>
 
       <p class="toast-meta">
@@ -121,7 +110,7 @@
   -->
 
   <header>
-
+<!-- 
     <div class="header-top">
 
       <div class="container">
@@ -155,20 +144,20 @@
         </ul>
 
         <div class="header-alert-news">
-          <p>
-            <b>Free Shipping</b>
+          <p style="color: white; font-size: 1em;">
+            <b style="color: white; font-size: 1em;">Free Shipping</b>
             This Week Order Over - $55
           </p>
-        </div>
+        </div> -->
 
-        <div class="header-top-actions">
+        <!-- <div class="header-top-actions">
 
           <select name="currency">
 
             <option value="usd">USD &dollar;</option>
             <option value="eur">EUR &euro;</option>
 
-          </select>
+          </select> 
 
           <select name="language">
 
@@ -178,7 +167,7 @@
 
           </select>
 
-        </div>
+        </div> -->
 
       </div>
 
@@ -189,7 +178,8 @@
       <div class="container">
 
         <a href="#" class="header-logo">
-          <img src="./assets/images/logo/logo.svg" alt="Anon's logo" width="120" height="36">
+          <!-- <img src="./assets/images/logo/logo.svg" alt="Anon's logo" width="120" height="36"> -->
+          <h2 style="color:white;letter-spacing: 1px;">Spar<span style="text-decoration: overline; color: cyan ;">k</span>io</h2>
         </a>
 
         <div class="header-search-container">
@@ -197,26 +187,28 @@
           <input type="search" name="search" class="search-field" placeholder="Enter your product name...">
 
           <button class="search-btn">
-            <ion-icon name="search-outline"></ion-icon>
+            <ion-icon style="color:black; font-size: 1.5em;"  name="search-outline"></ion-icon>
           </button>
 
         </div>
 
         <div class="header-user-actions">
-
+<a href="divs/register.html">
           <button class="action-btn">
-            <ion-icon name="person-outline"></ion-icon>
-          </button>
-
+            <ion-icon style="color: white" name="person-outline"></ion-icon>
+            
+          </button></a>
+<a href="https://images.sampletemplates.com/wp-content/uploads/2019/05/11-Project-Progress-Report-Samples-PDF-Word.jpg">
           <button class="action-btn">
-            <ion-icon name="heart-outline"></ion-icon>
-            <span class="count">0</span>
+            <ion-icon style="color: white" name="heart-outline"></ion-icon>
+            <span style="background-color: aqua; color: black;" class="count">0</span>
           </button>
-
+        </a>
+        <a href="https://images.sampletemplates.com/wp-content/uploads/2019/05/11-Project-Progress-Report-Samples-PDF-Word.jpg">
           <button class="action-btn">
-            <ion-icon name="bag-handle-outline"></ion-icon>
-            <span class="count">0</span>
-          </button>
+            <ion-icon style="color: white" name="bag-handle-outline"></ion-icon>
+            <span style="background-color: aqua; color: black;"  class="count">0</span>
+          </button></a></div>
 
         </div>
 
@@ -241,30 +233,18 @@
 
               <ul class="dropdown-panel-list">
 
-                <li class="menu-title">
-                  <a href="#">Electronics</a>
+
+                <li class="panel-list-item">
+                  <a href="categories/laptop.html">Laptop</a>
                 </li>
 
                 <li class="panel-list-item">
-                  <a href="#">Desktop</a>
+                  <a href="divs/Mobile.html">Smart Phones</a>
                 </li>
 
                 <li class="panel-list-item">
-                  <a href="#">Laptop</a>
+                  <a href="audio/audio.html">HeadPhones</a>
                 </li>
-
-                <li class="panel-list-item">
-                  <a href="#">Camera</a>
-                </li>
-
-                <li class="panel-list-item">
-                  <a href="#">Tablet</a>
-                </li>
-
-                <li class="panel-list-item">
-                  <a href="#">Headphone</a>
-                </li>
-
                 <li class="panel-list-item">
                   <a href="#">
                     <img src="./assets/images/electronics-banner-1.jpg" alt="headphone collection" width="250"
@@ -276,33 +256,23 @@
 
               <ul class="dropdown-panel-list">
 
-                <li class="menu-title">
-                  <a href="#">Men's</a>
+                <li class="panel-list-item">
+                  <a href="categories/airdopes.html">Airdopes</a>
                 </li>
 
-                <li class="panel-list-item">
-                  <a href="#">Formal</a>
-                </li>
 
                 <li class="panel-list-item">
-                  <a href="#">Casual</a>
+                  <a href="categories/smartTV.html">Smart Tvs</a>
                 </li>
 
-                <li class="panel-list-item">
-                  <a href="#">Sports</a>
-                </li>
 
                 <li class="panel-list-item">
-                  <a href="#">Jacket</a>
-                </li>
-
-                <li class="panel-list-item">
-                  <a href="#">Sunglasses</a>
+                  <a href="categories/iphone.html">Iphones</a>
                 </li>
 
                 <li class="panel-list-item">
                   <a href="#">
-                    <img src="./assets/images/mens-banner.jpg" alt="men's fashion" width="250" height="119">
+                    <img style="height: 145px;" src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1684236445/Croma%20Assets/CMS/Homepage%20Banners/Highlight2/HP_Highlights_DealsCorner_15Feb2023_vh0dcu.jpg?tr=w-1024" alt="men's fashion" width="200" height="100px">
                   </a>
                 </li>
 
@@ -310,33 +280,24 @@
 
               <ul class="dropdown-panel-list">
 
-                <li class="menu-title">
-                  <a href="#">Women's</a>
+                
+                <li class="panel-list-item">
+                  <a href="categories/watches.html">Apple watch</a>
                 </li>
 
                 <li class="panel-list-item">
-                  <a href="#">Formal</a>
+                  <a href="categories/camera.html">Camera</a>
                 </li>
 
                 <li class="panel-list-item">
-                  <a href="#">Casual</a>
+                  <a href="categories/Fans.html">Fans & AC</a>
                 </li>
 
-                <li class="panel-list-item">
-                  <a href="#">Perfume</a>
-                </li>
-
-                <li class="panel-list-item">
-                  <a href="#">Cosmetics</a>
-                </li>
-
-                <li class="panel-list-item">
-                  <a href="#">Bags</a>
-                </li>
+               
 
                 <li class="panel-list-item">
                   <a href="#">
-                    <img src="./assets/images/womens-banner.jpg" alt="women's fashion" width="250" height="119">
+                    <img style="height: 145px; filter: grayscale(100%);" src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1697826616/Croma%20Assets/CMS/Homepage%20Banners/Highlights/2023/HP_Highlights_GGR_20oct2023_yuprpr.png?tr=w-1024" width="250" height="119">
                   </a>
                 </li>
 
@@ -344,16 +305,9 @@
 
               <ul class="dropdown-panel-list">
 
-                <li class="menu-title">
-                  <a href="#">Electronics</a>
-                </li>
 
                 <li class="panel-list-item">
-                  <a href="#">Smart Watch</a>
-                </li>
-
-                <li class="panel-list-item">
-                  <a href="#">Smart TV</a>
+                  <a href="categories/kitchen.html">Kitchen Appliances</a>
                 </li>
 
                 <li class="panel-list-item">
@@ -364,9 +318,7 @@
                   <a href="#">Mouse</a>
                 </li>
 
-                <li class="panel-list-item">
-                  <a href="#">Microphone</a>
-                </li>
+              
 
                 <li class="panel-list-item">
                   <a href="#">
@@ -380,81 +332,56 @@
           </li>
 
           <li class="menu-category">
-            <a href="#" class="menu-title">Men's</a>
+            <a href="divs/index.html" class="menu-title">Top-Brands</a>
 
             <ul class="dropdown-list">
 
               <li class="dropdown-item">
-                <a href="#">Shirt</a>
+                <a href="#">oppo</a>
               </li>
 
               <li class="dropdown-item">
-                <a href="#">Shorts & Jeans</a>
+                <a href="#">Realme</a>
               </li>
 
               <li class="dropdown-item">
-                <a href="#">Safety Shoes</a>
+                <a href="#">Apple</a>
               </li>
 
               <li class="dropdown-item">
-                <a href="#">Wallet</a>
+                <a href="#">Sony</a>
               </li>
 
             </ul>
           </li>
 
           <li class="menu-category">
-            <a href="#" class="menu-title">Women's</a>
+            <a href="speakers/subAudio.html" class="menu-title">Compare & Choose</a>
 
-            <ul class="dropdown-list">
-
-              <li class="dropdown-item">
-                <a href="#">Dress & Frock</a>
-              </li>
-
-              <li class="dropdown-item">
-                <a href="#">Earrings</a>
-              </li>
-
-              <li class="dropdown-item">
-                <a href="#">Necklace</a>
-              </li>
-
-              <li class="dropdown-item">
-                <a href="#">Makeup Kit</a>
-              </li>
-
-            </ul>
+           
           </li>
 
           <li class="menu-category">
-            <a href="#" class="menu-title">Jewelry</a>
+            <a href="audio/audio.html" class="menu-title">Hot Deals</a>
 
-            <ul class="dropdown-list">
+           
+         
 
-              <li class="dropdown-item">
-                <a href="#">Earrings</a>
-              </li>
+          <li class="menu-category">
+            <a href="divs/aboutUs.html" class="menu-title">About us</a>
+            </li>
+         <li class="menu-category">
+            <a href="divs/contactUs.html" class="menu-title">Contact Us</a></li>
 
-              <li class="dropdown-item">
-                <a href="#">Couple Rings</a>
-              </li>
-
-              <li class="dropdown-item">
-                <a href="#">Necklace</a>
-              </li>
-
-              <li class="dropdown-item">
-                <a href="#">Bracelets</a>
-              </li>
-
-            </ul>
+          <li class="menu-category">
+            <a href="divs/blog.html" class="menu-title">Blog</a>
           </li>
 
           <li class="menu-category">
-            <a href="#" class="menu-title">Perfume</a>
+            <a href="testimonial.html" class="menu-title">Success Stories</a>
+          </li>
 
-            <ul class="dropdown-list">
+            <!-- <ul class="dropdown-list">
 
               <li class="dropdown-item">
                 <a href="#">Clothes Perfume</a>
@@ -472,24 +399,19 @@
                 <a href="#">Air Freshener</a>
               </li>
 
-            </ul>
+            </ul> -->
           </li>
+         
+          
+</li>
+</ul>
+</div>
+</nav>
+          
+         
+<!-- 
 
-          <li class="menu-category">
-            <a href="#" class="menu-title">Blog</a>
-          </li>
-
-          <li class="menu-category">
-            <a href="#" class="menu-title">Hot Offers</a>
-          </li>
-
-        </ul>
-
-      </div>
-
-    </nav>
-
-    <div class="mobile-bottom-navigation">
+     <div class="mobile-bottom-navigation">
 
       <button class="action-btn" data-mobile-menu-open-btn>
         <ion-icon name="menu-outline"></ion-icon>
@@ -515,8 +437,8 @@
         <ion-icon name="grid-outline"></ion-icon>
       </button>
 
-    </div>
-
+    </div> -->
+<!-- 
     <nav class="mobile-navigation-menu  has-scrollbar" data-mobile-menu>
 
       <div class="menu-top">
@@ -669,10 +591,7 @@
           <a href="#" class="menu-title">Blog</a>
         </li>
 
-        <li class="menu-category">
-          <a href="#" class="menu-title">Hot Offers</a>
-        </li>
-
+        
       </ul>
 
       <div class="menu-bottom">
@@ -703,8 +622,8 @@
 
             </ul>
 
-          </li>
-
+          </li> -->
+<!-- 
           <li class="menu-category">
             <button class="accordion-menu" data-accordion-btn>
               <p class="menu-title">Currency</p>
@@ -722,9 +641,9 @@
             </ul>
           </li>
 
-        </ul>
+        </ul> -->
 
-        <ul class="menu-social-container">
+        <!-- <ul class="menu-social-container">
 
           <li>
             <a href="#" class="social-link">
@@ -750,7 +669,7 @@
             </a>
           </li>
 
-        </ul>
+        </ul> 
 
       </div>
 
@@ -762,7 +681,7 @@
 
 
 
-  <!--
+  
     - MAIN
   -->
 
@@ -771,83 +690,23 @@
     <!--
       - BANNER
     -->
-
     <div class="banner">
-
       <div class="container">
-
-        <div class="slider-container has-scrollbar">
-
-          <div class="slider-item">
-
-            <img src="./assets/images/banner-1.jpg" alt="women's latest fashion sale" class="banner-img">
-
-            <div class="banner-content">
-
-              <p class="banner-subtitle">Trending item</p>
-
-              <h2 class="banner-title">Women's latest fashion sale</h2>
-
-              <p class="banner-text">
-                starting at &dollar; <b>20</b>.00
-              </p>
-
-              <a href="#" class="banner-btn">Shop now</a>
-
-            </div>
-
+          <div class="slider-parent">
+              <div class="slider-container">
+                  <div class="slider-item">
+                      <img src="https://s3.us-east-2.amazonaws.com/onida-files/banner/25/original/Air_Cooler_1.jpg?1642584872" alt="Image 1" class="banner-img">
+                  </div>
+                  <div class="slider-item">
+                      <img src="https://s3.us-east-2.amazonaws.com/onida-files/banner/19/original/Refrigerator.jpg?1642584935" alt="Image 2" class="banner-img">
+                  </div>
+                  <div class="slider-item">
+                      <img src="https://www.boat-lifestyle.com/cdn/shop/files/Desktop_3416514a-87f6-4562-bde3-420528f42d9f_1440x.jpg?v=1696856402" alt="Image 3" class="banner-img">
+                  </div>
+              </div>
           </div>
-
-          <div class="slider-item">
-
-            <img src="./assets/images/banner-2.jpg" alt="modern sunglasses" class="banner-img">
-
-            <div class="banner-content">
-
-              <p class="banner-subtitle">Trending accessories</p>
-
-              <h2 class="banner-title">Modern sunglasses</h2>
-
-              <p class="banner-text">
-                starting at &dollar; <b>15</b>.00
-              </p>
-
-              <a href="#" class="banner-btn">Shop now</a>
-
-            </div>
-
-          </div>
-
-          <div class="slider-item">
-
-            <img src="./assets/images/banner-3.jpg" alt="new fashion summer sale" class="banner-img">
-
-            <div class="banner-content">
-
-              <p class="banner-subtitle">Sale Offer</p>
-
-              <h2 class="banner-title">New fashion summer sale</h2>
-
-              <p class="banner-text">
-                starting at &dollar; <b>29</b>.99
-              </p>
-
-              <a href="#" class="banner-btn">Shop now</a>
-
-            </div>
-
-          </div>
-
-        </div>
-
       </div>
-
-    </div>
-
-
-
-
-
+  </div>
     <!--
       - CATEGORY
     -->
@@ -856,23 +715,23 @@
 
       <div class="container">
 
-        <div class="category-item-container has-scrollbar">
+        <div class="category-item-container ">
 
           <div class="category-item">
 
             <div class="category-img-box">
-              <img src="./assets/images/icons/dress.svg" alt="dress & frock" width="30">
+              <img src="https://www.boat-lifestyle.com/cdn/shop/files/shreyas-chronos-new.png?v=1696843687" alt="dress & frock" style="width: 120px; height: 150px;">
             </div>
 
             <div class="category-content-box">
 
               <div class="category-content-flex">
-                <h3 class="category-item-title">Dress & frock</h3>
+                <h3 class="category-item-title">For Fitness</h3>
 
                 <p class="category-item-amount">(53)</p>
               </div>
 
-              <a href="#" class="category-btn">Show all</a>
+              <a href="audio/audio.html" class="category-btn">Show all</a>
 
             </div>
 
@@ -881,18 +740,18 @@
           <div class="category-item">
 
             <div class="category-img-box">
-              <img src="./assets/images/icons/coat.svg" alt="winter wear" width="30">
+              <img src="https://www.boat-lifestyle.com/cdn/shop/files/Party_Animal_4.png?v=1685942349" alt="winter wear" style="width: 120px; height: 150px;">
             </div>
 
             <div class="category-content-box">
 
               <div class="category-content-flex">
-                <h3 class="category-item-title">Winter wear</h3>
+                <h3 class="category-item-title">for Parties</h3>
 
                 <p class="category-item-amount">(58)</p>
               </div>
 
-              <a href="#" class="category-btn">Show all</a>
+              <a href="audio/audio.html" class="category-btn">Show all</a>
 
             </div>
 
@@ -901,18 +760,18 @@
           <div class="category-item">
 
             <div class="category-img-box">
-              <img src="./assets/images/icons/glasses.svg" alt="glasses & lens" width="30">
+              <img src="https://www.boat-lifestyle.com/cdn/shop/files/Workaholic_2.png?v=1685083745" alt="glasses & lens" width="120" height="150px">
             </div>
 
             <div class="category-content-box">
 
               <div class="category-content-flex">
-                <h3 class="category-item-title">Glasses & lens</h3>
+                <h3 class="category-item-title">Smart Devices</h3>
 
                 <p class="category-item-amount">(68)</p>
               </div>
 
-              <a href="#" class="category-btn">Show all</a>
+              <a href="categories/iphone.html" class="category-btn">Show all</a>
 
             </div>
 
@@ -921,33 +780,33 @@
           <div class="category-item">
 
             <div class="category-img-box">
-              <img src="./assets/images/icons/shorts.svg" alt="shorts & jeans" width="30">
+              <img src="https://www.boat-lifestyle.com/cdn/shop/files/Entertainment_2.png?v=1685083746" alt="shorts & jeans" width="120" height="150px">
             </div>
 
             <div class="category-content-box">
 
               <div class="category-content-flex">
-                <h3 class="category-item-title">Shorts & jeans</h3>
+                <h3 class="category-item-title">For Work</h3>
 
                 <p class="category-item-amount">(84)</p>
               </div>
 
-              <a href="#" class="category-btn">Show all</a>
+              <a href="categories/laptop.html" class="category-btn">Show all</a>
 
             </div>
 
           </div>
 
-          <div class="category-item">
+          <!-- <div class="category-item">
 
             <div class="category-img-box">
-              <img src="./assets/images/icons/tee.svg" alt="t-shirts" width="30">
+              <img src="c1.png" alt="t-shirts" width="30">
             </div>
 
             <div class="category-content-box">
 
               <div class="category-content-flex">
-                <h3 class="category-item-title">T-shirts</h3>
+                <h3 class="category-item-title">Televisions & Smart LED's</h3>
 
                 <p class="category-item-amount">(35)</p>
               </div>
@@ -956,9 +815,9 @@
 
             </div>
 
-          </div>
+          </div> -->
 
-          <div class="category-item">
+          <!-- <div class="category-item">
 
             <div class="category-img-box">
               <img src="./assets/images/icons/jacket.svg" alt="jacket" width="30">
@@ -976,9 +835,9 @@
 
             </div>
 
-          </div>
+          </div> -->
 
-          <div class="category-item">
+          <!-- <div class="category-item">
 
             <div class="category-img-box">
               <img src="./assets/images/icons/watch.svg" alt="watch" width="30">
@@ -996,9 +855,9 @@
 
             </div>
 
-          </div>
+          </div> -->
 
-          <div class="category-item">
+          <!-- <div class="category-item">
 
             <div class="category-img-box">
               <img src="./assets/images/icons/hat.svg" alt="hat & caps" width="30">
@@ -1014,7 +873,7 @@
 
               <a href="#" class="category-btn">Show all</a>
 
-            </div>
+            </div> -->
 
           </div>
 
@@ -1060,10 +919,10 @@
                 <button class="sidebar-accordion-menu" data-accordion-btn>
 
                   <div class="menu-title-flex">
-                    <img src="./assets/images/icons/dress.svg" alt="clothes" width="20" height="20"
+                    <img src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1682587098/Croma%20Assets/Entertainment/Headphones%20and%20Earphones/Images/271046_0_iuoobe.png?tr=w-400" alt="clothes" width="50" height="50"
                       class="menu-title-img">
 
-                    <p class="menu-title">Clothes</p>
+                    <p class="menu-title">Audio & Video</p>
                   </div>
 
                   <div>
@@ -1077,29 +936,29 @@
 
                   <li class="sidebar-submenu-category">
                     <a href="#" class="sidebar-submenu-title">
-                      <p class="product-name">Shirt</p>
-                      <data value="300" class="stock" title="Available Stock">300</data>
+                      <p class="product-name">HeadPhones</p>
+                      <data value="300" class="stock" title="Available Stock"></data>
                     </a>
                   </li>
 
                   <li class="sidebar-submenu-category">
                     <a href="#" class="sidebar-submenu-title">
-                      <p class="product-name">shorts & jeans</p>
-                      <data value="60" class="stock" title="Available Stock">60</data>
+                      <p class="product-name">Speaker</p>
+                      <data value="60" class="stock" title="Available Stock"></data>
                     </a>
                   </li>
 
                   <li class="sidebar-submenu-category">
                     <a href="#" class="sidebar-submenu-title">
-                      <p class="product-name">jacket</p>
-                      <data value="50" class="stock" title="Available Stock">50</data>
+                      <p class="product-name">AirDopes</p>
+                      <data value="50" class="stock" title="Available Stock"></data>
                     </a>
                   </li>
 
                   <li class="sidebar-submenu-category">
                     <a href="#" class="sidebar-submenu-title">
-                      <p class="product-name">dress & frock</p>
-                      <data value="87" class="stock" title="Available Stock">87</data>
+                      <p class="product-name">Home Theatres</p>
+                      <data value="87" class="stock" title="Available Stock"></data>
                     </a>
                   </li>
 
@@ -1112,10 +971,10 @@
                 <button class="sidebar-accordion-menu" data-accordion-btn>
 
                   <div class="menu-title-flex">
-                    <img src="./assets/images/icons/shoes.svg" alt="footwear" class="menu-title-img" width="20"
-                      height="20">
+                    <img src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1697022104/Croma%20Assets/Small%20Appliances/Fans/Images/232310_0_mh0bkm.png?tr=w-400" class="menu-title-img" width="50"
+                      height="50">
 
-                    <p class="menu-title">Footwear</p>
+                    <p class="menu-title">Home Appliances</p>
                   </div>
 
                   <div>
@@ -1129,29 +988,29 @@
 
                   <li class="sidebar-submenu-category">
                     <a href="#" class="sidebar-submenu-title">
-                      <p class="product-name">Sports</p>
-                      <data value="45" class="stock" title="Available Stock">45</data>
+                      <p class="product-name">TV's</p>
+                      <data value="45" class="stock" title="Available Stock"></data>
                     </a>
                   </li>
 
                   <li class="sidebar-submenu-category">
                     <a href="#" class="sidebar-submenu-title">
-                      <p class="product-name">Formal</p>
-                      <data value="75" class="stock" title="Available Stock">75</data>
+                      <p class="product-name">LED's</p>
+                      <data value="75" class="stock" title="Available Stock"></data>
                     </a>
                   </li>
 
                   <li class="sidebar-submenu-category">
                     <a href="#" class="sidebar-submenu-title">
-                      <p class="product-name">Casual</p>
-                      <data value="35" class="stock" title="Available Stock">35</data>
+                      <p class="product-name">AC coolers</p>
+                      <data value="35" class="stock" title="Available Stock"></data>
                     </a>
                   </li>
 
                   <li class="sidebar-submenu-category">
                     <a href="#" class="sidebar-submenu-title">
-                      <p class="product-name">Safety Shoes</p>
-                      <data value="26" class="stock" title="Available Stock">26</data>
+                      <p class="product-name">vaccum Cleaners</p>
+                      <data value="26" class="stock" title="Available Stock"></data>
                     </a>
                   </li>
 
@@ -1164,10 +1023,10 @@
                 <button class="sidebar-accordion-menu" data-accordion-btn>
 
                   <div class="menu-title-flex">
-                    <img src="./assets/images/icons/jewelry.svg" alt="clothes" class="menu-title-img" width="20"
-                      height="20">
+                    <img src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1697017854/Croma%20Assets/Communication/Mobiles/Images/270656_0_p6disg.png?tr=w-400" alt="clothes" class="menu-title-img" width="50"
+                      height="50">
 
-                    <p class="menu-title">Jewelry</p>
+                    <p class="menu-title">Phones & Laptops</p>
                   </div>
 
                   <div>
@@ -1181,22 +1040,22 @@
 
                   <li class="sidebar-submenu-category">
                     <a href="#" class="sidebar-submenu-title">
-                      <p class="product-name">Earrings</p>
-                      <data value="46" class="stock" title="Available Stock">46</data>
+                      <p class="product-name">Redmi</p>
+                      <data value="46" class="stock" title="Available Stock"></data>
                     </a>
                   </li>
 
                   <li class="sidebar-submenu-category">
                     <a href="#" class="sidebar-submenu-title">
-                      <p class="product-name">Couple Rings</p>
-                      <data value="73" class="stock" title="Available Stock">73</data>
+                      <p class="product-name">One Plus</p>
+                      <data value="73" class="stock" title="Available Stock"></data>
                     </a>
                   </li>
 
                   <li class="sidebar-submenu-category">
                     <a href="#" class="sidebar-submenu-title">
-                      <p class="product-name">Necklace</p>
-                      <data value="61" class="stock" title="Available Stock">61</data>
+                      <p class="product-name">Redmi</p>
+                      <data value="61" class="stock" title="Available Stock"></data>
                     </a>
                   </li>
 
@@ -1209,10 +1068,10 @@
                 <button class="sidebar-accordion-menu" data-accordion-btn>
 
                   <div class="menu-title-flex">
-                    <img src="./assets/images/icons/perfume.svg" alt="perfume" class="menu-title-img" width="20"
-                      height="20">
+                    <img src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1605262768/Croma%20Assets/Entertainment/Speakers%20and%20Media%20Players/Images/8994605662238.png?tr=w-400" width="50"
+                      height="50">
 
-                    <p class="menu-title">Perfume</p>
+                    <p class="menu-title">Smart Devices</p>
                   </div>
 
                   <div>
@@ -1226,31 +1085,19 @@
 
                   <li class="sidebar-submenu-category">
                     <a href="#" class="sidebar-submenu-title">
-                      <p class="product-name">Clothes Perfume</p>
-                      <data value="12" class="stock" title="Available Stock">12 pcs</data>
+                      <p class="product-name">Smart LED</p>
+                      <data value="12" class="stock" title="Available Stock"> pcs</data>
                     </a>
                   </li>
 
                   <li class="sidebar-submenu-category">
                     <a href="#" class="sidebar-submenu-title">
-                      <p class="product-name">Deodorant</p>
-                      <data value="60" class="stock" title="Available Stock">60 pcs</data>
+                      <p class="product-name">Alexa </p>
+                      <data value="60" class="stock" title="Available Stock"> pcs</data>
                     </a>
                   </li>
 
-                  <li class="sidebar-submenu-category">
-                    <a href="#" class="sidebar-submenu-title">
-                      <p class="product-name">jacket</p>
-                      <data value="50" class="stock" title="Available Stock">50 pcs</data>
-                    </a>
-                  </li>
-
-                  <li class="sidebar-submenu-category">
-                    <a href="#" class="sidebar-submenu-title">
-                      <p class="product-name">dress & frock</p>
-                      <data value="87" class="stock" title="Available Stock">87 pcs</data>
-                    </a>
-                  </li>
+                  
 
                 </ul>
 
@@ -1261,10 +1108,10 @@
                 <button class="sidebar-accordion-menu" data-accordion-btn>
 
                   <div class="menu-title-flex">
-                    <img src="./assets/images/icons/cosmetics.svg" alt="cosmetics" class="menu-title-img" width="20"
-                      height="20">
+                    <img src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1612422006/Croma%20Assets/Small%20Appliances/Health%20Care/Images/182415_luqqhy.png?tr=w-400" class="menu-title-img" width="50"
+                      height="50">
 
-                    <p class="menu-title">Cosmetics</p>
+                    <p class="menu-title">Health  & Fitness</p>
                   </div>
 
                   <div>
@@ -1278,29 +1125,29 @@
 
                   <li class="sidebar-submenu-category">
                     <a href="#" class="sidebar-submenu-title">
-                      <p class="product-name">Shampoo</p>
-                      <data value="68" class="stock" title="Available Stock">68</data>
+                      <p class="product-name">Face Massager</p>
+                      <data value="68" class="stock" title="Available Stock"></data>
                     </a>
                   </li>
 
                   <li class="sidebar-submenu-category">
                     <a href="#" class="sidebar-submenu-title">
-                      <p class="product-name">Sunscreen</p>
-                      <data value="46" class="stock" title="Available Stock">46</data>
+                      <p class="product-name">Cosy Heat Pad</p>
+                      <data value="46" class="stock" title="Available Stock"></data>
                     </a>
                   </li>
 
                   <li class="sidebar-submenu-category">
                     <a href="#" class="sidebar-submenu-title">
-                      <p class="product-name">Body Wash</p>
-                      <data value="79" class="stock" title="Available Stock">79</data>
+                      <p class="product-name">Pollution Mask</p>
+                      <data value="79" class="stock" title="Available Stock"></data>
                     </a>
                   </li>
 
                   <li class="sidebar-submenu-category">
                     <a href="#" class="sidebar-submenu-title">
-                      <p class="product-name">Makeup Kit</p>
-                      <data value="23" class="stock" title="Available Stock">23</data>
+                      <p class="product-name">Fitness tracker</p>
+                      <data value="23" class="stock" title="Available Stock"></data>
                     </a>
                   </li>
 
@@ -1308,7 +1155,7 @@
 
               </li>
 
-              <li class="sidebar-menu-category">
+              <!-- <li class="sidebar-menu-category">
 
                 <button class="sidebar-accordion-menu" data-accordion-btn>
 
@@ -1331,14 +1178,14 @@
                   <li class="sidebar-submenu-category">
                     <a href="#" class="sidebar-submenu-title">
                       <p class="product-name">Sunglasses</p>
-                      <data value="50" class="stock" title="Available Stock">50</data>
+                      <data value="50" class="stock" title="Available Stock"></data>
                     </a>
                   </li>
 
                   <li class="sidebar-submenu-category">
                     <a href="#" class="sidebar-submenu-title">
                       <p class="product-name">Lenses</p>
-                      <data value="48" class="stock" title="Available Stock">48</data>
+                      <data value="48" class="stock" title="Available Stock"></data>
                     </a>
                   </li>
 
@@ -1368,30 +1215,30 @@
                   <li class="sidebar-submenu-category">
                     <a href="#" class="sidebar-submenu-title">
                       <p class="product-name">Shopping Bag</p>
-                      <data value="62" class="stock" title="Available Stock">62</data>
+                      <data value="62" class="stock" title="Available Stock"></data>
                     </a>
                   </li>
 
                   <li class="sidebar-submenu-category">
                     <a href="#" class="sidebar-submenu-title">
                       <p class="product-name">Gym Backpack</p>
-                      <data value="35" class="stock" title="Available Stock">35</data>
+                      <data value="35" class="stock" title="Available Stock"></data>
                     </a>
                   </li>
 
                   <li class="sidebar-submenu-category">
                     <a href="#" class="sidebar-submenu-title">
                       <p class="product-name">Purse</p>
-                      <data value="80" class="stock" title="Available Stock">80</data>
+                      <data value="80" class="stock" title="Available Stock"></data>
                     </a>
                   </li>
 
                   <li class="sidebar-submenu-category">
                     <a href="#" class="sidebar-submenu-title">
                       <p class="product-name">Wallet</p>
-                      <data value="75" class="stock" title="Available Stock">75</data>
+                      <data value="75" class="stock" title="Available Stock"></data>
                     </a>
-                  </li>
+                  </li> -->
 
                 </ul>
 
@@ -1403,7 +1250,7 @@
 
           <div class="product-showcase">
 
-            <h3 class="showcase-heading">best sellers</h3>
+            <h3 class="showcase-heading">Best Sellers</h3>
 
             <div class="showcase-wrapper">
 
@@ -1412,14 +1259,14 @@
                 <div class="showcase">
 
                   <a href="#" class="showcase-img-box">
-                    <img src="./assets/images/products/1.jpg" alt="baby fabric shoes" width="75" height="75"
+                    <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/WaveGenesis_bee29ab9-e06d-45fb-bd3f-dc3bce2ef37f_600x.png?v=1697442251" width="75" height="75"
                       class="showcase-img">
                   </a>
 
                   <div class="showcase-content">
 
                     <a href="#">
-                      <h4 class="showcase-title">baby fabric shoes</h4>
+                      <h4 class="showcase-title">Wave Genesis</h4>
                     </a>
 
                     <div class="showcase-rating">
@@ -1431,8 +1278,8 @@
                     </div>
 
                     <div class="price-box">
-                      <del>$5.00</del>
-                      <p class="price">$4.00</p>
+                      <del style="color: white;">$45.00</del>
+                      <p style="color: cyan;" class="price">$40.00</p>
                     </div>
 
                   </div>
@@ -1442,14 +1289,14 @@
                 <div class="showcase">
 
                   <a href="#" class="showcase-img-box">
-                    <img src="./assets/images/products/2.jpg" alt="men's hoodies t-shirt" class="showcase-img"
+                    <img src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1680399706/Croma%20Assets/Communication/Mobiles/Images/260534_zoes0z.png?tr=w-400" alt="men's hoodies t-shirt" class="showcase-img"
                       width="75" height="75">
                   </a>
 
                   <div class="showcase-content">
 
                     <a href="#">
-                      <h4 class="showcase-title">men's hoodies t-shirt</h4>
+                      <h4 class="showcase-title">SAMSUNG Galaxy Z Fold</h4>
                     </a>
                     <div class="showcase-rating">
                       <ion-icon name="star"></ion-icon>
@@ -1460,8 +1307,8 @@
                     </div>
 
                     <div class="price-box">
-                      <del>$17.00</del>
-                      <p class="price">$7.00</p>
+                      <del style="color: white;">$1700.00</del>
+                      <p style="color: cyan;" class="price">$1600.00</p>
                     </div>
 
                   </div>
@@ -1471,14 +1318,14 @@
                 <div class="showcase">
 
                   <a href="#" class="showcase-img-box">
-                    <img src="./assets/images/products/3.jpg" alt="girls t-shirt" class="showcase-img" width="75"
+                    <img src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1686892342/Croma%20Assets/Imaging/Camera%20and%20Camcorders/Images/269349_0_jmhpj7.png?tr=w-400" alt="girls t-shirt" class="showcase-img" width="75"
                       height="75">
                   </a>
 
                   <div class="showcase-content">
 
                     <a href="#">
-                      <h4 class="showcase-title">girls t-shirt</h4>
+                      <h4 class="showcase-title">Instant Camera</h4>
                     </a>
                     <div class="showcase-rating">
                       <ion-icon name="star"></ion-icon>
@@ -1489,8 +1336,8 @@
                     </div>
 
                     <div class="price-box">
-                      <del>$5.00</del>
-                      <p class="price">$3.00</p>
+                      <del style="color: white;">$50.00</del>
+                      <p style="color: cyan;" class="price">$39.00</p>
                     </div>
 
                   </div>
@@ -1500,14 +1347,14 @@
                 <div class="showcase">
 
                   <a href="#" class="showcase-img-box">
-                    <img src="./assets/images/products/4.jpg" alt="woolen hat for men" class="showcase-img" width="75"
+                    <img src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1690208353/Croma%20Assets/Computers%20Peripherals/Tablets%20and%20iPads/Images/274102_0_mh0qhu.png?tr=w-400" alt="woolen hat for men" class="showcase-img" width="75"
                       height="75">
                   </a>
 
                   <div class="showcase-content">
 
                     <a href="#">
-                      <h4 class="showcase-title">woolen hat for men</h4>
+                      <h4 class="showcase-title">Xiaomi Pad 6</h4>
                     </a>
                     <div class="showcase-rating">
                       <ion-icon name="star"></ion-icon>
@@ -1518,8 +1365,8 @@
                     </div>
 
                     <div class="price-box">
-                      <del>$15.00</del>
-                      <p class="price">$12.00</p>
+                      <del style="color: white;">$1500.00</del>
+                      <p style="color: cyan;" class="price">$1200.00</p>
                     </div>
 
                   </div>
@@ -1546,29 +1393,29 @@
 
             <div class="product-showcase">
 
-              <h2 class="title">New Arrivals</h2>
+              <h2 class="title" >New Arrivals</h2>
 
-              <div class="showcase-wrapper has-scrollbar">
+              <div class="showcase-wrapper ">
 
                 <div class="showcase-container">
 
                   <div class="showcase">
 
                     <a href="#" class="showcase-img-box">
-                      <img src="./assets/images/products/clothes-1.jpg" alt="relaxed short full sleeve t-shirt" width="70" class="showcase-img">
+                      <img src="https://rukminim2.flixcart.com/image/612/612/kyoqmq80/screen-guard/screen-guard/0/z/l/smart-watch-screen-guard-50-xaze-original-imagav5cnxffgdka.jpeg?q=70" alt="relaxed short full sleeve t-shirt" width="70" class="showcase-img">
                     </a>
 
                     <div class="showcase-content">
 
                       <a href="#">
-                        <h4 class="showcase-title">Relaxed Short full Sleeve T-Shirt</h4>
+                        <h4 class="showcase-title">Wave Connect</h4>
                       </a>
 
-                      <a href="#" class="showcase-category">Clothes</a>
+                      <a href="#" class="showcase-category">Smart Watch</a>
 
                       <div class="price-box">
-                        <p class="price">$45.00</p>
-                        <del>$12.00</del>
+                        <p style="color: cyan;" class="price">$45.00</p>
+                        <del style="color: white;" >$52.00</del>
                       </div>
 
                     </div>
@@ -1578,20 +1425,20 @@
                   <div class="showcase">
                   
                     <a href="#" class="showcase-img-box">
-                      <img src="./assets/images/products/clothes-2.jpg" alt="girls pink embro design top" class="showcase-img" width="70">
+                      <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/GW/CC/R01_Headphones_Desktop_Cat_Card_2x._SY608_CB575831742_.jpg" alt="girls pink embro design top" class="showcase-img" width="70">
                     </a>
                   
                     <div class="showcase-content">
                   
                       <a href="#">
-                        <h4 class="showcase-title">Girls pnk Embro design Top</h4>
+                        <h4 class="showcase-title">Airdopes 163</h4>
                       </a>
                   
-                      <a href="#" class="showcase-category">Clothes</a>
+                      <a href="#" class="showcase-category">Airdopes</a>
                   
                       <div class="price-box">
-                        <p class="price">$61.00</p>
-                        <del>$9.00</del>
+                        <p style="color: cyan;" class="price">$61.00</p>
+                        <del style="color: white;">$79.00</del>
                       </div>
                   
                     </div>
@@ -1601,21 +1448,21 @@
                   <div class="showcase">
                   
                     <a href="#" class="showcase-img-box">
-                      <img src="./assets/images/products/clothes-3.jpg" alt="black floral wrap midi skirt" class="showcase-img"
+                      <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/Wireless/nbshagun/Jupiter/CLP/Tiles/18oct/D98993888_Jupiter1_Desktop_CC_379X304._SY608_CB576571331_.jpg" alt="black floral wrap midi skirt" class="showcase-img"
                         width="70">
                     </a>
                   
                     <div class="showcase-content">
                   
                       <a href="#">
-                        <h4 class="showcase-title">Black Floral Wrap Midi Skirt</h4>
+                        <h4 class="showcase-title">Never Settle</h4>
                       </a>
                   
-                      <a href="#" class="showcase-category">Clothes</a>
+                      <a href="#" class="showcase-category">Smart Phone</a>
                   
                       <div class="price-box">
-                        <p class="price">$76.00</p>
-                        <del>$25.00</del>
+                        <p style="color: cyan;" class="price">$125.00</p>
+                        <del style="color: white;">$140.00</del>
                       </div>
                   
                     </div>
@@ -1625,21 +1472,21 @@
                   <div class="showcase">
                   
                     <a href="#" class="showcase-img-box">
-                      <img src="./assets/images/products/shirt-1.jpg" alt="pure garment dyed cotton shirt" class="showcase-img"
+                      <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/Scroll/Camera/Topdeal/n/Desktop_CC_2X._SY608_CB575822413_.jpg" alt="pure garment dyed cotton shirt" class="showcase-img"
                         width="70">
                     </a>
                   
                     <div class="showcase-content">
                   
                       <a href="#">
-                        <h4 class="showcase-title">Pure Garment Dyed Cotton Shirt</h4>
+                        <h4 class="showcase-title">ipad & Mac</h4>
                       </a>
                   
-                      <a href="#" class="showcase-category">Mens Fashion</a>
+                      <a href="#" class="showcase-category">Laptops</a>
                   
                       <div class="price-box">
-                        <p class="price">$68.00</p>
-                        <del>$31.00</del>
+                        <p style="color: cyan;" class="price">$168.00</p>
+                        <del style="color: white;">$171.00</del>
                       </div>
                   
                     </div>
@@ -1653,21 +1500,45 @@
                   <div class="showcase">
                 
                     <a href="#" class="showcase-img-box">
-                      <img src="./assets/images/products/jacket-5.jpg" alt="men yarn fleece full-zip jacket" class="showcase-img"
+                      <img src="https://www.boat-lifestyle.com/cdn/shop/files/Wireless-Speaker_small.png?v=1684842854" alt="men yarn fleece full-zip jacket" class="showcase-img"
                         width="70">
                     </a>
                 
                     <div class="showcase-content">
                 
                       <a href="#">
-                        <h4 class="showcase-title">MEN Yarn Fleece Full-Zip Jacket</h4>
+                        <h4 class="showcase-title">Wireless Speakers</h4>
+                      </a>
+                
+                      <a href="#" class="showcase-category">Speaker</a>
+                
+                      <div class="price-box">
+                        <p style="color: cyan;" class="price">$61.00</p>
+                        <del style="color: white;">$11.00</del>
+                      </div>
+                
+                    </div>
+                
+                  </div>
+                
+                  <div class="showcase">
+                
+                    <a href="#" class="showcase-img-box">
+                      <img src="https://www.boat-lifestyle.com/cdn/shop/files/Gaming-Headphones_small.png?v=1684842853" alt="mens winter leathers jackets" class="showcase-img"
+                        width="70">
+                    </a>
+                
+                    <div class="showcase-content">
+                
+                      <a href="#">
+                        <h4 class="showcase-title">Gaming HeadPhones</h4>
                       </a>
                 
                       <a href="#" class="showcase-category">Winter wear</a>
                 
                       <div class="price-box">
-                        <p class="price">$61.00</p>
-                        <del>$11.00</del>
+                        <p style="color: cyan;" class="price">$32.00</p>
+                        <del style="color: white;">$20.00</del>
                       </div>
                 
                     </div>
@@ -1677,21 +1548,21 @@
                   <div class="showcase">
                 
                     <a href="#" class="showcase-img-box">
-                      <img src="./assets/images/products/jacket-1.jpg" alt="mens winter leathers jackets" class="showcase-img"
+                      <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Groom_700.jpg?v=1697792146" alt="mens winter leathers jackets" class="showcase-img"
                         width="70">
                     </a>
                 
                     <div class="showcase-content">
                 
                       <a href="#">
-                        <h4 class="showcase-title">Mens Winter Leathers Jackets</h4>
+                        <h4 class="showcase-title">Misfit Groomfit</h4>
                       </a>
                 
-                      <a href="#" class="showcase-category">Winter wear</a>
+                      <a href="#" class="showcase-category">Groom Kit</a>
                 
                       <div class="price-box">
-                        <p class="price">$32.00</p>
-                        <del>$20.00</del>
+                        <p style="color: cyan;" class="price">$50.00</p>
+                        <del style="color: white;">$25.00</del>
                       </div>
                 
                     </div>
@@ -1701,45 +1572,21 @@
                   <div class="showcase">
                 
                     <a href="#" class="showcase-img-box">
-                      <img src="./assets/images/products/jacket-3.jpg" alt="mens winter leathers jackets" class="showcase-img"
+                      <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/IM_100.jpg?v=1696836117" alt="better basics french terry sweatshorts" class="showcase-img"
                         width="70">
                     </a>
                 
                     <div class="showcase-content">
                 
                       <a href="#">
-                        <h4 class="showcase-title">Mens Winter Leathers Jackets</h4>
+                        <h4 class="showcase-title">Immortal 100</h4>
                       </a>
                 
-                      <a href="#" class="showcase-category">Jackets</a>
+                      <a href="#" class="showcase-category">Airdopes</a>
                 
                       <div class="price-box">
-                        <p class="price">$50.00</p>
-                        <del>$25.00</del>
-                      </div>
-                
-                    </div>
-                
-                  </div>
-                
-                  <div class="showcase">
-                
-                    <a href="#" class="showcase-img-box">
-                      <img src="./assets/images/products/shorts-1.jpg" alt="better basics french terry sweatshorts" class="showcase-img"
-                        width="70">
-                    </a>
-                
-                    <div class="showcase-content">
-                
-                      <a href="#">
-                        <h4 class="showcase-title">Better Basics French Terry Sweatshorts</h4>
-                      </a>
-                
-                      <a href="#" class="showcase-category">Shorts</a>
-                
-                      <div class="price-box">
-                        <p class="price">$20.00</p>
-                        <del>$10.00</del>
+                        <p style="color: cyan;" class="price">$20.00</p>
+                        <del style="color: white;">$10.00</del>
                       </div>
                 
                     </div>
@@ -1756,28 +1603,28 @@
             
               <h2 class="title">Trending</h2>
             
-              <div class="showcase-wrapper  has-scrollbar">
+              <div class="showcase-wrapper ">
             
                 <div class="showcase-container">
             
                   <div class="showcase">
             
                     <a href="#" class="showcase-img-box">
-                      <img src="./assets/images/products/sports-1.jpg" alt="running & trekking shoes - white" class="showcase-img"
+                      <img src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1676968095/Croma%20Assets/CMS/LP%20Page%20Banners/2023/01_HP_BUGS_LP_BUGS/FEB/21-02-2023/Category%20Navigation%20-%20Audio%20Split/CategoryNavigation_AudioSplit_TV_21Feb2023_repyuk.png?tr=w-1024" alt="running & trekking shoes - white" class="showcase-img"
                         width="70">
                     </a>
             
                     <div class="showcase-content">
             
                       <a href="#">
-                        <h4 class="showcase-title">Running & Trekking Shoes - White</h4>
+                        <h4 class="showcase-title">Smart Tv's</h4>
                       </a>
             
-                      <a href="#" class="showcase-category">Sports</a>
+                      <a href="#" class="showcase-category">TV</a>
             
                       <div class="price-box">
-                        <p class="price">$49.00</p>
-                        <del>$15.00</del>
+                        <p style="color: cyan;" class="price">$149.00</p>
+                        <del style="color: white;">$154.00</del>
                       </div>
             
                     </div>
@@ -1787,21 +1634,21 @@
                   <div class="showcase">
             
                     <a href="#" class="showcase-img-box">
-                      <img src="./assets/images/products/sports-2.jpg" alt="trekking & running shoes - black" class="showcase-img"
+                      <img src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1676968094/Croma%20Assets/CMS/LP%20Page%20Banners/2023/01_HP_BUGS_LP_BUGS/FEB/21-02-2023/Category%20Navigation%20-%20Audio%20Split/CategoryNavigation_AudioSplit_H_E_21Feb2023_cw375r.png?tr=w-1024" alt="trekking & running shoes - black" class="showcase-img"
                         width="70">
                     </a>
             
                     <div class="showcase-content">
             
                       <a href="#">
-                        <h4 class="showcase-title">Trekking & Running Shoes - black</h4>
+                        <h4 class="showcase-title">Wave Rockers 2000</h4>
                       </a>
             
-                      <a href="#" class="showcase-category">Sports</a>
+                      <a href="#" class="showcase-category">Headphones & earphones</a>
             
                       <div class="price-box">
-                        <p class="price">$78.00</p>
-                        <del>$36.00</del>
+                        <p style="color: cyan;" class="price">$78.00</p>
+                        <del style="color: white;">$36.00</del>
                       </div>
             
                     </div>
@@ -1811,21 +1658,21 @@
                   <div class="showcase">
             
                     <a href="#" class="showcase-img-box">
-                      <img src="./assets/images/products/party-wear-1.jpg" alt="womens party wear shoes" class="showcase-img"
+                      <img src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1676968094/Croma%20Assets/CMS/LP%20Page%20Banners/2023/01_HP_BUGS_LP_BUGS/FEB/21-02-2023/Category%20Navigation%20-%20Audio%20Split/CategoryNavigation_AudioSplit_Ref_21Feb2023_ztynzt.png?tr=w-1024" alt="womens party wear shoes" class="showcase-img"
                         width="70">
                     </a>
             
                     <div class="showcase-content">
             
                       <a href="#">
-                        <h4 class="showcase-title">Womens Party Wear Shoes</h4>
+                        <h4 class="showcase-title">Cool Refrigerator</h4>
                       </a>
             
-                      <a href="#" class="showcase-category">Party wear</a>
+                      <a href="#" class="showcase-category">Refrigerators</a>
             
                       <div class="price-box">
-                        <p class="price">$94.00</p>
-                        <del>$42.00</del>
+                        <p style="color: cyan;" class="price">$94.00</p>
+                        <del style="color: white;">$42.00</del>
                       </div>
             
                     </div>
@@ -1835,21 +1682,21 @@
                   <div class="showcase">
             
                     <a href="#" class="showcase-img-box">
-                      <img src="./assets/images/products/sports-3.jpg" alt="sports claw women's shoes" class="showcase-img"
+                      <img src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1676968094/Croma%20Assets/CMS/LP%20Page%20Banners/2023/01_HP_BUGS_LP_BUGS/FEB/21-02-2023/Category%20Navigation%20-%20Audio%20Split/CategoryNavigation_AudioSplit_HT_SB_21Feb2023_rk8ohd.png?tr=w-1024" alt="sports claw women's shoes" class="showcase-img"
                         width="70">
                     </a>
             
                     <div class="showcase-content">
             
                       <a href="#">
-                        <h4 class="showcase-title">Sports Claw Women's Shoes</h4>
+                        <h4 class="showcase-title">Soundbars</h4>
                       </a>
             
-                      <a href="#" class="showcase-category">Sports</a>
+                      <a href="#" class="showcase-category">Home Theatres</a>
             
                       <div class="price-box">
-                        <p class="price">$54.00</p>
-                        <del>$65.00</del>
+                        <p style="color: cyan;" class="price">$54.00</p>
+                        <del style="color: white;">$65.00</del>
                       </div>
             
                     </div>
@@ -1876,8 +1723,8 @@
                       <a href="#" class="showcase-category">Sports</a>
             
                       <div class="price-box">
-                        <p class="price">$52.00</p>
-                        <del>$55.00</del>
+                        <p style="color: cyan;" class="price">$52.00</p>
+                        <del style="color: white;">$55.00</del>
                       </div>
             
                     </div>
@@ -1899,8 +1746,8 @@
                       <a href="#" class="showcase-category">boots</a>
             
                       <div class="price-box">
-                        <p class="price">$20.00</p>
-                        <del>$30.00</del>
+                        <p style="color: cyan;" class="price">$20.00</p>
+                        <del style="color: white;">$30.00</del>
                       </div>
             
                     </div>
@@ -1923,8 +1770,8 @@
                       <a href="#" class="showcase-category">formal</a>
             
                       <div class="price-box">
-                        <p class="price">$56.00</p>
-                        <del>$78.00</del>
+                        <p style="color: cyan;" class="price">$56.00</p>
+                        <del style="color: white;">$78.00</del>
                       </div>
             
                     </div>
@@ -1946,8 +1793,8 @@
                       <a href="#" class="showcase-category">Casual</a>
             
                       <div class="price-box">
-                        <p class="price">$50.00</p>
-                        <del>$55.00</del>
+                        <p style="color: cyan;" class="price">$50.00</p>
+                        <del style="color: white;">$55.00</del>
                       </div>
             
                     </div>
@@ -1964,28 +1811,28 @@
             
               <h2 class="title">Top Rated</h2>
             
-              <div class="showcase-wrapper  has-scrollbar">
+              <div class="showcase-wrapper ">
             
                 <div class="showcase-container">
             
                   <div class="showcase">
             
                     <a href="#" class="showcase-img-box">
-                      <img src="./assets/images/products/watch-3.jpg" alt="pocket watch leather pouch" class="showcase-img"
+                      <img src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1690270086/Croma%20Assets/CMS/Category%20icon/Updated%20Icons/LP_WishlistSale_CN_WP_4July2023_jtwzp9.png?tr=w-1024" alt="pocket watch leather pouch" class="showcase-img"
                         width="70">
                     </a>
             
                     <div class="showcase-content">
             
                       <a href="#">
-                        <h4 class="showcase-title">Pocket Watch Leather Pouch</h4>
+                        <h4 class="showcase-title">RO Purifier</h4>
                       </a>
             
-                      <a href="#" class="showcase-category">Watches</a>
+                      <a href="#" class="showcase-category">Purifiers</a>
             
                       <div class="price-box">
-                        <p class="price">$50.00</p>
-                        <del>$34.00</del>
+                        <p style="color: cyan;" class="price">$50.00</p>
+                        <del style="color: white;">$34.00</del>
                       </div>
             
                     </div>
@@ -1995,21 +1842,21 @@
                   <div class="showcase">
             
                     <a href="#" class="showcase-img-box">
-                      <img src="./assets/images/products/jewellery-3.jpg" alt="silver deer heart necklace" class="showcase-img"
+                      <img src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1683281227/Croma%20Assets/CMS/LP%20Page%20Banners/2023/HP%20Category%20Navigation/grooming_categoryicons_oj7mrc.png?tr=w-1024" alt="silver deer heart necklace" class="showcase-img"
                         width="70">
                     </a>
             
                     <div class="showcase-content">
             
                       <a href="#">
-                        <h4 class="showcase-title">Silver Deer Heart Necklace</h4>
+                        <h4 class="showcase-title">GroomFit</h4>
                       </a>
             
-                      <a href="#" class="showcase-category">Jewellery</a>
+                      <a href="#" class="showcase-category">Groom Kit</a>
             
                       <div class="price-box">
-                        <p class="price">$84.00</p>
-                        <del>$30.00</del>
+                        <p style="color: cyan;" class="price">$84.00</p>
+                        <del style="color: white;">$30.00</del>
                       </div>
             
                     </div>
@@ -2019,21 +1866,21 @@
                   <div class="showcase">
             
                     <a href="#" class="showcase-img-box">
-                      <img src="./assets/images/products/perfume.jpg" alt="titan 100 ml womens perfume" class="showcase-img"
+                      <img src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1683281227/Croma%20Assets/CMS/LP%20Page%20Banners/2023/HP%20Category%20Navigation/gaming_categoryicons_hfqpze.png?tr=w-1024" alt="titan 100 ml womens perfume" class="showcase-img"
                         width="70">
                     </a>
             
                     <div class="showcase-content">
             
                       <a href="#">
-                        <h4 class="showcase-title">Titan 100 Ml Womens Perfume</h4>
+                        <h4 class="showcase-title">Gaming </h4>
                       </a>
             
-                      <a href="#" class="showcase-category">Perfume</a>
+                      <a href="#" class="showcase-category"></a>
             
                       <div class="price-box">
-                        <p class="price">$42.00</p>
-                        <del>$10.00</del>
+                        <p style="color: cyan;" class="price">$42.00</p>
+                        <del style="color: white;">$10.00</del>
                       </div>
             
                     </div>
@@ -2043,21 +1890,21 @@
                   <div class="showcase">
             
                     <a href="#" class="showcase-img-box">
-                      <img src="./assets/images/products/belt.jpg" alt="men's leather reversible belt" class="showcase-img"
+                      <img src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1690521345/Croma%20Assets/CMS/Category%20icon/CategoryNavigation_AudioSplit_Cameras_21Feb2023_fxbmtt.png?tr=w-1024" alt="men's leather reversible belt" class="showcase-img"
                         width="70">
                     </a>
             
                     <div class="showcase-content">
             
                       <a href="#">
-                        <h4 class="showcase-title">Men's Leather Reversible Belt</h4>
+                        <h4 class="showcase-title">Camera</h4>
                       </a>
             
-                      <a href="#" class="showcase-category">Belt</a>
+                      <a href="#" class="showcase-category"></a>
             
                       <div class="price-box">
-                        <p class="price">$24.00</p>
-                        <del>$10.00</del>
+                        <p style="color: cyan;" class="price">$24.00</p>
+                        <del style="color: white;">$10.00</del>
                       </div>
             
                     </div>
@@ -2084,8 +1931,8 @@
                       <a href="#" class="showcase-category">jewellery</a>
             
                       <div class="price-box">
-                        <p class="price">$62.00</p>
-                        <del>$65.00</del>
+                        <p style="color: cyan;" class="price">$62.00</p>
+                        <del style="color: white;">$65.00</del>
                       </div>
             
                     </div>
@@ -2107,8 +1954,8 @@
                       <a href="#" class="showcase-category">Watches</a>
             
                       <div class="price-box">
-                        <p class="price">$56.00</p>
-                        <del>$78.00</del>
+                        <p style="color: cyan;" class="price">$56.00</p>
+                        <del style="color: white;">$78.00</del>
                       </div>
             
                     </div>
@@ -2131,8 +1978,8 @@
                       <a href="#" class="showcase-category">cosmetics</a>
             
                       <div class="price-box">
-                        <p class="price">$20.00</p>
-                        <del>$30.00</del>
+                        <p style="color: cyan;" class="price">$20.00</p>
+                        <del style="color: white;">$30.00</del>
                       </div>
             
                     </div>
@@ -2155,8 +2002,8 @@
                       <a href="#" class="showcase-category">jewellery</a>
             
                       <div class="price-box">
-                        <p class="price">$20.00</p>
-                        <del>$30.00</del>
+                        <p style="color: cyan;" class="price">$20.00</p>
+                        <del style="color: white;">$30.00</del>
                       </div>
             
                     </div>
@@ -2181,14 +2028,14 @@
 
             <h2 class="title">Deal of the day</h2>
 
-            <div class="showcase-wrapper has-scrollbar">
+            <div class="showcase-wrapper">
 
               <div class="showcase-container">
 
                 <div class="showcase">
                   
                   <div class="showcase-banner">
-                    <img src="./assets/images/products/shampoo.jpg" alt="shampoo, conditioner & facewash packs" class="showcase-img">
+                    <img src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1685967802/Croma%20Assets/Computers%20Peripherals/Tablets%20and%20iPads/Images/264260_lsakad.png?tr=w-640" alt="shampoo, conditioner & facewash packs" class="showcase-img">
                   </div>
 
                   <div class="showcase-content">
@@ -2202,21 +2049,23 @@
                     </div>
 
                     <a href="#">
-                      <h3 class="showcase-title">shampoo, conditioner & facewash packs</h3>
+                      <h3 class="showcase-title">Apple iPad 10th Generation Wi-Fi (10.9 Inch, 64GB, Silver, 2022 model)</h3>
                     </a>
 
                     <p class="showcase-desc">
-                      Lorem ipsum dolor sit amet consectetur Lorem ipsum
-                      dolor dolor sit amet consectetur Lorem ipsum dolor
+                      10.9 inches (27.69 cm) Liquid Retina True Tone Display
+                      64GB ROM
+                      Apple A14 Bionic Chip, Hexa Core
+                      
                     </p>
 
                     <div class="price-box">
-                      <p class="price">$150.00</p>
+                      <p style="color: cyan;" class="price">$150.00</p>
 
-                      <del>$200.00</del>
+                      <del style="color: white;">$200.00</del>
                     </div>
 
-                    <button class="add-cart-btn">add to cart</button>
+                    <button style="color: black;" class="add-cart-btn">add to cart</button>
 
                     <div class="showcase-status">
                       <div class="wrapper">
@@ -2301,8 +2150,8 @@
                     </p>
               
                     <div class="price-box">
-                      <p class="price">$1990.00</p>
-                      <del>$2000.00</del>
+                      <p style="color: cyan;" class="price">$1990.00</p>
+                      <del style="color: white;">$2000.00</del>
                     </div>
               
                     <button class="add-cart-btn">add to cart</button>
@@ -2371,39 +2220,20 @@
 
                 <div class="showcase-banner">
 
-                  <img src="./assets/images/products/jacket-3.jpg" alt="Mens Winter Leathers Jackets" width="300" class="product-img default">
-                  <img src="./assets/images/products/jacket-4.jpg" alt="Mens Winter Leathers Jackets" width="300" class="product-img hover">
+                  <img src="https://www.boat-lifestyle.com/cdn/shop/products/IM131-FI_Black01-PhotoRoom.png-PhotoRoom_800x.png?v=1674687289" alt="Mens Winter Leathers Jackets" width="300" class="product-img default">
+                  <img src="https://www.boat-lifestyle.com/cdn/shop/products/b6_800x.jpg?v=1674687289" alt="Mens Winter Leathers Jackets" width="300" class="product-img hover">
 
                   <p class="showcase-badge">15%</p>
 
-                  <div class="showcase-actions">
-
-                    <button class="btn-action">
-                      <ion-icon name="heart-outline"></ion-icon>
-                    </button>
-
-                    <button class="btn-action">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </button>
-
-                    <button class="btn-action">
-                      <ion-icon name="repeat-outline"></ion-icon>
-                    </button>
-
-                    <button class="btn-action">
-                      <ion-icon name="bag-add-outline"></ion-icon>
-                    </button>
-
-                  </div>
-
+                  
                 </div>
 
                 <div class="showcase-content">
 
-                  <a href="#" class="showcase-category">jacket</a>
+                  <a href="#" class="showcase-category">Immortal 131</a>
 
                   <a href="#">
-                    <h3 class="showcase-title">Mens Winter Leathers Jackets</h3>
+                    <h3 class="showcase-title"> Gaming Earbuds with 40 hrs playtime</h3>
                   </a>
 
                   <div class="showcase-rating">
@@ -2415,8 +2245,8 @@
                   </div>
 
                   <div class="price-box">
-                    <p class="price">$48.00</p>
-                    <del>$75.00</del>
+                    <p style="color: cyan;" class="price">$48.00</p>
+                    <del style="color: white;">$75.00</del>
                   </div>
 
                 </div>
@@ -2426,37 +2256,21 @@
               <div class="showcase">
               
                 <div class="showcase-banner">
-                  <img src="./assets/images/products/shirt-1.jpg" alt="Pure Garment Dyed Cotton Shirt" class="product-img default"
+                  <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/WaveCall.197_1300x.png?v=1685530085" alt="Pure Garment Dyed Cotton Shirt" class="product-img default"
                     width="300">
-                  <img src="./assets/images/products/shirt-2.jpg" alt="Pure Garment Dyed Cotton Shirt" class="product-img hover"
+                  <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/71Vb7Bnou_L._SX679__1_679x.jpg?v=1685530109" alt="Pure Garment Dyed Cotton Shirt" class="product-img hover"
                     width="300">
               
-                  <p class="showcase-badge angle black">sale</p>
+                  <p style="color: black;" class="showcase-badge angle black">sale</p>
               
-                  <div class="showcase-actions">
-                    <button class="btn-action">
-                      <ion-icon name="heart-outline"></ion-icon>
-                    </button>
-              
-                    <button class="btn-action">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </button>
-              
-                    <button class="btn-action">
-                      <ion-icon name="repeat-outline"></ion-icon>
-                    </button>
-              
-                    <button class="btn-action">
-                      <ion-icon name="bag-add-outline"></ion-icon>
-                    </button>
-                  </div>
+                  
                 </div>
               
                 <div class="showcase-content">
-                  <a href="#" class="showcase-category">shirt</a>
+                  <a href="#" class="showcase-category">Wave Call</a>
               
                   <h3>
-                    <a href="#" class="showcase-title">Pure Garment Dyed Cotton Shirt</a>
+                    <a href="#" class="showcase-title">bluetooth calling smartwatch</a>
                   </h3>
               
                   <div class="showcase-rating">
@@ -2468,8 +2282,8 @@
                   </div>
               
                   <div class="price-box">
-                    <p class="price">$45.00</p>
-                    <del>$56.00</del>
+                    <p style="color: cyan;" class="price">$45.00</p>
+                    <del style="color: white;">$56.00</del>
                   </div>
               
                 </div>
@@ -2479,35 +2293,19 @@
               <div class="showcase">
               
                 <div class="showcase-banner">
-                  <img src="./assets/images/products/jacket-5.jpg" alt="MEN Yarn Fleece Full-Zip Jacket" class="product-img default"
+                  <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Artboard1copy6_1300x.png?v=1686564175" alt="MEN Yarn Fleece Full-Zip Jacket" class="product-img default"
                     width="300">
-                  <img src="./assets/images/products/jacket-6.jpg" alt="MEN Yarn Fleece Full-Zip Jacket" class="product-img hover"
+                  <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Artboard1_3_1300x.png?v=1686564175" alt="MEN Yarn Fleece Full-Zip Jacket" class="product-img hover"
                     width="300">
               
-                  <div class="showcase-actions">
-                    <button class="btn-action">
-                      <ion-icon name="heart-outline"></ion-icon>
-                    </button>
-              
-                    <button class="btn-action">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </button>
-              
-                    <button class="btn-action">
-                      <ion-icon name="repeat-outline"></ion-icon>
-                    </button>
-              
-                    <button class="btn-action">
-                      <ion-icon name="bag-add-outline"></ion-icon>
-                    </button>
-                  </div>
+                  
                 </div>
               
                 <div class="showcase-content">
-                  <a href="#" class="showcase-category">Jacket</a>
+                  <a href="#" class="showcase-category">Nirvana 525</a>
               
                   <h3>
-                    <a href="#" class="showcase-title">MEN Yarn Fleece Full-Zip Jacket</a>
+                    <a href="#" class="showcase-title">Wireless earphones with dobly audio</a>
                   </h3>
               
                   <div class="showcase-rating">
@@ -2519,8 +2317,8 @@
                   </div>
               
                   <div class="price-box">
-                    <p class="price">$58.00</p>
-                    <del>$65.00</del>
+                    <p style="color: cyan;" class="price">$58.00</p>
+                    <del style="color: white;">$65.00</del>
                   </div>
               
                 </div>
@@ -2530,37 +2328,21 @@
               <div class="showcase">
               
                 <div class="showcase-banner">
-                  <img src="./assets/images/products/clothes-3.jpg" alt="Black Floral Wrap Midi Skirt" class="product-img default"
+                  <img src="https://www.boat-lifestyle.com/cdn/shop/products/0cfa4417-0213-4b49-b78e-0ae68aeb7057_18fb3b69-5601-4680-a06c-b2a4c1a1343e_600x.png?v=1629538793" alt="Black Floral Wrap Midi Skirt" class="product-img default"
                     width="300">
-                  <img src="./assets/images/products/clothes-4.jpg" alt="Black Floral Wrap Midi Skirt" class="product-img hover"
+                  <img src="https://www.boat-lifestyle.com/cdn/shop/products/R550ergonomicdesign_ade456c9-04a4-4f1d-a0f3-a34c674a6c4c_1300x.jpg?v=1667828684" alt="Black Floral Wrap Midi Skirt" class="product-img hover"
                     width="300">
               
                   <p class="showcase-badge angle pink">new</p>
               
-                  <div class="showcase-actions">
-                    <button class="btn-action">
-                      <ion-icon name="heart-outline"></ion-icon>
-                    </button>
-              
-                    <button class="btn-action">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </button>
-              
-                    <button class="btn-action">
-                      <ion-icon name="repeat-outline"></ion-icon>
-                    </button>
-              
-                    <button class="btn-action">
-                      <ion-icon name="bag-add-outline"></ion-icon>
-                    </button>
-                  </div>
+                  
                 </div>
               
                 <div class="showcase-content">
-                  <a href="#" class="showcase-category">skirt</a>
+                  <a href="#" class="showcase-category">Rockerz 558</a>
               
                   <h3>
-                    <a href="#" class="showcase-title">Black Floral Wrap Midi Skirt</a>
+                    <a href="#" class="showcase-title">Wireless HeadPhone with 20H playback</a>
                   </h3>
               
                   <div class="showcase-rating">
@@ -2572,8 +2354,8 @@
                   </div>
               
                   <div class="price-box">
-                    <p class="price">$25.00</p>
-                    <del>$35.00</del>
+                    <p style="color: cyan;" class="price">$25.00</p>
+                    <del style="color: white;">$35.00</del>
                   </div>
               
                 </div>
@@ -2583,35 +2365,19 @@
               <div class="showcase">
               
                 <div class="showcase-banner">
-                  <img src="./assets/images/products/shoe-2.jpg" alt="Casual Men's Brown shoes" class="product-img default"
+                  <img src="https://opsg-img-cdn-gl.heytapimg.com/epb/202209/29/ewLS8vybGeOjMLlQ.png?x-amz-process=image/format,webp/quality,Q_80" alt="Casual Men's Brown shoes" class="product-img default"
                     width="300">
-                  <img src="./assets/images/products/shoe-2_1.jpg" alt="Casual Men's Brown shoes" class="product-img hover"
+                  <img src="https://opsg-img-cdn-gl.heytapimg.com/epb/202209/29/wpSQHfwYSLXeEjxo.png?x-amz-process=image/format,webp/quality,Q_80" alt="Casual Men's Brown shoes" class="product-img hover"
                     width="300">
               
-                  <div class="showcase-actions">
-                    <button class="btn-action">
-                      <ion-icon name="heart-outline"></ion-icon>
-                    </button>
-              
-                    <button class="btn-action">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </button>
-              
-                    <button class="btn-action">
-                      <ion-icon name="repeat-outline"></ion-icon>
-                    </button>
-              
-                    <button class="btn-action">
-                      <ion-icon name="bag-add-outline"></ion-icon>
-                    </button>
-                  </div>
+                  
                 </div>
               
                 <div class="showcase-content">
-                  <a href="#" class="showcase-category">casual</a>
+                  <a href="#" class="showcase-category">oppo A17</a>
               
                   <h3>
-                    <a href="#" class="showcase-title">Casual Men's Brown shoes</a>
+                    <a href="#" class="showcase-title">Premium Leather-free design</a>
                   </h3>
               
                   <div class="showcase-rating">
@@ -2623,8 +2389,8 @@
                   </div>
               
                   <div class="price-box">
-                    <p class="price">$99.00</p>
-                    <del>$105.00</del>
+                    <p style="color: cyan;" class="price">$99.00</p>
+                    <del style="color: white;">$105.00</del>
                   </div>
               
                 </div>
@@ -2634,37 +2400,21 @@
               <div class="showcase">
               
                 <div class="showcase-banner">
-                  <img src="./assets/images/products/watch-3.jpg" alt="Pocket Watch Leather Pouch" class="product-img default"
+                  <img src="https://m.media-amazon.com/images/I/71xb2xkN5qL._SX679_.jpg" alt="Pocket Watch Leather Pouch" class="product-img default"
                     width="300">
-                  <img src="./assets/images/products/watch-4.jpg" alt="Pocket Watch Leather Pouch" class="product-img hover"
+                  <img src="https://m.media-amazon.com/images/I/61CAYVr34QL._SX679_.jpg" alt="Pocket Watch Leather Pouch" class="product-img hover"
                     width="300">
               
-                  <p class="showcase-badge angle black">sale</p>
+                  <p style="color: black; background-color: palevioletred;" class="showcase-badge angle black">sale</p>
               
-                  <div class="showcase-actions">
-                    <button class="btn-action">
-                      <ion-icon name="heart-outline"></ion-icon>
-                    </button>
-              
-                    <button class="btn-action">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </button>
-              
-                    <button class="btn-action">
-                      <ion-icon name="repeat-outline"></ion-icon>
-                    </button>
-              
-                    <button class="btn-action">
-                      <ion-icon name="bag-add-outline"></ion-icon>
-                    </button>
-                  </div>
+                  
                 </div>
               
                 <div class="showcase-content">
-                  <a href="#" class="showcase-category">watches</a>
+                  <a href="#" class="showcase-category">Apple iphone 13</a>
               
                   <h3>
-                    <a href="#" class="showcase-title">Pocket Watch Leather Pouch</a>
+                    <a href="#" class="showcase-title">15 cm (6.1-inch) Super Retina XDR</a>
                   </h3>
               
                   <div class="showcase-rating">
@@ -2676,8 +2426,8 @@
                   </div>
               
                   <div class="price-box">
-                    <p class="price">$150.00</p>
-                    <del>$170.00</del>
+                    <p style="color: cyan;" class="price">$150.00</p>
+                    <del style="color: white;">$170.00</del>
                   </div>
               
                 </div>
@@ -2687,34 +2437,18 @@
               <div class="showcase">
               
                 <div class="showcase-banner">
-                  <img src="./assets/images/products/watch-1.jpg" alt="Smart watche Vital Plus" class="product-img default"
+                  <img src="https://m.media-amazon.com/images/I/71dEY4Neo3L._SX679_.jpg" alt="Smart watche Vital Plus" class="product-img default"
                     width="300">
-                  <img src="./assets/images/products/watch-2.jpg" alt="Smart watche Vital Plus" class="product-img hover" width="300">
+                  <img src="https://m.media-amazon.com/images/I/71X-p0uwMBL._SX679_.jpg" alt="Smart watche Vital Plus" class="product-img hover" width="300">
               
-                  <div class="showcase-actions">
-                    <button class="btn-action">
-                      <ion-icon name="heart-outline"></ion-icon>
-                    </button>
-              
-                    <button class="btn-action">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </button>
-              
-                    <button class="btn-action">
-                      <ion-icon name="repeat-outline"></ion-icon>
-                    </button>
-              
-                    <button class="btn-action">
-                      <ion-icon name="bag-add-outline"></ion-icon>
-                    </button>
-                  </div>
+                  
                 </div>
               
                 <div class="showcase-content">
-                  <a href="#" class="showcase-category">watches</a>
+                  <a href="#" class="showcase-category">realme narzo N53 </a>
               
                   <h3>
-                    <a href="#" class="showcase-title">Smart watche Vital Plus</a>
+                    <a href="#" class="showcase-title">Feather Gold, 4GB+64GB</a>
                   </h3>
               
                   <div class="showcase-rating">
@@ -2726,8 +2460,8 @@
                   </div>
               
                   <div class="price-box">
-                    <p class="price">$100.00</p>
-                    <del>$120.00</del>
+                    <p style="color: cyan;" class="price">$100.00</p>
+                    <del style="color: white;">$120.00</del>
                   </div>
               
                 </div>
@@ -2737,37 +2471,21 @@
               <div class="showcase">
               
                 <div class="showcase-banner">
-                  <img src="./assets/images/products/party-wear-1.jpg" alt="Womens Party Wear Shoes" class="product-img default"
+                  <img src="https://m.media-amazon.com/images/I/71wbJ2D57xL._SX679_.jpg" alt="Womens Party Wear Shoes" class="product-img default"
                     width="300">
-                  <img src="./assets/images/products/party-wear-2.jpg" alt="Womens Party Wear Shoes" class="product-img hover"
+                  <img src="https://m.media-amazon.com/images/I/718LQXZabKL._SX679_.jpg" alt="Womens Party Wear Shoes" class="product-img hover"
                     width="300">
               
-                  <p class="showcase-badge angle black">sale</p>
+                  <p style="color: black; background-color: palevioletred;" class="showcase-badge angle black">sale</p>
               
-                  <div class="showcase-actions">
-                    <button class="btn-action">
-                      <ion-icon name="heart-outline"></ion-icon>
-                    </button>
-              
-                    <button class="btn-action">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </button>
-              
-                    <button class="btn-action">
-                      <ion-icon name="repeat-outline"></ion-icon>
-                    </button>
-              
-                    <button class="btn-action">
-                      <ion-icon name="bag-add-outline"></ion-icon>
-                    </button>
-                  </div>
+                  
                 </div>
               
                 <div class="showcase-content">
-                  <a href="#" class="showcase-category">party wear</a>
+                  <a href="#" class="showcase-category">Oneplus Open 5G</a>
               
                   <h3>
-                    <a href="#" class="showcase-title">Womens Party Wear Shoes</a>
+                    <a href="#" class="showcase-title">Voyager Black, 16GB RAM, 512GB Storage</a>
                   </h3>
               
                   <div class="showcase-rating">
@@ -2779,8 +2497,8 @@
                   </div>
               
                   <div class="price-box">
-                    <p class="price">$25.00</p>
-                    <del>$30.00</del>
+                    <p style="color: cyan;" class="price">$25.00</p>
+                    <del style="color: white;">$30.00</del>
                   </div>
               
                 </div>
@@ -2790,35 +2508,19 @@
               <div class="showcase">
               
                 <div class="showcase-banner">
-                  <img src="./assets/images/products/jacket-1.jpg" alt="Mens Winter Leathers Jackets" class="product-img default"
+                  <img src="https://m.media-amazon.com/images/I/71EF8fY2HuL._SX679_.jpg" alt="Mens Winter Leathers Jackets" class="product-img default"
                     width="300">
-                  <img src="./assets/images/products/jacket-2.jpg" alt="Mens Winter Leathers Jackets" class="product-img hover"
+                  <img src="https://m.media-amazon.com/images/I/71wWO2qAT5L._SX679_.jpg" alt="Mens Winter Leathers Jackets" class="product-img hover"
                     width="300">
               
-                  <div class="showcase-actions">
-                    <button class="btn-action">
-                      <ion-icon name="heart-outline"></ion-icon>
-                    </button>
-              
-                    <button class="btn-action">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </button>
-              
-                    <button class="btn-action">
-                      <ion-icon name="repeat-outline"></ion-icon>
-                    </button>
-              
-                    <button class="btn-action">
-                      <ion-icon name="bag-add-outline"></ion-icon>
-                    </button>
-                  </div>
+                  
                 </div>
               
                 <div class="showcase-content">
-                  <a href="#" class="showcase-category">jacket</a>
+                  <a href="#" class="showcase-category">Dell 14 Laptop</a>
               
                   <h3>
-                    <a href="#" class="showcase-title">Mens Winter Leathers Jackets</a>
+                    <a href="#" class="showcase-title">Intel Core i5-1135G7 Processor/ 8GB DDR4</a>
                   </h3>
               
                   <div class="showcase-rating">
@@ -2830,8 +2532,8 @@
                   </div>
               
                   <div class="price-box">
-                    <p class="price">$32.00</p>
-                    <del>$45.00</del>
+                    <p style="color: cyan;" class="price">$32.00</p>
+                    <del style="color: white;">$45.00</del>
                   </div>
               
                 </div>
@@ -2841,37 +2543,21 @@
               <div class="showcase">
               
                 <div class="showcase-banner">
-                  <img src="./assets/images/products/sports-2.jpg" alt="Trekking & Running Shoes - black" class="product-img default"
+                  <img src="https://m.media-amazon.com/images/I/71jZxYhUROL._SX679_.jpg" alt="Trekking & Running Shoes - black" class="product-img default"
                     width="300">
-                  <img src="./assets/images/products/sports-4.jpg" alt="Trekking & Running Shoes - black" class="product-img hover"
+                  <img src="https://m.media-amazon.com/images/I/71OoNTPchRL._SX679_.jpg" alt="Trekking & Running Shoes - black" class="product-img hover"
                     width="300">
               
-                  <p class="showcase-badge angle black">sale</p>
+                  <p style="color: black; background-color: palevioletred;" class="showcase-badge angle black">sale</p>
               
-                  <div class="showcase-actions">
-                    <button class="btn-action">
-                      <ion-icon name="heart-outline"></ion-icon>
-                    </button>
-              
-                    <button class="btn-action">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </button>
-              
-                    <button class="btn-action">
-                      <ion-icon name="repeat-outline"></ion-icon>
-                    </button>
-              
-                    <button class="btn-action">
-                      <ion-icon name="bag-add-outline"></ion-icon>
-                    </button>
-                  </div>
+                  
                 </div>
               
                 <div class="showcase-content">
-                  <a href="#" class="showcase-category">sports</a>
+                  <a href="#" class="showcase-category">Laptop Cooling Pad </a>
               
                   <h3>
-                    <a href="#" class="showcase-title">Trekking & Running Shoes - black</a>
+                    <a href="#" class="showcase-title">Silent Fans, Silicon Pads</a>
                   </h3>
               
                   <div class="showcase-rating">
@@ -2883,8 +2569,8 @@
                   </div>
               
                   <div class="price-box">
-                    <p class="price">$58.00</p>
-                    <del>$64.00</del>
+                    <p style="color: cyan;" class="price">$58.00</p>
+                    <del style="color: white;">$64.00</del>
                   </div>
               
                 </div>
@@ -2894,35 +2580,19 @@
               <div class="showcase">
               
                 <div class="showcase-banner">
-                  <img src="./assets/images/products/shoe-1.jpg" alt="Men's Leather Formal Wear shoes" class="product-img default"
+                  <img src="https://m.media-amazon.com/images/I/81wF-WytvhL._SX679_.jpg" alt="Men's Leather Formal Wear shoes" class="product-img default"
                     width="300">
-                  <img src="./assets/images/products/shoe-1_1.jpg" alt="Men's Leather Formal Wear shoes" class="product-img hover"
+                  <img src="https://m.media-amazon.com/images/I/81IqZdhnN9L._SX679_.jpg" alt="Men's Leather Formal Wear shoes" class="product-img hover"
                     width="300">
               
-                  <div class="showcase-actions">
-                    <button class="btn-action">
-                      <ion-icon name="heart-outline"></ion-icon>
-                    </button>
-              
-                    <button class="btn-action">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </button>
-              
-                    <button class="btn-action">
-                      <ion-icon name="repeat-outline"></ion-icon>
-                    </button>
-              
-                    <button class="btn-action">
-                      <ion-icon name="bag-add-outline"></ion-icon>
-                    </button>
-                  </div>
+                  
                 </div>
               
                 <div class="showcase-content">
-                  <a href="#" class="showcase-category">formal</a>
+                  <a href="#" class="showcase-category">ZEBRONICS Zeb-Pluto</a>
               
                   <h3>
-                    <a href="#" class="showcase-title">Men's Leather Formal Wear shoes</a>
+                    <a href="#" class="showcase-title">2.0 Multi Speaker with Aux Connectivity</a>
                   </h3>
               
                   <div class="showcase-rating">
@@ -2934,8 +2604,8 @@
                   </div>
               
                   <div class="price-box">
-                    <p class="price">$50.00</p>
-                    <del>$65.00</del>
+                    <p style="color: cyan;" class="price">$50.00</p>
+                    <del style="color: white;">$65.00</del>
                   </div>
               
                 </div>
@@ -2945,37 +2615,21 @@
               <div class="showcase">
               
                 <div class="showcase-banner">
-                  <img src="./assets/images/products/shorts-1.jpg" alt="Better Basics French Terry Sweatshorts"
+                  <img src="https://m.media-amazon.com/images/I/61erc7ly+ZL._SX679_.jpg" alt="Better Basics French Terry Sweatshorts"
                     class="product-img default" width="300">
-                  <img src="./assets/images/products/shorts-2.jpg" alt="Better Basics French Terry Sweatshorts"
+                  <img src="https://m.media-amazon.com/images/I/61Vz7oLscpL._SX679_.jpg" alt="Better Basics French Terry Sweatshorts"
                     class="product-img hover" width="300">
               
-                  <p class="showcase-badge angle black">sale</p>
+                  <p style="color: black; background-color: palevioletred;" class="showcase-badge angle black">sale</p>
               
-                  <div class="showcase-actions">
-                    <button class="btn-action">
-                      <ion-icon name="heart-outline"></ion-icon>
-                    </button>
-              
-                    <button class="btn-action">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </button>
-              
-                    <button class="btn-action">
-                      <ion-icon name="repeat-outline"></ion-icon>
-                    </button>
-              
-                    <button class="btn-action">
-                      <ion-icon name="bag-add-outline"></ion-icon>
-                    </button>
-                  </div>
+                  
                 </div>
               
                 <div class="showcase-content">
-                  <a href="#" class="showcase-category">shorts</a>
+                  <a href="#" class="showcase-category">Fujifilm Instax </a>
               
                   <h3>
-                    <a href="#" class="showcase-title">Better Basics French Terry Sweatshorts</a>
+                    <a href="#" class="showcase-title">Mini 12 Instant Camera-Blue</a>
                   </h3>
               
                   <div class="showcase-rating">
@@ -2987,8 +2641,8 @@
                   </div>
               
                   <div class="price-box">
-                    <p class="price">$78.00</p>
-                    <del>$85.00</del>
+                    <p style="color: cyan;" class="price">$78.00</p>
+                    <del style="color: white;">$85.00</del>
                   </div>
               
                 </div>
@@ -3031,15 +2685,16 @@
 
               <img src="./assets/images/testimonial-1.jpg" alt="alan doe" class="testimonial-banner" width="80" height="80">
 
-              <p class="testimonial-name">Alan Doe</p>
+              <p class="testimonial-name">- Certified Buyer, Chennai</p>
 
-              <p class="testimonial-title">CEO & Founder Invision</p>
+              <p class="testimonial-title"> </p>
 
               <img src="./assets/images/icons/quotes.svg" alt="quotation" class="quotation-img" width="26">
 
               <p class="testimonial-desc">
-                Lorem ipsum dolor sit amet consectetur Lorem ipsum
-                dolor dolor sit amet.
+                Excellent , Superb Ultra HD TV and which comes in 55K only. my family is soo happy with this product and its features.
+ 
+
               </p>
 
             </div>
@@ -3054,13 +2709,13 @@
 
           <div class="cta-container">
 
-            <img src="./assets/images/cta-banner.jpg" alt="summer collection" class="cta-banner">
+            <img src="https://w0.peakpx.com/wallpaper/163/707/HD-wallpaper-crushed-black-paper-black-texture-dark.jpg" alt="summer collection" class="cta-banner">
 
             <a href="#" class="cta-content">
 
               <p class="discount">25% Discount</p>
 
-              <h2 class="cta-title">Summer collection</h2>
+              <h2 class="cta-title">Seasonal Deals</h2>
 
               <p class="cta-text">Starting @ $10</p>
 
@@ -3083,17 +2738,17 @@
             <div class="service-container">
 
               <a href="#" class="service-item">
-
+<!-- 
                 <div class="service-icon">
                   <ion-icon name="boat-outline"></ion-icon>
-                </div>
+                </div> -->
 
-                <div class="service-content">
+                <!-- <div class="service-content">
 
                   <h3 class="service-title">Worldwide Delivery</h3>
                   <p class="service-desc">For Order Over $100</p>
 
-                </div>
+                </div> -->
 
               </a>
 
@@ -3106,7 +2761,7 @@
                 <div class="service-content">
               
                   <h3 class="service-title">Next Day delivery</h3>
-                  <p class="service-desc">UK Orders Only</p>
+                  <p class="service-desc"></p>
               
                 </div>
               
@@ -3184,15 +2839,15 @@
           <div class="blog-card">
 
             <a href="#">
-              <img src="./assets/images/blog-1.jpg" alt="Clothes Retail KPIs 2021 Guide for Clothes Executives" width="300" class="blog-banner">
+              <img src="https://www.zdnet.com/a/img/resize/e0073a2382c83fca4954fb9206e45f077e0f1be6/2023/05/08/5babe444-e0d3-4a86-886f-95fa29c74473/google-pixel-7a-in-hand.jpg?auto=webp&fit=crop&height=360&width=640" alt="Clothes Retail KPIs 2021 Guide for Clothes Executives" width="300" height="205px" class="blog-banner">
             </a>
 
             <div class="blog-content">
 
-              <a href="#" class="blog-category">Fashion</a>
+              <a href="#" class="blog-category">Smart Phones</a>
 
-              <a href="#">
-                <h3 class="blog-title">Clothes Retail KPIs 2021 Guide for Clothes Executives.</h3>
+              <a href="https://www.zdnet.com/article/best-google-phone/">
+                <h3 class="blog-title">The best Google Pixel phones (including the Pixel 8 Pro)</h3>
               </a>
 
               <p class="blog-meta">
@@ -3206,16 +2861,16 @@
           <div class="blog-card">
           
             <a href="#">
-              <img src="./assets/images/blog-2.jpg" alt="Curbside fashion Trends: How to Win the Pickup Battle."
+              <img src="https://www.zdnet.com/a/img/resize/025f723fae72cfe10cd99a1fcdb86dabdd8a1c92/2023/06/06/48689ad3-bca3-447a-b958-bfea14736233/img-8838.jpg?auto=webp&width=1280" alt="Curbside fashion Trends: How to Win the Pickup Battle."
                 class="blog-banner" width="300">
             </a>
           
             <div class="blog-content">
           
-              <a href="#" class="blog-category">Clothes</a>
+              <a href="#" class="blog-category">Innovation</a>
           
               <h3>
-                <a href="#" class="blog-title">Curbside fashion Trends: How to Win the Pickup Battle.</a>
+                <a href="https://www.zdnet.com/article/apple-vision-pro-first-take-3-reasons-this-changes-everything/" class="blog-title">Apple Vision Pro first take: 3 reasons this changes everything</a>
               </h3>
           
               <p class="blog-meta">
@@ -3229,16 +2884,16 @@
           <div class="blog-card">
           
             <a href="#">
-              <img src="./assets/images/blog-3.jpg" alt="EBT vendors: Claim Your Share of SNAP Online Revenue."
-                class="blog-banner" width="300">
+              <img src="https://www.zdnet.com/a/img/resize/eaded57df6eda2633d2d09cf59350eb1bafbe110/2023/07/06/b9a88544-8ac8-4cf9-996e-9b37415f85c3/macbook-air-15-inch-hero.jpg?auto=webp&width=1280" alt="EBT vendors: Claim Your Share of SNAP Online Revenue."
+                class="blog-banner" width="300" height="205px">
             </a>
           
             <div class="blog-content">
           
-              <a href="#" class="blog-category">Shoes</a>
+              <a href="#" class="blog-category">Computing</a>
           
               <h3>
-                <a href="#" class="blog-title">EBT vendors: Claim Your Share of SNAP Online Revenue.</a>
+                <a href="#" class="blog-title">The 2023 M2 MacBook Air is at all-time low price right now</a>
               </h3>
           
               <p class="blog-meta">
@@ -3253,7 +2908,7 @@
           
             <a href="#">
               <img src="./assets/images/blog-4.jpg" alt="Curbside fashion Trends: How to Win the Pickup Battle."
-                class="blog-banner" width="300">
+                class="blog-banner" width="300" height="205px">
             </a>
           
             <div class="blog-content">
@@ -3284,7 +2939,7 @@
 
 
 
-  <!--
+  <!-- 
     - FOOTER
   -->
 
@@ -3298,68 +2953,59 @@
 
         <div class="footer-category-box">
 
-          <h3 class="category-box-title">Fashion :</h3>
+          <h3 class="category-box-title">Audio & Video:</h3>
 
-          <a href="#" class="footer-category-link">T-shirt</a>
-          <a href="#" class="footer-category-link">Shirts</a>
-          <a href="#" class="footer-category-link">shorts & jeans</a>
-          <a href="#" class="footer-category-link">jacket</a>
-          <a href="#" class="footer-category-link">dress & frock</a>
-          <a href="#" class="footer-category-link">innerwear</a>
-          <a href="#" class="footer-category-link">hosiery</a>
+          <a href="#" class="footer-category-link">HeadPhones</a>
+          <a href="#" class="footer-category-link">Speakers</a>
+          <a href="#" class="footer-category-link">Airdopes</a>
+          <a href="#" class="footer-category-link">Home Theaters</a>
+          <a href="#" class="footer-category-link">SoundBars</a>
+          <a href="#" class="footer-category-link">Earbuds</a>
 
         </div>
 
         <div class="footer-category-box">
-          <h3 class="category-box-title">footwear :</h3>
+          <h3 class="category-box-title">Home Appliance :</h3>
         
-          <a href="#" class="footer-category-link">sport</a>
-          <a href="#" class="footer-category-link">formal</a>
-          <a href="#" class="footer-category-link">Boots</a>
-          <a href="#" class="footer-category-link">casual</a>
-          <a href="#" class="footer-category-link">cowboy shoes</a>
-          <a href="#" class="footer-category-link">safety shoes</a>
-          <a href="#" class="footer-category-link">Party wear shoes</a>
-          <a href="#" class="footer-category-link">Branded</a>
-          <a href="#" class="footer-category-link">Firstcopy</a>
-          <a href="#" class="footer-category-link">Long shoes</a>
+          <a href="#" class="footer-category-link">Televisions</a>
+          <a href="#" class="footer-category-link">Leds</a>
+          <a href="#" class="footer-category-link">Ac</a>
+          <a href="#" class="footer-category-link">coolers</a>
+          <a href="#" class="footer-category-link">Vaccum Cleaners</a>
+          <a href="#" class="footer-category-link">GroomFit</a>
+          <a href="#" class="footer-category-link">Geysers</a>
+         
         </div>
 
         <div class="footer-category-box">
-          <h3 class="category-box-title">jewellery :</h3>
-        
-          <a href="#" class="footer-category-link">Necklace</a>
-          <a href="#" class="footer-category-link">Earrings</a>
-          <a href="#" class="footer-category-link">Couple rings</a>
-          <a href="#" class="footer-category-link">Pendants</a>
-          <a href="#" class="footer-category-link">Crystal</a>
-          <a href="#" class="footer-category-link">Bangles</a>
-          <a href="#" class="footer-category-link">bracelets</a>
-          <a href="#" class="footer-category-link">nosepin</a>
-          <a href="#" class="footer-category-link">chain</a>
-          <a href="#" class="footer-category-link">Earrings</a>
-          <a href="#" class="footer-category-link">Couple rings</a>
+          <h3 class="category-box-title">Brands</h3>
+          <a href="#" class="footer-category-link">Apple</a>
+          <a href="#" class="footer-category-link">Samsung</a>
+          <a href="#" class="footer-category-link">Sony</a>
+          <a href="#" class="footer-category-link">LG</a>
+          <a href="#" class="footer-category-link">Dell</a>
+          <a href="#" class="footer-category-link">HP</a>
+          <a href="#" class="footer-category-link">Canon</a>
+          <a href="#" class="footer-category-link">Bose</a>
+          <a href="#" class="footer-category-link">Microsoft</a>
+          <a href="#" class="footer-category-link">Philips</a>
+          
         </div>
 
         <div class="footer-category-box">
-          <h3 class="category-box-title">cosmetics :</h3>
-        
-          <a href="#" class="footer-category-link">Shampoo</a>
-          <a href="#" class="footer-category-link">Bodywash</a>
-          <a href="#" class="footer-category-link">Facewash</a>
-          <a href="#" class="footer-category-link">makeup kit</a>
-          <a href="#" class="footer-category-link">liner</a>
-          <a href="#" class="footer-category-link">lipstick</a>
-          <a href="#" class="footer-category-link">prefume</a>
-          <a href="#" class="footer-category-link">Body soap</a>
-          <a href="#" class="footer-category-link">scrub</a>
-          <a href="#" class="footer-category-link">hair gel</a>
-          <a href="#" class="footer-category-link">hair colors</a>
-          <a href="#" class="footer-category-link">hair dye</a>
-          <a href="#" class="footer-category-link">sunscreen</a>
-          <a href="#" class="footer-category-link">skin loson</a>
-          <a href="#" class="footer-category-link">liner</a>
-          <a href="#" class="footer-category-link">lipstick</a>
+          <h3 class="category-box-title">Smart Electronics Devices:</h3>
+          <a href="#" class="footer-category-link">Smartphones</a>
+          <a href="#" class="footer-category-link">Laptops</a>
+          <a href="#" class="footer-category-link">Smart TVs</a>
+          <a href="#" class="footer-category-link">Tablets</a>
+          <a href="#" class="footer-category-link">Smartwatches</a>
+          <a href="#" class="footer-category-link">Gaming Consoles</a>
+          <a href="#" class="footer-category-link">Home Automation</a>
+          <a href="#" class="footer-category-link">Wireless Earbuds</a>
+          <a href="#" class="footer-category-link">Virtual Assistants</a>
+          <a href="#" class="footer-category-link">Headphones</a>
+          <a href="#" class="footer-category-link">Cameras</a>
+          
         </div>
 
       </div>
@@ -3377,25 +3023,24 @@
           </li>
 
           <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Fashion</a>
-          </li>
-
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Electronic</a>
-          </li>
-
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Cosmetic</a>
-          </li>
-
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Health</a>
-          </li>
-
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Watches</a>
-          </li>
-
+            <a href="#" class="footer-nav-link">Smartphones</a>
+        </li>
+        
+        <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Laptops</a>
+        </li>
+        
+        <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Smart TVs</a>
+        </li>
+        
+        <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Tablets</a>
+        </li>
+        
+        <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Gaming Consoles</a>
+        </li>
         </ul>
 
         <ul class="footer-nav-list">
@@ -3573,7 +3218,7 @@
 
     </div>
 
-  </footer>
+  </footer> 
 
 
 

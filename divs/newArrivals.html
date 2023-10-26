@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: black;
+    }
+    .mArrival {
+        width: 70%;
+        height: 100%;
+        margin: 50px auto;
+        display: grid;
+        grid-template-rows: 350px 350px ; /* Two rows */
+        grid-template-columns: 1fr 1fr 1fr 1fr; /* Three columns for the first row */
+        grid-gap: 20px;
+    }
+    .ngrid1,
+    .ngrid2,
+    .ngrid3 {
+        background-size: 100% 100%;
+        border-radius: 5%;
+    }
+    .ngrid1 {
+        background-image: url('https://images-eu.ssl-images-amazon.com/images/G/31/img23/PC/MED/CE3/05_MED_Aug23_440x550.jpg');
+    }
+    .ngrid2 {
+        background-image: url('https://images-eu.ssl-images-amazon.com/images/G/31/img23/PC/MED/CE4/13_MED_Aug23_440x550.jpg');
+    }.ngrid3{
+        background-image: url('https://images-eu.ssl-images-amazon.com/images/G/31/img23/PC/MED/CE2/02_MED_Aug23_440x550.jpg');
+    }
+    .ngrid4,
+    .ngrid5,
+    .ngrid6,
+    .ngrid7,
+    .ngrid8 {
+        background-size: 100% 100%;
+        border-radius: 5%;
+    }
+    .ngrid4 {
+        background-image: url('https://images-eu.ssl-images-amazon.com/images/G/31/img23/PC/MED/CE3/08_MED_Aug23_440x550.jpg');
+    }
+    .ngrid5 {
+        background-image: url('https://images-eu.ssl-images-amazon.com/images/G/31/img23/PC/MED/CE2/01_MED_Aug23_440x550.jpg');
+    }
+    .ngrid6 {
+        background-image: url('https://images-eu.ssl-images-amazon.com/images/G/31/img23/PC/MED/CE2/04_MED_Aug23_440x550.jpg');
+    }
+    .ngrid7 {
+        background-image: url('https://images-eu.ssl-images-amazon.com/images/G/31/img23/PC/MED/CE4/11_MED_Aug23_440x550.jpg');
+    }
+    .ngrid8 {
+        background-image: url('https://images-eu.ssl-images-amazon.com/images/G/31/img23/PC/MED/CE7/19_MED_Aug23_440x550.jpg');
+    }
+    
+
+    /* Responsive adjustments */
+    @media screen and (max-width: 768px) {
+        .mArrival {
+            width: 90%;
+            grid-template-columns: 1fr; /* Single column layout for smaller screens */
+            grid-template-rows: auto auto auto auto; /* Four rows for smaller screens */
+        }
+        .ngrid1,
+        .ngrid2,
+        .ngrid3,
+        .ngrid4,
+        .ngrid5,
+        .ngrid6,
+        .ngrid7 {
+            grid-column: 1/-1; /* Full width for smaller screens */
+        }
+    }
+</style>
+<body>
+    <div class="new">NEW ARRIVALS</div>
+    <div class="mArrival ">
+        <div class="ngrid1"></div>
+        <div class="ngrid2"></div>
+        <div class="ngrid3"></div>
+        <div class="ngrid4"></div>
+        <div class="ngrid5"></div>
+        <div class="ngrid6"></div>
+        <div class="ngrid7"></div>
+        <div class="ngrid8"></div>
+    </div>
+</body>
+</html>

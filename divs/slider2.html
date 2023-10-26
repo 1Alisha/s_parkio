@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        width: 100%;
+        height: 150vh;
+        display: grid;
+        place-items: center;
+        background-color: black;
+    }
+    .imgSlider{
+        width: 95%;
+        height: 60%;
+        background-image: url('https://images.unsplash.com/photo-1472214103451-9374bd1c798e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGljfGVufDB8fDB8fHww&w=1000&q=80');
+        background-size: 100% 100%;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        animation:changeImage 15s linear infinite ;
+
+    }
+    @keyframes changeImage{
+        0%{
+            background-image: url('https://img.freepik.com/free-photo/sky-clouds-cinematic-clouds-wallpaper-3_1562-740.jpg?w=360');
+        }25%{
+            background-image: url('https://images.hdqwalls.com/wallpapers/sky-clouds.jpg');
+        }50%{
+            background-image: url('https://wallpapers.com/images/featured/clouds-6swlqte8g6dniemk.jpg')
+        }75%{ 
+            background-image: url('https://thumbs.dreamstime.com/b/clouds-2488305.jpg')       
+        }100%{
+            background-image: url('https://media.istockphoto.com/id/1465754066/photo/panorama-of-dramatic-storm-cell-with-rain-at-sunset-over-the-open-ocean.webp?b=1&s=170667a&w=0&k=20&c=02k_RiV7-4c7oDx9koByhAYuzmQ_RgesKvMRhAky8z0=')        }
+    }
+</style>
+<body>
+    <div class="imgSlider"></div>
+</body>
+</html>

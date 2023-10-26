@@ -1,0 +1,625 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sparkio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <!-- <link rel="stylesheet" href="../divs/mystyle.css"> -->
+    
+   <!-- <link rel="stylesheet" href="./assets/css/style-prefix.css"> -->
+    <!-- Update the Font Awesome link as follows -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+
+body {
+   
+    background-color: black;
+}
+
+span {
+    text-decoration: overline;
+    color: cyan;
+}
+
+.logo {
+    color: white;
+    font-size: 2.5em;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    margin-left: 20px;
+}
+
+.fa-search {
+    cursor: pointer;
+}
+
+#navbar {
+   
+    top: 0; /* Position it at the top */
+    left: 0;
+    right: 0;
+    /* position: fixed;
+    overflow: hidden; */
+    z-index: 1000; /* Adjust the z-index as needed */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(22, 20, 21);
+    padding: 20px 30px;
+    margin-bottom: 0px;
+}
+
+#navbar li {
+    list-style: none;
+    margin-right: 70px;
+}
+
+.button:last-child {
+    margin-right: 0px;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    transition: 0.3s ease;
+}
+
+.bxs-user {
+    font-size: 2em;
+    margin-left: 1em;
+    color: cyan;
+}
+
+#navbar li a:hover {
+    color: rgb(22, 20, 21);
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    margin-right: 20px;
+    margin-top: 0px;
+}
+
+.button:hover {
+    background-color: aqua;
+}
+
+.button.last {
+    margin-right: 0;
+}
+
+.search-container {
+    position: relative;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 8px 40px 8px 8px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    width: 350px;
+    height: 35px;
+}
+
+i.fas.fa-search {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    color: black;
+    cursor: pointer;
+}
+
+button {
+    padding: 8px 12px;
+    background-color: cyan;
+    color: black;
+    border: none;
+    border-radius: 20px 20px 20px 20px;
+    cursor: pointer;
+    float: left;
+}
+
+button:hover {
+    background-color: cyan;
+}
+
+.fas fa-search {
+    color: cyan;
+}
+
+@media screen and (max-width: 768px) {
+    #navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #navbar li {
+        margin: 10px 0;
+    }
+
+    #navbar li:last-child {
+        margin-bottom: 20px;
+    }
+}
+
+.button.last {
+    margin-right: 0;
+}
+
+/* ====================================================================================================== */
+/* Footer Styles */
+
+/* /////////////////////////////////slider/////////////////////////////////////// /////////////////////////////////slider/////////////////////////////////////// */
+
+.wrapper{
+    margin-top:0.5em;
+    margin-left: 0px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.pro
+{
+    background-image: url(https://images.template.net/wp-content/uploads/2017/01/31132621/Watercolor-Gradient-Texture.jpg);
+    background-size: cover;
+    text-align: center;
+    margin-left: 3em;
+    margin-top: 1em;
+    height: 350px;
+    width: 300px;
+    /* background:url('https://png.pngtree.com/element_our/sm/20180409/sm_5acb9a71aade6.png'); */
+    border-radius: 10px;
+    margin-bottom: 2em;
+
+}
+.pro > img{
+
+    height: 250px;
+    width:300px;
+    border-radius: 10px 10px 0px 0px;
+}
+h4{
+color: #111010;
+font-size: 20px;
+font-style: normal;
+padding-top: 10px;
+text-align: center;
+}
+
+button{
+    margin-top: 0px;
+    border-radius: 5px 5px 5px 5px;
+    justify-content: center;
+    text-align: center;
+    margin-left: 6em;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    margin-bottom: 10px;
+    background-color:cyan;
+}.pro {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+  }
+  
+  .pro::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0) 100%);
+    transform: skewX(-25deg);
+    transition: left 0.5s ease; /* Add a smooth transition for the shine effect */
+    opacity: 0; /* Initially hidden */
+  }
+  
+  .pro:hover::before {
+    left: 100%;
+    opacity: 2; /* Display the shine effect on hover */
+  }
+  .warr{
+    margin-top:0.5em;
+    margin-left: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin-left: 3.5em;
+    margin-right: 2.5em;
+    margin-bottom: 8em;
+    
+  }
+  .r{
+   /* border: 2px solid white; */
+    margin-top: 1em;
+    height: 100px;
+    width: 300px;
+    /* display: flex;
+
+    justify-content:center;
+    text-align: center; */
+
+    
+    
+  }
+  .r > img{
+
+    height: 150px;
+    width:150px;
+    
+}
+h5{
+    color: white;
+    font-size: 20px;
+}
+span{
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+   /* .bt{
+    margin-top:5em;
+    margin-left: 0px;
+    display: flex;
+    flex-wrap: wrap;
+   }
+   .st{
+    margin-left: 3em;
+    margin-top: 1em;
+    height: 330px;
+    width: 300px;
+   }
+   .st > img{
+
+    height: 450px;
+    width:300px;
+   
+}
+.h4{
+    text-align: center;
+} */
+
+/* .filter{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+} */
+a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    margin-left: 2em;
+}
+.btnn{
+    height: 30px;
+    width: 40px;
+    background-color: gray;
+}
+.sub{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.pro{
+    text-align: center;
+}
+
+.footer {
+  background-color: black;
+  color: #fefefe;
+  /* position: fixed; */
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.footer .heading {
+  color: #fefefe;
+  max-width: 1010px;
+  width: 90%;
+  text-transform: uppercase;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.footer .content {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1.5rem;
+}
+
+.footer .content p {
+  margin-bottom: 1.3rem;
+}
+
+.footer .content a {
+  text-decoration: none;
+  color: #fefefe;
+}
+
+.footer .content a:hover {
+  border-bottom: 1px solid #971717;
+}
+
+.footer .content h4 {
+  margin-bottom: 1.3rem;
+  font-size: 19px;
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+footer hr {
+  margin: 2rem 0;
+}
+
+@media (max-width: 767px) {
+  .footer .content {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+  }
+
+  .footer {
+    position: unset;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .footer .content,
+  .footer {
+    font-size: 14px;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 500px) {
+  .footer {
+    position: unset;
+  }
+}
+</style>
+<body>
+<!-- ----------------------------------------NAVBAR---------------------------------------------------------------- -->
+<div>
+    <ul id="navbar">
+        <li>
+            <a href="index.html"><p class="logo">Spar<span>k</span>io</p></a>
+        </li>
+        <li>
+            <div class="search-container">
+                <input type="text" placeholder="What are you looking for..?">
+                <i class="fas fa-search"></i>
+            </div>
+        </li>
+        <li>
+            
+            <a href="Mobile.html" class="button">Categories</a>
+            <a href="blog.html" class="button">blog</a>
+            <a href="AboutUs.html" class="button">About Us</a>
+            <a href="ContactUs.html" class="button last">Contact Us</a>
+
+        </li>
+    </ul>
+</div>
+<!-- ----------------------------------------NAVBAR---------------------------------------------------------------- -->
+<div class="hoarding">
+    <img src="" alt="">
+</div>
+<div class="wrapper">
+    <div class="pro">
+        <img src="https://m.media-amazon.com/images/I/71yjoXu2ZAL._SX679_.jpg" alt="">
+        <h4> HP Ryzen </h4>
+       <button type="submit" id="showPageButton"> <a style="text-decoration: none; color: black; text-align: center; margin-left: 0px; font-size: medium;" href="sublaptop.html">View More</a></button>
+    </div>
+    <div class="pro">
+        <img src="https://m.media-amazon.com/images/I/71czGb00k5L._AC_UY436_FMwebp_QL65_.jpg" alt="">
+        <h4> Acer Aspire </h4>
+       <button type="submit" id="showPageButton"> <a style="text-decoration: none; color: black; text-align: center; margin-left: 0px; font-size: medium;" href="sublaptop.html">View More</a></button>
+    </div>
+    <div class="pro">
+        <img src="https://m.media-amazon.com/images/I/619wdC9vcCL._AC_UY436_FMwebp_QL65_.jpg" alt="">
+        <h4>Lenovo Ipad</h4>
+       <button type="submit" id="showPageButton"> <a style="text-decoration: none; color: black; text-align: center; margin-left: 0px; font-size: medium;" href="sublaptop.html">View More</a></button>
+    </div>
+    <div class="pro">
+        <img src="https://m.media-amazon.com/images/I/71odFxm6AQL._AC_UY436_FMwebp_QL65_.jpg" alt="">
+        <h4> MSI GF63</h4>
+       <button type="submit" id="showPageButton"> <a style="text-decoration: none; color: black; text-align: center; margin-left: 0px; font-size: medium;" href="sublaptop.html">View More</a></button>
+    </div>
+    <div class="pro">
+        <img src="https://m.media-amazon.com/images/I/71-Fx3Vfq5L._AC_UY436_FMwebp_QL65_.jpg" alt="">
+        <h4>Asus TUF Gamimg</h4>
+       <button class="sub" type="submit">View More</button>
+    </div>
+    <div class="pro">
+        <img src="https://m.media-amazon.com/images/I/71jjYEX-pFL._AC_UY436_FMwebp_QL65_.jpg" alt="">
+        <h4>Asus BR1100</h4>
+       <button type="submit" id="showPageButton"> <a style="text-decoration: none; color: black; text-align: center; margin-left: 0px; font-size: medium;" href="sublaptop.html">View More</a></button>
+    </div>
+    <div class="pro">
+        <img src="https://m.media-amazon.com/images/I/61iRHicGP4L._AC_UY436_FMwebp_QL65_.jpg" alt="">
+        <h4> Lenovo AMD Ryzen</h4>
+       <button type="submit" id="showPageButton"> <a style="text-decoration: none; color: black; text-align: center; margin-left: 0px; font-size: medium;" href="sublaptop.html">View More</a></button>
+    </div>
+    <div class="pro">
+        <img src="https://m.media-amazon.com/images/I/71Lz10Ln2BL._AC_UL640_FMwebp_QL65_.jpg" alt="">
+        <h4>Dell Vostro</h4>
+       <button type="submit" id="showPageButton"> <a style="text-decoration: none; color: black; text-align: center; margin-left: 0px; font-size: medium;" href="sublaptop.html">View More</a></button>
+    </div>
+  </div>
+  
+
+
+<!-- ----------------------------------------NAVBAR---------------------------------------------------------------- -->
+<!-- ----------------------------------------Footer---------------------------------------------------------------- -->
+<div class="pro">
+    <img src="https://m.media-amazon.com/images/I/71-l4YfD2yL._AC_UL640_FMwebp_QL65_.jpg" alt="">
+    <h4> Asus Vivobook </h4>
+   <button type="submit" id="showPageButton">View More</button>
+</div>
+<div class="pro">
+    <img src="https://rukminim2.flixcart.com/image/832/832/xif0q/computer/a/w/p/-original-imagfdeqqe6kkuxw.jpeg?q=70" alt="">
+    <h4> Apple 2022 </h4>
+   <button type="submit" id="showPageButton"> <a style="text-decoration: none; color: black; text-align: center; margin-left: 0px; font-size: medium;" href="sublaptop.html">View More</a></button>
+</div>
+<div class="pro">
+    <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/computer/2/z/t/-original-imagtke6rhxjcj9n.jpeg?q=70" alt="">
+    <h4>Acer Blackit</h4>
+   <button type="submit" id="showPageButton"> <a style="text-decoration: none; color: black; text-align: center; margin-left: 0px; font-size: medium;" href="sublaptop.html">View More</a></button>
+</div>
+<div class="pro">
+    <img src="https://m.media-amazon.com/images/I/71odFxm6AQL._AC_UY436_FMwebp_QL65_.jpg" alt="">
+    <h4> MSI GF63</h4>
+   <button type="submit" id="showPageButton"> <a style="text-decoration: none; color: black; text-align: center; margin-left: 0px; font-size: medium;" href="sublaptop.html">View More</a></button>
+</div>
+<div class="pro">
+    <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/computer/z/o/h/-original-imaguefzgjekhgzd.jpeg?q=70" alt="">
+    <h4>Hp 360</h4>
+   <button class="sub" type="submit">View More</button>
+</div>
+<div class="pro">
+    <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/computer/u/u/k/-original-imagmxuravjcmdwu.jpeg?q=70" alt="">
+    <h4>InFinix Inbook</h4>
+   <button type="submit" id="showPageButton"> <a style="text-decoration: none; color: black; text-align: center; margin-left: 0px; font-size: medium;" href="sublaptop.html">View More</a></button>
+</div>
+<div class="pro">
+    <img src="https://m.media-amazon.com/images/I/61iRHicGP4L._AC_UY436_FMwebp_QL65_.jpg" alt="">
+    <h4> Lenovo AMD Ryzen</h4>
+   <button type="submit" id="showPageButton"> <a style="text-decoration: none; color: black; text-align: center; margin-left: 0px; font-size: medium;" href="sublaptop.html">View More</a></button>
+</div>
+<div class="pro">
+    <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/computer/j/2/o/-original-imagtq47azeytzzg.jpeg?q=70" alt="">
+    <h4>Wings Nuvobook</h4>
+   <button type="submit" id="showPageButton"> <a style="text-decoration: none; color: black; text-align: center; margin-left: 0px; font-size: medium;" href="sublaptop.html">View More</a></button>
+</div>
+</div>
+<div class="pro">
+    <img src="https://m.media-amazon.com/images/I/71-Fx3Vfq5L._AC_UY436_FMwebp_QL65_.jpg" alt="">
+    <h4>Asus TUF Gamimg</h4>
+   <button class="sub" type="submit">View More</button>
+</div>
+<div class="pro">
+    <img src="https://m.media-amazon.com/images/I/71jjYEX-pFL._AC_UY436_FMwebp_QL65_.jpg" alt="">
+    <h4>Asus BR1100</h4>
+   <button type="submit" id="showPageButton"> <a style="text-decoration: none; color: black; text-align: center; margin-left: 0px; font-size: medium;" href="sublaptop.html">View More</a></button>
+</div>
+<div class="pro">
+    <img src="https://m.media-amazon.com/images/I/61iRHicGP4L._AC_UY436_FMwebp_QL65_.jpg" alt="">
+    <h4> Lenovo AMD Ryzen</h4>
+   <button type="submit" id="showPageButton"> <a style="text-decoration: none; color: black; text-align: center; margin-left: 0px; font-size: medium;" href="sublaptop.html">View More</a></button>
+</div>
+<div class="pro">
+    <img src="https://m.media-amazon.com/images/I/71Lz10Ln2BL._AC_UL640_FMwebp_QL65_.jpg" alt="">
+    <h4>Dell Vostro</h4>
+   <button type="submit" id="showPageButton"> <a style="text-decoration: none; color: black; text-align: center; margin-left: 0px; font-size: medium;" href="sublaptop.html">View More</a></button>
+</div>
+</div>
+<div class="pro">
+    <img src="https://m.media-amazon.com/images/I/71-l4YfD2yL._AC_UL640_FMwebp_QL65_.jpg" alt="">
+    <h4> Asus Vivobook </h4>
+   <button type="submit" id="showPageButton">View More</button>
+</div>
+<div class="pro">
+    <img src="https://rukminim2.flixcart.com/image/832/832/xif0q/computer/a/w/p/-original-imagfdeqqe6kkuxw.jpeg?q=70" alt="">
+    <h4> Apple 2022 </h4>
+   <button type="submit" id="showPageButton"> <a style="text-decoration: none; color: black; text-align: center; margin-left: 0px; font-size: medium;" href="sublaptop.html">View More</a></button>
+</div>
+<div class="pro">
+    <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/computer/2/z/t/-original-imagtke6rhxjcj9n.jpeg?q=70" alt="">
+    <h4>Acer Blackit</h4>
+   <button type="submit" id="showPageButton"> <a style="text-decoration: none; color: black; text-align: center; margin-left: 0px; font-size: medium;" href="sublaptop.html">View More</a></button>
+</div>
+<div class="pro">
+    <img src="https://m.media-amazon.com/images/I/71odFxm6AQL._AC_UY436_FMwebp_QL65_.jpg" alt="">
+    <h4> MSI GF63</h4>
+   <button type="submit" id="showPageButton"> <a style="text-decoration: none; color: black; text-align: center; margin-left: 0px; font-size: medium;" href="sublaptop.html">View More</a></button>
+</div>
+
+<div class="footer">
+    
+    <div class="content">
+      <div class="services">
+        <h4>Services</h4>
+        <p><a href="#">Audio & video</a></p>
+        <p><a href="#">Laptops</a></p>
+        <p><a href="#">Smart Phones</a></p>
+        <p><a href="#">Camera</a></p>
+      </div>
+      <div class="social-media">
+        <h4>Social</h4>
+        
+        <p>
+          <a href="#"
+            ><i class="fab fa-twitter"></i> Twitter</a
+          >
+        </p>
+        <p>
+          <a href="https://github.com/farazc60"
+            ><i class="fab fa-youtube"></i> Youtube</a
+          >
+        </p>
+        <p>
+          <a href="https://www.facebook.com/codewithfaraz"
+            ><i class="fab fa-facebook"></i> Facebook</a
+          >
+        </p>
+        <p>
+          <a href="https://www.instagram.com/codewithfaraz"
+            ><i class="fab fa-instagram"></i> Instagram</a
+          >
+        </p>
+      </div>
+      <div class="links">
+        <h4>Quick links</h4>
+        <p><a href="#">Home</a></p>
+        <p><a href="#">About</a></p>
+        <p><a href="#">Blogs</a></p>
+        <p><a href="#">Contact</a></p>
+      </div>
+      
+      <div class="details">
+        <h4 class="address">Address</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur <br />
+          adipisicing elit. Cupiditate, qui!
+        </p>
+       
+      </div>
+    </div>
+    <footer>
+      <hr />
+      <p class="copyright">
+        Copyright &copy; <a href="#">Sparkio</a> all rights reserved.
+      </p>
+    </footer>
+  </div>
+</body>
+</html>

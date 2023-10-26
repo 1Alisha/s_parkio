@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sparkio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Update the Font Awesome link as follows -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<style>
+    *{
+        margin: 0; 
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Spartan', sans-serif;
+}
+body{
+    width: 100%;
+    background-color:rgb(22,20,21);
+}
+span{
+    text-decoration: overline;
+    color: cyan;
+ }
+ .logo{
+    color: white;
+    font-size:2.5em;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    margin-left: 20px;
+
+ }
+  #navbar {
+    display: flex; /* Use flexbox to align items horizontally */
+    justify-content: space-between; /* Distribute items evenly between logo and list items */
+    align-items: center; /* Center items vertically*/
+    background: rgb(22, 20, 21);
+    padding: 20px 30px;
+}
+#navbar li {
+    list-style: none;
+    /* padding: 0 20px; */
+     /* Add margin to create space between list items */
+      margin-right: 70px; 
+}
+/* #navbar li:last-child {
+    margin-right: 0; /* Remove margin from the last list item 
+} */
+.button:last-child{
+    margin-right: 0px;
+}
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover {
+    color:rgb(22,20,21);
+}
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333; /* Adjust background color as needed */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    margin-right: 20px;
+    margin-top: 0px;
+    
+}
+
+.button:hover {
+    background-color: aqua; /* Adjust hover background color as needed */
+}
+.button.last{
+    margin-right: 0;
+}
+.search-container {
+  position: relative;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 8px 40px 8px 8px; /* Adjust the right padding to make space for the icon */
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  width: 350px;
+  height: 35px;
+}
+
+i.fas.fa-search {
+  position: absolute;
+  top: 50%;
+  right: 15px; /* Adjust the right position to control the icon position */
+  transform: translateY(-50%);
+  color: black;
+  pointer-events: none; /* This ensures the icon does not interfere with text input */
+  cursor:pointer;
+  
+}
+
+
+button {
+  padding: 8px 12px;
+  background-color:cyan;
+  color:black;
+  border: none;
+  border-radius: 20px 20px 20px 20px;
+  cursor: pointer;
+  float: left;
+}
+
+button:hover {
+  background-color:cyan;
+}
+.fas fa-search{
+    color: cyan;
+  
+}
+@media screen and (max-width: 768px) {
+    #navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    #navbar li {
+        margin: 10px 0;
+    }
+    
+    #navbar li:last-child {
+        margin-bottom: 20px;
+    }
+}
+.button.last {
+     margin-right: 0; 
+}
+
+
+</style>
+<body>
+<!-- ----------------------------------------NAVBAR---------------------------------------------------------------- -->
+<div>
+    <ul id="navbar">
+        <li>
+            <p class="logo">Spar<span>k</span>io</p>
+        </li>
+        <li>
+            <div class="search-container">
+                <input type="text" placeholder="What are you looking for..?">
+                <i class="fas fa-search"></i>
+            </div>
+        </li>
+        <li>
+            
+            <a href="Categories.html" class="button">Categories</a>
+            <a href="blog.html" class="button">blog</a>
+            <a href="AboutUs.html" class="button">About Us</a>
+            <a href="ContactUs.html" class="button last">Contact Us</a>
+
+        </li>
+    </ul>
+</div>
+<!--  ---------------------------------------------------------------------------------------------------- -->
+
+<!-- ----------------------------------------demo---------------------------------------------------------------- -->
+<div class="demo">
+    
+</div>
